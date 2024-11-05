@@ -2,31 +2,39 @@
 <html>
 
 <head>
-    <title>Nevigation Bar</title>
+
+    <title>exe.1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        header {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding-left: 10px;
+        }
+
         #nav {
             display: flex;
-            color: black;
-            justify-content: space-between;
-            padding: 20px;
-            width: 500px;
+            color: rgb(0, 0, 0);
+        }
+
+
+        header img {
+            height: 45px;
+        }
+
+        div {
+            margin: 10px;
+            padding-left: 10px;
         }
 
         a {
             text-decoration: none;
-            color: purple;
         }
 
         a:hover {
             text-decoration: underline;
-            color: purple;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
         }
 
         button.callnow {
@@ -34,7 +42,7 @@
             color: white;
             border: 1px solid purple;
             border-radius: 50px;
-            padding: 10px;
+            padding: 20px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
@@ -43,13 +51,16 @@
 </head>
 
 <body>
-
     <header>
-        <div><img src="BizBud (1).png" alt="logo" height="60px"></div>
-
+        <div><img src="BizBud (1).png" />
+        </div>
         <div id="nav">
-
-
+            <div><a href="#">Home</a></div>
+            <div>Services</div>
+            <div><a href=""></a>About</div>
+            <div><a href=""></a>Testimonials</div>
+            <div><a href=""></a>Clients</div>
+            <div><a href=""></a>Contact</div>
         </div>
 
         <div><button class="callnow">Call Now</button></div>
