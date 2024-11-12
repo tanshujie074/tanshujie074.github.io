@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .header {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .column1 {
+            flex: 1;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+
+        .column2 {
+            flex: 2;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        .content2 {
+            display: flex;
+            gap: 10px;
+            align-items: flex-end;
+        }
+
+        .column3 {
+            flex: 2;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        .column4 {
+            flex: 1;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="column1">
+                <h2>Column 1</h2>
+                <p>This is the first column.</p>
+            </div>
+            <div class="column2">
+                <h2>Column 2</h2>
+                <p>This is the second column.</p>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="column3">
+                <h2>Column 3</h2>
+                <p>This is the third column.</p>
+            </div>
+            <div class="column4">
+                <h2>Column 4</h2>
+                <p>This is the fourth column.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+
+</html>
