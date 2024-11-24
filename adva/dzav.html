@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏示例</title>
+    <style>
+        /* 导航栏样式 */
+        .navbar {
+            background-color: #333;
+            /* 背景色 */
+            overflow: hidden;
+            /* 清除浮动 */
+            display: flex;
+            /* 使用弹性布局 */
+            padding: 0 20px;
+            /* 内边距 */
+        }
+
+        .navbar a {
+            color: white;
+            /* 字体颜色 */
+            padding: 14px 20px;
+            /* 链接间距 */
+            text-decoration: none;
+            /* 去掉下划线 */
+            text-align: center;
+            /* 居中对齐 */
+            transition: background-color 0.3s;
+            /* 动态效果 */
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            /* 悬停时的背景色 */
+        }
+
+        .navbar .logo {
+            font-size: 20px;
+            /* Logo 字体大小 */
+            font-weight: bold;
+            /* 加粗 */
+            flex-grow: 1;
+            /* 占满剩余空间，Logo 靠左 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="logo">我的网站</div>
+        <a href="#home">首页</a>
+        <a href="#about">关于</a>
+        <a href="#services">服务</a>
+        <a href="#contact">联系我们</a>
+    </div>
+</body>
+
+</html>

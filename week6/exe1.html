@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe 1 week 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            height: 30px;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu-item {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .menu-link:hover {
+            background-color: #555;
+        }
+
+        .menu-item.with-icon>.menu-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-item.with-icon>.menu-link img {
+            margin-left: 5px;
+            width: 10px;
+            height: 10px;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 160px;
+        }
+
+        .submenu .submenu-item {
+            padding: 10px 15px;
+            text-align: left;
+        }
+
+        .submenu .submenu-item a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Spotify_logo_with_text.svg[1].png" alt="logo">
+        </div>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="#" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item with-icon">
+                <a href="#" class="menu-link">
+                    About
+                    <img src="chevron.png" alt="Dropdown Icon">
+                </a>
+                <div class="submenu">
+                    <div class="submenu-item"><a href="#">Mission</a></div>
+                    <div class="submenu-item"><a href="#">Vision</a></div>
+                </div>
+            </div>
+            <div class="menu-item with-icon">
+                <a href="#" class="menu-link">
+                    Services
+                    <img src="chevron.png" alt="Dropdown Icon">
+                </a>
+                <div class="submenu">
+                    <div class="submenu-item"><a href="#">Web Development</a></div>
+                    <div class="submenu-item"><a href="#">App Development</a></div>
+                    <div class="submenu-item"><a href="#">SEO Services</a></div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-link">Contact</a>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
