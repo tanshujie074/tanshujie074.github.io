@@ -7,14 +7,12 @@
     <title>Web Publishing Portfolio</title>
     <style>
         body {
-            background: linear-gradient(to bottom right, #f1f1f1, #e9e2e8);
+            background-image: url("index img.html/image.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
             margin: 0;
             font-family: "Edu AU VIC WA NT Pre", cursive;
-        }
-
-        .all {
-            background-image: url(index.html/image.png);
-            background-size: cover;
         }
 
         .navbar {
@@ -48,18 +46,23 @@
             margin-bottom: 10px;
         }
 
-        .content {
+
+
+        .cloumn1 {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .cloumn2 {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
         }
 
         .week-box {
-            flex: 1;
-            min-width: 200px;
             background-color: white;
+            flex: 1;
             border-radius: 8px;
             padding: 15px;
             text-align: center;
@@ -67,7 +70,6 @@
         }
 
         .week5 {
-            flex-basis: 100%;
             background-color: white;
         }
 
@@ -84,9 +86,7 @@
         }
 
         .separator {
-            width: 100%;
-            height: 1px;
-            background-color: #e0e0e0;
+            background-color: #ffffff;
             margin: 10px 0;
         }
 
@@ -101,6 +101,16 @@
         .footer .social-icons {
             justify-content: center;
             margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .cloumn1 {
+                flex-direction: column;
+            }
+
+            .cloumn2 {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -131,29 +141,49 @@
     </div>
 
     <div class="content">
-        <div class="week-box">
-            <h3><img src="index img.html/calendar.png"> Week 2</h3>
-            <div class="separator"></div>
-            <p>Exercise 1</p>
-            <p>Exercise 2</p>
+        <div class="cloumn1">
+            <div class="week-box">
+                <h3><img src="index img.html/calendar.png"> Week 2</h3>
+                <div class="separator">
+                    <div><a href="http://127.0.0.1:5500/week2/exe1.html">Exercise 1</a></div>
+                    <div><a href="http://127.0.0.1:5500/week2/exe2.html">Exercise 2</a></div>
+                </div>
+            </div>
+
+            <div class="week-box">
+                <h3><img src="index img.html/calendar.png"> Week 3</h3>
+                <div class="separator">
+                    <div><a href="week3/exe1.html">Exercise 1</a></div>
+                    <div><a href="week3/exe2.html">Exercise 2</a></div>
+                </div>
+            </div>
+            <div class="week-box">
+                <h3><img src="index img.html/calendar.png"> Week 4</h3>
+                <div class="separator">
+                    <div><a href="week4/exe1.html">Exercise 1</a></div>
+                    <div><a href="week4/exe2.html">Exercise 2</a></div>
+                </div>
+            </div>
         </div>
-        <div class="week-box">
-            <h3><img src="index img.html/calendar.png"> Week 3</h3>
-            <div class="separator"></div>
-            <p>Exercise 1</p>
-            <p>Exercise 2</p>
-        </div>
-        <div class="week-box">
-            <h3><img src="index img.html/calendar.png"> Week 4</h3>
-            <div class="separator"></div>
-            <p>Exercise 1</p>
-            <p>Exercise 2</p>
-        </div>
-        <div class="week-box week5">
-            <h3><img src="index img.html/calendar.png"> Week 5</h3>
-            <div class="separator"></div>
-            <p>Exercise 1</p>
-            <p>Exercise 2</p>
+
+        <div class="cloumn2">
+            <div class="week-box week5">
+                <h3><img src="index img.html/calendar.png"> Week 5</h3>
+                <div class="separator">
+                    <div><a href="week5/exe1.html">Exercise 1</a></div>
+                    <div><a href="week5/exe2.html">Exercise 2</a></div>
+                    <div><a href="week5/exe3.html">Exercise 3</a></div>
+                </div>
+            </div>
+            <div class="week-box week5">
+                <h3><img src="index img.html/calendar.png">Week 6</h3>
+                <div class="separator">
+                    <div><a href="week6/exe1.html">Exercise 1</a></div>
+                    <div><a href="week6/exe2.html">Exercise 2</a></div>
+                    <div><a href="week6/exe3.html">Exercise 3</a></div>
+                    <div><a href="week6/exe4.html">Exercise 4</a></div>
+                </div>
+            </div>
         </div>
     </div>
 
