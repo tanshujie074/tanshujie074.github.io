@@ -4,6 +4,8 @@
 body {
     background-color: rgba(27, 27, 29, 1);
     color: rgb(255, 255, 255);
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /*copy here to*/
@@ -103,10 +105,6 @@ a {
     display: block;
 }
 
-
-
-
-
 /*get in touch*/
 .get-in-touch {
     display: flex;
@@ -126,4 +124,54 @@ g:hover path {
     fill: #5D9DFE;
 }
 
-/*copy here*/
+/*copy until here*/
+
+/*content*/
+.content {
+    margin-top: 0px;
+}
+
+
+/* hero*/
+.hero-image {
+    background-image: url(home-images/GaqShcPaoAA1r0b.jpeg);
+    height: 560px;
+    background-position: 30% 21%;
+    font-family: "Noto Serif JP", serif;
+}
+
+.hero-text {
+    background-image: linear-gradient(to right, hsl(240, 4%, 11%), #1b1b1dfa, #1b1b1df4, #1b1b1d7e, hsla(240, 4%, 11%, 0.027), hsla(240, 4%, 11%, 0));
+    height: 560px;
+    align-content: flex-end;
+    bottom: 10px;
+    padding: 0px 0px 0px 144px;
+}
+
+.hero-image h1 {
+    margin: 0px;
+    font-size: 128px;
+    line-height: 105%;
+}
+
+.hero-image h4 {
+    font-size: 39px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.blue-button {
+    background-color: #07175B;
+    border: #07175B 1px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 650;
+    font-family: 'Futura Std', sans-serif;
+    padding: 12px 30px;
+    margin: 0px 0px 85px 0px;
+}
+
+.blue-button:hover {
+    background-color: #5D9DFE;
+}
