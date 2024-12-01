@@ -1,7 +1,23 @@
+@font-face {
+    font-family: Futura Book;
+    src: url("Futura/FuturaStd-Book.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Futura Heavy;
+    src: url("Futura/FuturaStd-Heavy.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     background-color: #1b1b1d;
 }
+
+
 
 .news-heroimg {
     background-image: url("newsimages/Ado-news-banner-enlonged.jpg");
@@ -25,12 +41,29 @@ h1.news-heading {
     font-size: 80px;
 }
 
+h2.news-subheading1 {
+    color: white;
+    font-size: xx-large;
+}
 
-.news-label {
+h4.label {
+    font-family: Futura Heavy;
     background-color: #5D9DFE;
     color: white;
-    padding: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    width: 80px
+}
 
+h4.date {
+    font-family: Futura Book;
+    color: white;
+}
+
+div.type-date {
+    display: flex;
+    align-items: center;
 }
 
 div.news1 {
