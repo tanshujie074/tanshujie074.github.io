@@ -1,9 +1,23 @@
+@font-face {
+    font-family: Futura Book;
+    src: url("Futura/FuturaStd-Book.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Futura Heavy;
+    src: url("Futura/FuturaStd-Heavy.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     background-color: #1b1b1d;
 }
 
-.news-heroimg {
+div.news-heroimg {
     background-image: url("newsimages/Ado-news-banner-enlonged.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,24 +31,157 @@ h1.news-heading {
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-    font-variation-settings: "wdth" 100;
     position: absolute;
     bottom: 25px;
-    left: 100px;
+    left: 144px;
     color: white;
     font-size: 80px;
 }
 
-
-.news-label {
-    background-color: #5D9DFE;
-    color: white;
-    padding: 15px;
-
+div.latest {
+    margin-left: 144px;
+    margin-right: 144px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-div.news1 {
+div.content {
+    display: flex;
+    gap: 20px;
+}
+
+h2.news-subheading {
+    color: white;
+    font-family: "Noto Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+}
+
+h4.label {
+    font-family: Futura Heavy;
+    background-color: #5D9DFE;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    width: 80px
+}
+
+h4.date {
+    font-family: Futura Book;
+    color: white;
+}
+
+div.type-date {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+h3.news-description {
+    font-family: Futura Heavy;
+    color: white;
+}
+
+div.news1-content {
+    background-color: #07175B;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+}
+
+div.news-multiple {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+div.news2 {
     flex: 1;
     background-color: #07175B;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
 
+div.news3 {
+    flex: 1;
+    background-color: #07175B;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+div.news4 {
+    flex: 1;
+    background-color: #07175B;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+div.news5 {
+    flex: 1;
+    background-color: #07175B;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+div.more-news-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.more-news-button {
+    font-family: Futura Heavy;
+    background-color: #07175B;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+button.more-news-button:hover {
+    font-family: Futura Heavy;
+    background-color: white;
+    color: #07175B;
+}
+
+div.release-bannerimg {
+    background-image: url("newsimages/Ado-news-release-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+    width: 100%;
+    height: 600px;
+}
+
+div.release {
+    margin-left: 144px;
+    margin-right: 144px;
+    margin-top: -100px;
+}
+
+h3.release-description {
+    font-family: Futura Heavy;
+    color: white;
+}
+
+div.release-border {
+    flex: 1;
+    background-color: #07175B;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
