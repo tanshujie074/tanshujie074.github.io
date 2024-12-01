@@ -17,9 +17,7 @@ body {
     background-color: #1b1b1d;
 }
 
-
-
-.news-heroimg {
+div.news-heroimg {
     background-image: url("newsimages/Ado-news-banner-enlonged.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,9 +34,22 @@ h1.news-heading {
     font-variation-settings: "wdth" 100;
     position: absolute;
     bottom: 25px;
-    left: 100px;
+    left: 80px;
     color: white;
     font-size: 80px;
+}
+
+div.latest {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+div.latest-content {
+    display: flex;
+}
+
+div.content {
+    display: flex;
 }
 
 h2.news-subheading1 {
@@ -64,10 +75,38 @@ h4.date {
 div.type-date {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-div.news1 {
-    flex: 1;
-    background-color: #07175B;
+h3.news1-description {
+    font-family: Futura Heavy;
+    color: white;
+}
 
+div.news1-content {
+    background-color: #07175B;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+div.news1-left {
+    flex: 1;
+}
+
+
+div.news2 {
+    background-color: #07175B;
+}
+
+div.news3 {
+    background-color: #07175B;
+}
+
+div.news4 {
+    background-color: #07175B;
+}
+
+div.news5 {
+    background-color: #07175B;
 }
