@@ -112,6 +112,196 @@ body {
     color: black;
 }
 
+/*Desktop footer*/
+@font-face {
+    font-family: Futura Medium;
+    src: url("Futura/FuturaStd-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+div.footer-get-in-touch {
+    margin: 10px 0px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+div.footer-content {
+    margin-left: 144px;
+    margin-right: 144px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.footer-first-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.menu {
+    display: flex;
+}
+
+a.menu-item {
+    font-family: Futura Medium;
+    color: white;
+    font-size: 18px;
+}
+
+a.menu-item:hover {
+    color: #5D9DFE;
+}
+
+a.footer-info {
+    font-family: Futura Medium;
+    color: white;
+    font-size: 16px;
+}
+
+div.footer-info {
+    margin-right: 35px;
+}
+
+a.footer-info:hover {
+    color: #5D9DFE;
+}
+
+div.footer-info-menu {
+    display: flex;
+    margin-top: 60px;
+}
+
+p.copyright {
+    font-family: Futura Medium;
+    color: white;
+    font-size: 15px;
+}
+
+/*End of desktop footer*/
+
+@media screen and (max-width: 600px) {
+    div.nav1 {
+        /
+    }
+
+    div.get-in-touch {
+        /
+    }
+
+
+    h1.news-heading {
+        position: absolute;
+        bottom: 25px;
+        left: 22px;
+        font-size: 80px;
+    }
+
+    div.news1-mob {
+        display: block;
+    }
+
+    div.news1-left {
+        display: none;
+    }
+
+    div.latest {
+        flex-direction: column;
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    img.news-image-mob {
+        width: 390px;
+    }
+
+    div.content {
+        flex-direction: column;
+    }
+
+    div.news-multiple {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    div.news-heroimg {
+        background-position-x: 80%;
+    }
+
+    div.release {
+        flex-direction: column;
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    div.right-content {
+        display: none;
+    }
+
+
+    div.right-content-mob {
+        display: block;
+    }
+
+
+    /*Mobile footer*/
+    div.footer-first-layer {
+        display: block;
+
+    }
+
+    div.footer-content {
+        margin-left: 22px;
+        margin-right: 22px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    div.footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    div.menu {
+        display: block;
+        text-align: center;
+    }
+
+    div.menu-content {
+        margin: 10px 0px;
+    }
+
+    div.footer-get-in-touch-mob {
+        margin: 30px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    div.footer-info-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px 0px;
+    }
+
+    div.footer-info {
+        margin: 0;
+        margin: 5px 10px;
+    }
+
+    div.copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

@@ -1,83 +1,124 @@
-.navbar {
-    background-color: rgba(15, 15, 16, 1);
-    position: relative;
-    padding-left: 144px;
-    padding-right: 144px;
+/*copy here to*/
+/*Navbar*/
+/*futura font*/
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+body {
+    background-color: hsl(240, 4%, 11%);
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+nav {
+    background-color: hsl(240, 3%, 6%);
+    font-family: 'Futura Std', sans-serif;
+    font-size: 16px;
+    padding: 15px 144px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position: sticky;
+    top: 0;
 }
 
-.logo img {
-    max-height: 50px;
-}
-
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding-right: 500px;
-}
-
-.nav-menu>li {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.nav-menu a {
+a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: normal;
 }
 
-.nav-menu a:hover {
-    text-decoration: underline;
-    text-decoration-color: rgba(93, 157, 254, 1);
+.nav1 {
+    display: flex;
+    gap: 55px;
+    align-items: center;
 }
 
-.nav-icon {
-    max-height: 15px;
-    margin-left: auto;
+.arrow {
+    transform: rotate(90deg);
+    height: 20px;
 }
 
-.dropdown {
-    list-style: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(15, 15, 16, 1);
-    padding: 10px 0;
+.underline:hover {
+    border-bottom: #5D9DFE solid 2px;
+    cursor: pointer;
+}
+
+/*menu*/
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submenu1 {
     display: none;
-    z-index: 100;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1px;
 }
 
-.dropdown li {
-    margin: 0;
-    padding: 5px 20px;
-    display: flex;
-    align-items: center;
-}
-
-.dropdown li a {
-    color: rgba(93, 157, 254, 1);
-    text-decoration: none;
-}
-
-.dropdown li:hover {
+.submenu1 a {
+    display: block;
+    text-align: left;
     background-color: rgba(15, 15, 16, 1);
+    padding: 13px 20px;
 }
 
-.nav-menu>li:hover .dropdown {
+.menu-item1:hover .arrow {
+    transform: rotate(270deg);
+}
+
+.menu-item1:hover .submenu1 {
     display: block;
 }
 
-.social-icons {
+.live-news {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 5px;
 }
 
-.social-icons img {
-    max-height: 30px;
+.submenu1,
+.submenu2 {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1x;
 }
+
+.submenu1 a,
+.submenu2 a {
+    display: block;
+    text-align: left;
+    background-color: rgba(15, 15, 16, 1);
+    padding: 13px 20px;
+}
+
+.menu-item1:hover .arrow,
+.menu-item2:hover .arrow {
+    transform: rotate(270deg);
+}
+
+.menu-item1:hover .submenu1,
+.menu-item2:hover .submenu2 {
+    display: block;
+}
+
+/*get in touch*/
+.get-in-touch {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon :hover,
+g:hover circle,
+g:hover path {
+    fill: #5D9DFE;
+}
+
+/*copy until here*/
