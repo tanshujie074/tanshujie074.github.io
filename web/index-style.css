@@ -49,7 +49,38 @@ a {
     align-items: center;
 }
 
+<<<<<<< HEAD
 #about,
+=======
+#about {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.submenu1 {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1px;
+}
+
+.submenu1 a {
+    display: block;
+    text-align: left;
+    background-color: rgba(15, 15, 16, 1);
+    padding: 13px 20px;
+}
+
+.menu-item1:hover .arrow {
+    transform: rotate(270deg);
+}
+
+.menu-item1:hover .submenu1 {
+    display: block;
+}
+
+>>>>>>> a8504dbe0f0087b258a6b693a7758636c1508dec
 #live-news {
     display: flex;
     align-items: center;
