@@ -180,6 +180,10 @@ h2.news-subheading {
     font-size: 48px;
 }
 
+div.news1-mob {
+    display: none;
+}
+
 h4.label {
     font-family: Futura Heavy;
     background-color: #5D9DFE;
@@ -399,6 +403,14 @@ div.release-banner2img {
         font-size: 80px;
     }
 
+    div.news1-mob {
+        display: block;
+    }
+
+    div.news1-left {
+        display: none;
+    }
+
     div.latest {
         flex-direction: column;
         margin-left: 22px;
@@ -419,10 +431,8 @@ div.release-banner2img {
     }
 
 
-    .background {
-        background-position: right;
-        width: 100%;
-        min-height: 55vh;
+    div.news-heroimg {
+        background-position-x: 80%;
     }
 
     div.release {
