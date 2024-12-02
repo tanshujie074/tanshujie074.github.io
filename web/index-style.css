@@ -49,10 +49,7 @@ a {
     align-items: center;
 }
 
-<<<<<<< HEAD
-#about,
-=======
-#about {
+.about {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -80,8 +77,7 @@ a {
     display: block;
 }
 
->>>>>>> a8504dbe0f0087b258a6b693a7758636c1508dec
-#live-news {
+.live-news {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -183,7 +179,7 @@ g:hover path {
     cursor: pointer;
 }
 
-/*live*/
+/*live & news*/
 .live {
     background-image: url(home-images/expo.jpeg);
     height: 700px;
@@ -198,7 +194,6 @@ g:hover path {
     height: 700px;
     align-content: center;
     justify-items: end;
-    align-items: center;
     gap: 30px;
     padding: 0px 144px 0px 0px;
 }
@@ -226,7 +221,7 @@ g:hover path {
 }
 
 .item-box:hover {
-    background-color: #5d9dfe6e;
+    background-color: #5d9dfee3;
     cursor: pointer;
 }
 
@@ -235,6 +230,12 @@ g:hover path {
     font-size: 23px;
     align-items: center;
     padding: 20px 20px 20px 5px;
+}
+
+.item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .date {
@@ -295,6 +296,7 @@ g:hover path {
 .card {
     background-color: #07175B;
     max-width: 392px;
+    min-width: auto;
     justify-items: center;
     padding: 25px 25px 22px 25px;
 }
@@ -335,4 +337,104 @@ g:hover path {
 .right-bottom-button {
     text-align: end;
     margin-top: 30px;
+}
+
+/* news*/
+.news {
+    background-image: url(home-images/live\ 3.jpg);
+    height: 700px;
+    background-size: auto 450%;
+    background-position: 1% 20%;
+    background-repeat: no-repeat;
+    font-family: "Noto Serif JP", serif;
+}
+
+.news-text {
+    background-image: linear-gradient(to right, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0));
+    height: 700px;
+    align-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 0px 0px 144px;
+}
+
+.news-button {
+    width: 583px;
+    text-align: end;
+}
+
+/*store*/
+
+.store {
+    padding: 80px 144px;
+}
+
+.store-row {
+    display: flex;
+    gap: 27px;
+}
+
+.store-column1,
+.store-column2,
+.store-column3 {
+    background-size: 100%;
+    width: 392px;
+    height: 480px;
+}
+
+.store-column1 {
+    background-image: url(home-images/doll.png);
+}
+
+.store-column2 {
+    background-image: url(home-images/t-shirt.png);
+}
+
+.store-column3 {
+    background-image: url(home-images/stand.png);
+}
+
+.store-card {
+    font-family: 'Futura Std', sans-serif;
+    font-size: 23px;
+    background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0));
+    display: flex;
+    align-items: flex-end;
+    width: 392px;
+    height: 480px;
+}
+
+.store-text {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 23px;
+}
+
+.store-column1:hover .store-text img {
+    background-color: #5D9DFE;
+}
+
+.store-column2:hover .store-text img {
+    background-color: #5D9DFE;
+}
+
+.store-column3:hover .store-text img {
+    background-color: #5D9DFE;
+}
+
+.store-button {
+    background-color: #9F1C07;
+    border: #9F1C07 1px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 650;
+    font-family: 'Futura Std', sans-serif;
+    font-size: 19px;
+    padding: 15px 37px;
+}
+
+.store-button:hover {
+    background-color: #5D9DFE;
+    cursor: pointer;
 }
