@@ -134,6 +134,14 @@ g:hover path {
     font-style: normal;
 }
 
+@font-face {
+    font-family: Futura Medium;
+    src: url("Futura/FuturaStd-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     margin: 0;
     background-color: #1b1b1d;
@@ -451,4 +459,28 @@ div.release-banner2img {
     }
 
 
+}
+
+/*Footer*/
+div.footer-content {}
+
+a.footer-info {
+    font-family: Futura Medium;
+    color: white;
+    font-size: 15px;
+}
+
+a.footer-info:hover {
+    font-family: Futura Medium;
+    color: #5D9DFE;
+}
+
+div.footer-info-menu {
+    display: flex;
+}
+
+p.copyright {
+    font-family: Futura Medium;
+    color: white;
+    font-size: 15px;
 }
