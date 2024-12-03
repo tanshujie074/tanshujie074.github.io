@@ -28,6 +28,10 @@ a {
     height: 20px;
 }
 
+.underline {
+    display: flex;
+}
+
 .underline:hover {
     border-bottom: #5D9DFE solid 2px;
 }
