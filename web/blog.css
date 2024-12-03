@@ -48,11 +48,11 @@ body {
     width: 100%;
     max-width: 550px;
     gap: 10px;
+    transition: transform 0.5s ease;
 }
 
 .frame1:hover {
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 .frame1 img {
@@ -77,12 +77,11 @@ body {
     width: 100%;
     max-width: 350px;
     gap: 10px;
-    x
+    transition: transform 0.5s ease;
 }
 
 .frame2:hover {
     transform: scale(1.1);
-    transition: 0.5s;
 }
 
 .frame2 img {
