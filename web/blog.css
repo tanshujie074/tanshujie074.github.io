@@ -194,129 +194,55 @@ p.copyright {
 
 /*End of desktop footer*/
 
-@media screen and (max-width: 600px) {
-    div.nav1 {
-        /
+
+@media screen and (max-width: 768px) {
+    .header-text {
+        font-size: 48px;
     }
 
-    div.get-in-touch {
-        /
+    .header-image {
+        height: 250px;
+        width: 250px;
     }
 
-
-    h1.news-heading {
-        position: absolute;
-        bottom: 25px;
-        left: 22px;
-        font-size: 80px;
-    }
-
-    div.news1-mob {
-        display: block;
-    }
-
-    div.news1-left {
-        display: none;
-    }
-
-    div.latest {
+    .column1 {
         flex-direction: column;
-        margin-left: 22px;
-        margin-right: 22px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
-    img.news-image-mob {
-        width: 390px;
-    }
-
-    div.content {
+    .column2 {
         flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
-    div.news-multiple {
-        display: flex;
+    .column3 {
+        align-items: center;
         flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
-
-    div.news-heroimg {
-        background-position-x: 80%;
+    .frame2 {
+        background-image: url(img/blog\ \ image/);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        max-width: 550px;
     }
 
-    div.release {
-        flex-direction: column;
-        margin-left: 22px;
-        margin-right: 22px;
+    .frame2 img {
+        width: 100%;
+        height: 300px;
+        max-width: 550px;
     }
 
-    div.right-content {
-        display: none;
+    .frame1:hover {
+        transform: scale(1.0);
     }
 
-
-    div.right-content-mob {
-        display: block;
-    }
-
-
-    /*Mobile footer*/
-    div.footer-first-layer {
-        display: block;
-
-    }
-
-    div.footer-content {
-        margin-left: 22px;
-        margin-right: 22px;
-        margin-top: 45px;
-        margin-bottom: 45px;
-    }
-
-    div.footer-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0px;
-    }
-
-    div.menu {
-        display: block;
-        text-align: center;
-    }
-
-    div.menu-content {
-        margin: 10px 0px;
-    }
-
-    div.footer-get-in-touch-mob {
-        margin: 30px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    div.footer-info-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 4px 0px;
-    }
-
-    div.footer-info {
-        margin: 0;
-        margin: 5px 10px;
-    }
-
-    div.copyright {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    .frame2:hover {
+        transform: scale(1.0);
     }
 }
