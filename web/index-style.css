@@ -132,7 +132,7 @@ g:hover path {
 
 /* hero*/
 .hero-image {
-    background-image: url(home-images/hibana.jpeg);
+    background-image: url(img/home-images/hibana.jpeg);
     height: 560px;
     background-position: 30% 21%;
     font-family: "Noto Serif JP", serif;
@@ -181,7 +181,7 @@ g:hover path {
 
 /*live & news*/
 .live {
-    background-image: url(home-images/expo.jpeg);
+    background-image: url(img/home-images/expo.jpeg);
     height: 700px;
     background-size: auto 320%;
     background-position: 1% 23%;
@@ -341,7 +341,7 @@ g:hover path {
 
 /* news*/
 .news {
-    background-image: url(home-images/live\ 3.jpg);
+    background-image: url(img/home-images/live\ 3.jpg);
     height: 700px;
     background-size: auto 450%;
     background-position: 1% 20%;
@@ -383,15 +383,15 @@ g:hover path {
 }
 
 .store-column1 {
-    background-image: url(home-images/doll.png);
+    background-image: url(img/home-images/doll.png);
 }
 
 .store-column2 {
-    background-image: url(home-images/t-shirt.png);
+    background-image: url(img/home-images/t-shirt.png);
 }
 
 .store-column3 {
-    background-image: url(home-images/stand.png);
+    background-image: url(img/home-images/stand.png);
 }
 
 .store-card {
