@@ -36,7 +36,6 @@ body {
 .column1 {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     margin-bottom: 100px;
     margin-left: 144px;
     margin-right: 144px;
@@ -49,6 +48,11 @@ body {
     width: 100%;
     max-width: 550px;
     gap: 10px;
+}
+
+.frame1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .frame1 img {
@@ -73,6 +77,12 @@ body {
     width: 100%;
     max-width: 350px;
     gap: 10px;
+    x
+}
+
+.frame2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .frame2 img {
@@ -84,7 +94,6 @@ body {
 .column3 {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
     margin-bottom: 100px;
     margin-left: 144px;
     margin-right: 144px;
@@ -105,6 +114,11 @@ body {
     color: rgba(217, 217, 217, 1);
     font-size: 16px;
     cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: #5D9DFE;
 }
 
 .button.active {
