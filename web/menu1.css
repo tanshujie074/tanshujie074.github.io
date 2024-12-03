@@ -1,0 +1,22 @@
+/*futura font*/
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: hsl(240, 3%, 6%);
+    font-family: 'Futura Std', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
