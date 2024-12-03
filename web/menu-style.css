@@ -121,4 +121,8 @@ g:hover path {
     fill: #5D9DFE;
 }
 
+/*Responsive Breakpoint*/
+@media screen and (max-width: 768px; ) {}
+
+
 /*copy until here*/
