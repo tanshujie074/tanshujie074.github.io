@@ -1,36 +1,24 @@
 /*futura font*/
 @import url('https://fonts.cdnfonts.com/css/futura-std-4');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: hsl(240, 4%, 11%);
     margin: 0px;
+    color: white;
+    background-color: hsl(240, 4%, 11%);
 }
 
-.content {
-    background-color: aliceblue;
-    padding: 0 10px;
-    margin: 0 auto;
-    width: calc(100% - 50px);
-    max-width: 1228px;
+.hero-image {
+    background-color: rgb(23, 141, 245);
+    position: relative;
+    height: 50%;
+    height: 500px;
+    top: 80px;
 }
 
-div.hero {
-    background-image: ;
-    height: 100%;
-    margin: auto;
-    height: 100px;
-    object-fit: cover;
-}
-
-
-@media (max-width:1090px) {
-    .content {
-        width: calc(100% - 40px);
-    }
-}
-
-@media (max-width:800px) {
-    .content {
-        width: calc(100% - 15px);
-    }
+.column {
+    background-color: aqua;
 }
