@@ -242,6 +242,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
     nav .navbar .nav-links .links li a:hover {
         color: #5D9DFE;
         text-decoration: none;
+        transition: color 0.3s ease;
     }
 
     nav .navbar .navbar1 .nav-links .links {
