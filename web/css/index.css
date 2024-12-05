@@ -1,0 +1,36 @@
+/*futura font*/
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+body {
+    background-color: hsl(240, 4%, 11%);
+    margin: 0px;
+}
+
+.content {
+    background-color: aliceblue;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: calc(100% - 50px);
+    max-width: 1228px;
+}
+
+div.hero {
+    background-image: ;
+    height: 100%;
+    margin: auto;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+@media (max-width:1090px) {
+    .content {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width:800px) {
+    .content {
+        width: calc(100% - 15px);
+    }
+}
