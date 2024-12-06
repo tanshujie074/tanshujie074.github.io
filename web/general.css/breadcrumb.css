@@ -49,3 +49,19 @@ a:hover {
     text-decoration: underline;
 
 }
+
+@media screen and (max-width: 1000px) {
+    ul.breadcrumb {
+        margin-left: 3%;
+        margin-right: 3%;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    ul.breadcrumb {
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+}

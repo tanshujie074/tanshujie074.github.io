@@ -54,6 +54,21 @@ a:hover {
 
 }
 
+@media screen and (max-width: 1000px) {
+    ul.breadcrumb {
+        margin-left: 3%;
+        margin-right: 3%;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    ul.breadcrumb {
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+}
 
 /*news*/
 div.news-heroimg {
@@ -273,6 +288,11 @@ div.release-banner-img2 {
 
 
 @media screen and (max-width: 1000px) {
+
+    /*news*/
+    div.news-heading {
+        margin-left: 6%;
+    }
 
     /*latest*/
     .latest-section {
