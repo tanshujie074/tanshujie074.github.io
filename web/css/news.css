@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Serif+JP:wght@200..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+body {
+    margin: 0;
+    background-color: #1b1b1d;
+    color: white;
+}
+
+/*breadcrumb*/
+div.breadcrumb {
+    background-color: #07175B;
+    color: white;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+}
+
+ul.breadcrumb {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    list-style: none;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+ul.breadcrumb li {
+    display: inline;
+    margin-right: 8px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5D9DFE;
+}
+
+.arrow {
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin-right: 8px;
+    font-size: large;
+}
+
+.the-on-page {
+    font-weight: 650;
+    text-decoration: underline;
+
+}
+
+@media screen and (max-width: 1000px) {
+    ul.breadcrumb {
+        margin-left: 3%;
+        margin-right: 3%;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    ul.breadcrumb {
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+}
+
+/*news*/
+div.news-heroimg {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-banner-cropped.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    background-position-x: 80%;
+    width: 100%;
+    height: 590px;
+}
+
+div.news-heading {
+    margin-left: 10%;
+    margin-top: -200px;
+}
+
+h1.news-heading {
+    font-size: 80px;
+}
+
+/*latest*/
+.latest-section {
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.latest-content {
+    display: flex;
+    gap: 15px;
+}
+
+.subheading {
+    font-size: 48px;
+}
+
+.news1-side {
+    display: flex;
+    flex: 1;
+}
+
+.news1-side-mobile {
+    display: none;
+}
+
+div.news-content {
+    background-color: #07175B;
+    border: 1px solid #07175B;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.news-content:hover {
+    background-color: #0F0F10;
+    border: 1px solid white;
+}
+
+h4.label {
+    margin: 5px 0px;
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 650;
+    background-color: #5D9DFE;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+
+h4.news1-label {
+    margin: 25px 0px;
+}
+
+h4.date {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+div.label-date {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 15px;
+}
+
+h3.news1-description {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 650;
+    font-size: 24px;
+}
+
+h3.news-description {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 650;
+    font-size: 18px;
+}
+
+.center-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div.more-news {
+    display: grid;
+    justify-content: center;
+}
+
+button.more-news {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 550;
+    font-size: 16px;
+    background-color: #07175B;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 25px;
+}
+
+button.more-news:hover {
+    background-color: white;
+    color: #07175B;
+}
+
+/*release*/
+div.release-banner-img1 {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-release-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+    width: 100%;
+    height: 440px;
+}
+
+.release-section {
+    margin-top: -45px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.all-release-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+.release-left-column {
+    font-family: 'Futura Std', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3.news-release-description {
+    font-weight: 650;
+    font-size: 18px;
+}
+
+.release-right-column {
+    font-family: 'Futura Std', sans-serif;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.release-content {
+    display: flex;
+    padding: 15px 0px;
+    align-items: center;
+}
+
+img.release-img {
+    width: auto;
+    height: auto;
+    max-width: 40%;
+    object-fit: cover;
+    margin-right: 25px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+div.release-banner-img2 {
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-release-banner2-cropped.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+    width: 100%;
+    height: 400px;
+    margin-top: -30px;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    /*news*/
+    div.news-heading {
+        margin-left: 6%;
+    }
+
+    /*latest*/
+    .latest-section {
+        margin-top: 80px;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    /*release*/
+    .release-section {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .all-release-content {
+        display: block;
+    }
+
+    .release-left-column {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+    /*news*/
+    div.news-heading {
+        margin-left: 5%;
+        margin-top: -200px;
+    }
+
+    /*latest*/
+    .latest-section {
+        margin-top: 80px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .latest-content {
+        display: block;
+    }
+
+    .news1-side-mobile {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .news1-side {
+        display: none;
+    }
+
+    .center-column {
+        margin-bottom: 15px;
+    }
+
+    .right-column {
+        margin-bottom: 15px;
+
+    }
+
+    /*release*/
+    .release-section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .release-left-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .release-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .release-content {
+        padding-top: 0px;
+    }
+}
+
+
+/*footer*/
+footer {
+    font-family: 'Futura Std', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px 0px 20px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+div.footer-content {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+div.footer-first-layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.menu {
+    display: flex;
+    gap: 25px;
+}
+
+a.menu-item {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a.menu-item:hover {
+    color: #5D9DFE;
+}
+
+.under {
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.social i {
+    font-size: 30px;
+}
+
+.social i:hover {
+    color: #5D9DFE;
+    transition: color 0.3s ease;
+}
+
+a.footer-info {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+div.footer-info {
+    margin-right: 35px;
+
+}
+
+a.footer-info:hover {
+    color: #5D9DFE;
+}
+
+div.footer-info-menu {
+    display: flex;
+    margin-top: 50px;
+}
+
+p.copyright {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    div.footer-content {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    a.menu-item {
+        font-size: 16px;
+    }
+
+    div.menu {
+        gap: 15px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    /*Mobile footer*/
+    div.footer-first-layer {
+        display: block;
+
+    }
+
+    div.footer-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    div.footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    div.menu {
+        display: block;
+        text-align: center;
+    }
+
+    a.menu-item {
+        font-size: 18px;
+    }
+
+    div.menu-content {
+        margin: 10px 0px;
+    }
+
+    div.social {
+        margin: 30px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.footer-info-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px 0px;
+    }
+
+    div.footer-info {
+        margin: 0;
+        margin: 5px 10px;
+    }
+
+    div.copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

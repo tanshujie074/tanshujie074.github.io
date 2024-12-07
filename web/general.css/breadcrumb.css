@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-color: #1b1b1d;
+    color: white;
+}
+
+/*breadcrumb*/
+div.breadcrumb {
+    background-color: #07175B;
+    color: white;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+}
+
+ul.breadcrumb {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    list-style: none;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+ul.breadcrumb li {
+    display: inline;
+    margin-right: 8px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5D9DFE;
+}
+
+.arrow {
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin-right: 8px;
+    font-size: large;
+}
+
+.the-on-page {
+    font-weight: 650;
+    text-decoration: underline;
+
+}
+
+@media screen and (max-width: 1000px) {
+    ul.breadcrumb {
+        margin-left: 3%;
+        margin-right: 3%;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    ul.breadcrumb {
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+}

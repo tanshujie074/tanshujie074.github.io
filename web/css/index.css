@@ -1,0 +1,194 @@
+/*futura font*/
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    color: white;
+    background-color: hsl(240, 4%, 11%);
+}
+
+/*hero-image*/
+.hero-image {
+    background-image: url(../img/home-images/hibana.jpeg);
+    height: 95vh;
+    background-size: cover;
+    background-size: 115%;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+}
+
+.gradient {
+    background-size: cover;
+    height: 95vh;
+    padding: 0 50px;
+    place-content: center;
+}
+
+.hero-g {
+    background-image: linear-gradient(to right, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+}
+
+.container {
+    height: 80%;
+    max-width: 1165px;
+    margin: auto;
+    place-content: end;
+}
+
+.hero-text {
+    max-height: 100%;
+    max-width: fit-content;
+}
+
+.hero-text h1 {
+    font-size: 128px;
+    line-height: 105%;
+}
+
+.hero-text h4 {
+    font-size: 39px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.blue-button {
+    background-color: #07175B;
+    border: #07175B 1px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 650;
+    font-family: 'Futura Std', sans-serif;
+    font-size: 19px;
+    padding: 15px 37px;
+}
+
+.blue-button:hover {
+    background-color: #5D9DFE;
+    cursor: pointer;
+}
+
+/*live*/
+.live {
+    background-image: url(../img/home-images/expo.jpeg);
+    height: 85vh;
+    background-size: cover;
+    background-position-y: -300px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.live-g {
+    background-image: linear-gradient(to left, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0));
+    height: 85vh;
+}
+
+.discography-row {
+    height: 85vh;
+    padding: 80px 144px;
+    margin: auto;
+}
+
+.column {
+    background-color: red;
+    float: left;
+    width: 33.3%;
+}
+
+.card {
+    background-color: blue;
+    padding: 20px;
+}
+
+.pic {
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width:1090px) {
+
+    /*home*/
+    .hero-text h1 {
+        font-size: 125px;
+    }
+
+    .gradient {
+        padding: 0 50px;
+    }
+
+    .hero-g {
+        background-image: linear-gradient(to right, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.986), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    }
+
+    /*live*/
+
+}
+
+@media (max-width:900px) {
+
+    /*home*/
+    .hero-image {
+        background-position-y: -130px;
+        background-position-x: center;
+    }
+
+    .gradient {
+        padding: 0 50px;
+    }
+
+    .hero-g {
+        background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.97), hsla(240, 4%, 11%, 0.859), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    }
+
+    .hero-text h1 {
+        font-size: 115px;
+    }
+
+    .hero-text h4 {
+        font-size: 29px;
+    }
+
+    .blue-button {
+        font-size: 18px;
+    }
+
+    /*live*/
+    .live-g {
+        background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0));
+        height: 85vh;
+    }
+}
+
+@media (max-width:600px) {
+
+    /*home*/
+    .hero-image {
+        background-position-y: -60px;
+        background-position-x: center;
+    }
+
+    .gradient {
+        padding: 0 25px;
+    }
+
+    .hero-g {
+        background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.97), hsla(240, 4%, 11%, 0.859), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    }
+
+    .hero-text h1 {
+        font-size: 90px;
+    }
+
+    .hero-text h4 {
+        font-size: 25px;
+    }
+
+    .blue-button {
+        font-size: 16px;
+    }
+
+    /*live*/
+
+}
