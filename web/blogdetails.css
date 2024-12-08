@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+    background-image: url("img/blogdetail-imgaes/blog-detail-image1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.title {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 64px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 178px;
+    right: 144px;
+}
+
+.contect_box {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 625px;
+    max-height: 300px;
+    position: absolute;
+    top: 350px;
+    right: 248px;
+    z-index: 2;
+}
+
+.contect_box_text {
+    color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_blur {
+    background-color: rgba(7, 23, 91, 1);
+    max-width: 830px;
+    max-height: 260px;
+    position: absolute;
+    top: 510px;
+    right: 0;
+    z-index: 0;
+}
