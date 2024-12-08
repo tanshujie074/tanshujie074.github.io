@@ -5,76 +5,111 @@
     box-sizing: border-box;
 }
 
+:root {
+    /*font*/
+    --title-family: "Noto Serif JP", serif;
+    --body-family: 'Futura Std', sans-serif;
+    /*height*/
+    --hero-height: clamp(400px, 95vh, 1000px);
+    --view-height: clamp(400px, 85vh, 1000px);
+    /*color*/
+    --font-color: white;
+    --background-color: #1b1b1d;
+    --accent-color: #5D9DFE;
+    --main-color-blue: #07175B;
+}
+
 body {
     margin: 0px;
-    color: white;
-    background-color: hsl(240, 4%, 11%);
+    color: var(--font-color);
+    background-color: var(--background-color);
+    font-family: 'Futura', 'Noto Serif JP', sans-serif;
+}
+
+
+.button {
+    border-radius: 3px;
+    font-weight: 650;
+    font-family: var(--body-family);
+    color: var(--font-color);
+    padding: 15px 37px;
+    font-size: clamp(16px, 5vw, 19px);
+
+}
+
+.blue-button {
+    background-color: var(--main-color-blue);
+    border: var(--main-color-blue) 1px;
+}
+
+
+.black-button {
+    background-color: var(--background-color);
+    border: var(--background-color) 1px;
+}
+
+.black-button:hover,
+.blue-button:hover {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 /*hero-image*/
 .hero-image {
     background-image: url(../img/home-images/hibana.jpeg);
-    height: 95vh;
+    height: var(--hero-height);
     background-size: cover;
-    background-size: 115%;
-    background-position-y: -200px;
+    background-size: 135%;
+    background-position-x: 250px;
+    background-position-y: -400px;
     background-repeat: no-repeat;
+    font-family: var(--title-family);
 }
 
-.gradient {
-    background-size: cover;
-    height: 95vh;
+.row {
     padding: 0 50px;
     place-content: center;
 }
 
 .hero-g {
     background-image: linear-gradient(to right, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    height: var(--hero-height);
 }
 
 .container {
-    height: 80%;
     max-width: 1165px;
-    margin: auto;
-    place-content: end;
+    margin: 0 auto;
+}
+
+.hero-c {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .hero-text {
-    max-height: 100%;
+    min-height: fit-content;
     max-width: fit-content;
 }
 
 .hero-text h1 {
-    font-size: 128px;
-    line-height: 105%;
+    font-size: clamp(125px, 10vw, 128px);
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 .hero-text h4 {
-    font-size: 39px;
+    font-size: clamp(28px, 4vw, 39px);
     font-weight: 400;
     margin-bottom: 30px;
-}
-
-.blue-button {
-    background-color: #07175B;
-    border: #07175B 1px;
-    border-radius: 3px;
-    color: white;
-    font-weight: 650;
-    font-family: 'Futura Std', sans-serif;
-    font-size: 19px;
-    padding: 15px 37px;
-}
-
-.blue-button:hover {
-    background-color: #5D9DFE;
-    cursor: pointer;
 }
 
 /*live*/
 .live {
     background-image: url(../img/home-images/expo.jpeg);
-    height: 85vh;
+    min-height: var(--view-height);
     background-size: cover;
     background-position-y: -300px;
     background-size: 80%;
@@ -83,38 +118,119 @@ body {
 
 .live-g {
     background-image: linear-gradient(to left, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0));
-    height: 85vh;
+    min-height: clamp(400px, 85vh, 1000px);
 }
 
-.discography-row {
-    height: 85vh;
-    padding: 80px 144px;
+.live-c {
+    height: 90%;
+    display: flex;
+    justify-content: end;
     margin: auto;
 }
 
-.column {
-    background-color: red;
-    float: left;
-    width: 33.3%;
+.live-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    row-gap: 20px;
+    min-height: fit-content;
 }
 
-.card {
-    background-color: blue;
-    padding: 20px;
+.title {
+    align-self: center;
 }
 
-.pic {
-    background-color: rgb(255, 255, 255);
+.title h1 {
+    font-size: clamp(39px, 8vw, 48px);
+    font-family: var(--title-family);
+    font-weight: 900;
 }
 
-@media (max-width:1090px) {
+.item-box {
+    background-color: var(--background-color);
+    border: white solid 2px;
+    font-family: var(--body-family);
+    display: flex;
+    align-items: center;
+}
+
+.item-box:hover {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.item-box1,
+.item-box2 {
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    font-size: clamp(18px, 4vw, 23px);
+    flex: 4;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.item-text {
+    flex: 9;
+}
+
+.item-icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.date {
+    border-right: white solid 2px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.date .day {
+    font-size: clamp(20px, 5vw, 27px);
+    font-weight: 650;
+}
+
+.date .mm-yyyy {
+    font-size: clamp(14px, 4vw, 16px);
+    font-weight: 500;
+}
+
+.live-button {
+    float: right;
+}
+
+/*discography*/
+
+.discography {
+    min-height: var(--view-height);
+}
+
+
+@media screen and (max-width:1090px) {
 
     /*home*/
     .hero-text h1 {
-        font-size: 125px;
+        font-size: clamp(115px, 8vw, 125px);
     }
 
-    .gradient {
+    .hero-image {
+        background-size: 150%;
+        background-position-x: 100px;
+        background-position-y: -300px;
+        background-repeat: no-repeat;
+    }
+
+    .row {
         padding: 0 50px;
     }
 
@@ -123,19 +239,31 @@ body {
     }
 
     /*live*/
+    .live {
+        background-position-y: -300px;
+        background-size: 100%;
+    }
 
 }
 
-@media (max-width:900px) {
+@media screen and (max-width:900px) {
 
     /*home*/
-    .hero-image {
-        background-position-y: -130px;
-        background-position-x: center;
+    :root {
+        --hero-height: 85vh;
+        --view-height: 100vh;
     }
 
-    .gradient {
+    .hero-image {
+        min-height: var(--hero-height);
+        background-position-y: -100px;
+        background-position-x: center;
+        background-size: 100%;
+    }
+
+    .row {
         padding: 0 50px;
+        min-height: var(--hero-height);
     }
 
     .hero-g {
@@ -143,52 +271,111 @@ body {
     }
 
     .hero-text h1 {
-        font-size: 115px;
+        font-size: clamp(90px, 8vw, 115px);
     }
 
     .hero-text h4 {
-        font-size: 29px;
+        font-size: clamp(25px, 4vw, 29px);
     }
 
-    .blue-button {
-        font-size: 18px;
+    .button {
+        font-size: clamp(16px, 5vw, 18px);
     }
 
     /*live*/
+    .live {
+        background-position-x: center;
+        background-size: 100%;
+        min-height: var(--view-height);
+        background-position-y: -300px;
+    }
+
     .live-g {
         background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0));
-        height: 85vh;
+        min-height: var(--view-height);
+    }
+
+    .live-c {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .live-text {
+        max-width: 1000px;
+    }
+
+    .title h1 {
+        font-size: clamp(40px, 8vw, 48px);
+    }
+
+    .item {
+        font-size: clamp(16px, 4vw, 18px);
+    }
+
+    .date .day {
+        font-size: clamp(20px, 5vw, 23px);
+    }
+
+    .date .mm-yyyy {
+        font-size: clamp(14px, 4vw, 16px);
     }
 }
 
-@media (max-width:600px) {
+
+@media screen and (max-width:800px) {
+
 
     /*home*/
     .hero-image {
-        background-position-y: -60px;
+        min-height: var(--hero-height);
+        background-position-y: -70px;
         background-position-x: center;
     }
 
-    .gradient {
+    .row {
         padding: 0 25px;
     }
 
-    .hero-g {
-        background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.97), hsla(240, 4%, 11%, 0.859), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
-    }
-
     .hero-text h1 {
-        font-size: 90px;
+        font-size: clamp(84px, 8vw, 90px);
     }
 
     .hero-text h4 {
-        font-size: 25px;
+        font-size: clamp(24px, 4vw, 28px);
     }
 
-    .blue-button {
-        font-size: 16px;
+    .button {
+        font-size: clamp(14px, 5vw, 16px);
     }
 
     /*live*/
+    .live {
+        background-position-x: center;
+        background-position-y: -100px;
+    }
 
+    .title {
+        align-self: start;
+    }
+
+
+    .live-text {
+        width: 100%;
+        row-gap: 10px;
+    }
+
+    .item {
+        flex: 4;
+    }
+
+    .date .mm-yyyy {
+        font-size: clamp(11px, 4vw, 16px);
+    }
+
+    .item-box1,
+    .item-box2 {
+        margin-bottom: 10px;
+    }
 }
