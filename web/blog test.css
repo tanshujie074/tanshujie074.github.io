@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgba(27, 27, 29, 1);
+    margin-left: 144px;
+    margin-right: 144px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (max-width: 40rem) {
+    html {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+
+    html {
+        background-color: rgba(27, 27, 29, 1);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 33.3333%;
+    }
+
+    html {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.card {
+    background-color: rgba(27, 27, 29, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 550px;
+}
+
+.card_content {
+    background-color: rgba(27, 27, 29, 1);
+    margin: 0px;
+}
+
+.card_date {
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.card_text {
+    color: #ffffff;
+    font-weight: 900px;
+}
+
+.made_by {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.number-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #1a1a1a;
+    color: rgba(217, 217, 217, 1);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: #5D9DFE;
+}
+
+.button.active {
+    background-color: #ffffff;
+    color: black;
