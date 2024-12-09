@@ -6,79 +6,74 @@ body {
 
 /*breadcrumb*/
 div.breadcrumb {
-    position: sticky;
-    top: 70px;
     background-color: #07175B;
     color: white;
-    padding: 8px 0px 8px 0px;
+    padding: 5px 0px 5px 0px;
     margin: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: fit-content;
     z-index: 98;
 }
 
-ul.breadcrumb-content {
+ul.breadcrumb {
     font-family: 'Futura Std', sans-serif;
     font-weight: 400;
     font-size: 14px;
     list-style: none;
-    margin-left: 7%;
-    margin-right: 7%;
-
+    max-width: 1250px;
+    padding: 0px 50px;
+    width: 100%;
 }
 
-ul.breadcrumb-content,
-li.breadcrumb-items,
-li.the-on-page {
+ul.breadcrumb li {
     display: inline;
     margin-right: 8px;
     text-align: center;
 }
 
-a.breadcumb-items {
+.breadcrumb-a a {
     color: white;
-    font-size: 14px;
     text-decoration: none;
 }
 
-a.breadcumb-items:hover {
+.breadcrumb-a a:hover {
     color: #5D9DFE;
 }
 
-i.breadcrumb-arrow {
+a.breadcrumb-a {
+    font-size: 14px;
+}
+
+.breadcrumb-arrow {
     display: inline-block;
     transform: rotate(-90deg);
     margin-right: 8px;
     font-size: large;
 }
 
-li.the-on-page {
+.the-on-page {
     font-weight: 650;
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
-
 }
 
-@media screen and (max-width: 1000px) {
-    ul.breadcrumb-content {
-        margin-left: 3%;
-        margin-right: 3%;
-
+@media screen and (max-width: 1090px) {
+    ul.breadcrumb {
+        padding: 0px 50px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    ul.breadcrumb-content {
-        margin-left: 0%;
-        margin-right: 0%;
-        font-size: 11px;
+    ul.breadcrumb {
+        padding: 0 25px;
     }
 
-    a.breadcumb-items {
-        color: white;
-        font-size: 11px;
-
-    }
-
-    i.breadcrumb-arrow {
-        font-size: medium;
+    ul.breadcrumb {
+        font-size: 16px;
     }
 }

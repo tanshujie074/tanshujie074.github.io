@@ -1,0 +1,333 @@
+/*futura font*/
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*font*/
+    --title-family: "Noto Serif JP", serif;
+    --body-family: 'Futura Std', sans-serif;
+    /*height*/
+    --hero-height: clamp(400px, 95vh, 1000px);
+    --view-height: clamp(400px, 85vh, 1000px);
+    /*color*/
+    --font-color: white;
+    --background-color: #1b1b1d;
+    --accent-color: #5D9DFE;
+    --main-color-blue: #07175B;
+    --main-color-red: #9F1C07;
+}
+
+body {
+    color: var(--font-color);
+    background-color: var(--background-color);
+    font-family: 'Futura', 'Noto Serif JP', sans-serif;
+}
+
+.row {
+    padding: 0 50px;
+    place-content: center;
+}
+
+.container {
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+/*title*/
+.bio-title {
+    min-height: var(--hero-height);
+    background-image: url(../img/biography-images/hero-images.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.title-g {
+    background-color: hsla(240, 4%, 11%, 0.621);
+    min-height: var(--hero-height);
+    width: 100%;
+    font-family: var(--title-family);
+    align-items: center;
+}
+
+.text {
+    min-height: var(--hero-height);
+    align-content: center;
+    text-align: center;
+    font-size: clamp(70px, 10vw, 80px);
+    font-weight: 700;
+}
+
+/*bio*/
+.bio {
+    background-image: url(../img/biography-images/ado1.jpg);
+    background-size: cover;
+    background-size: 150%;
+    background-position-x: -800px;
+    background-position-y: -500px;
+    background-repeat: no-repeat;
+    min-height: var(--view-height);
+}
+
+.bio-g {
+    background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    min-height: var(--view-height);
+}
+
+.bio-c {
+    height: 90%;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+
+.bio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    min-height: fit-content;
+}
+
+.bio-text hr {
+    width: 10%;
+    text-align: left;
+    margin-left: 0;
+}
+
+.bio-text h2 {
+    font-family: var(--title-family);
+    font-size: clamp(70px, 10vw, 80px);
+    font-weight: 600;
+    margin: 0%;
+    padding: 0%;
+}
+
+.bio-text h6 {
+    font-family: var(--title-family);
+    font-size: clamp(18px, 4vw, 23px);
+    font-weight: 500;
+    margin: 0;
+    padding: 2% 0%;
+}
+
+.bio-text p {
+    font-family: var(--body-family);
+    font-size: clamp(14px, 4vw, 16px);
+    line-height: 28px;
+}
+
+/*data*/
+.data {
+    min-height: 30vh;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    height: fit-content;
+}
+
+.column-gap {
+    padding-right: clamp(10px, 5vw, 20px);
+}
+
+.data-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.data-item h3 {
+    font-family: var(--title-family);
+    font-size: clamp(39px, 8vw, 48px);
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.data-item h6 {
+    font-family: var(--body-family);
+    font-size: clamp(18px, 4vw, 23px);
+    margin: 0%;
+    font-weight: 300;
+}
+
+/*TOP YOUTUBE VIDEOS*/
+.top-video {
+    min-height: var(--view-height);
+    background-image: url(../img/biography-images/Ado-Live-Tour-2023-2-Budokan-A.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-g {
+    background-color: hsla(240, 4%, 11%, 0.685);
+}
+
+.title h1 {
+    font-size: clamp(40px, 8vw, 48px);
+}
+
+.top-video-c {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.video-row {
+    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.video-text1 {
+    min-height: 472px;
+    height: 100%;
+    width: 100%;
+    min-width: 608px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.video-img1 {
+    background-image: url(../img/biography-images/Usseewa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.video-img2 {
+    background-image: url(../img/biography-images/Odo.jpeg);
+}
+
+.video-img3 {
+    background-image: url(../img/biography-images/show.jpg);
+}
+
+.video-text1 h4 {
+    font-family: var(--body-family);
+    font-size: clamp(40px, 8vw, 48px);
+    margin: 0;
+}
+
+.video-text1 h6 {
+    font-family: var(--body-family);
+    font-size: clamp(20px, 4vw, 33px);
+    margin: 0;
+}
+
+@media screen and (max-width:1090px) {
+    .row {
+        padding: 0 50px;
+    }
+
+    /*bio*/
+    .bio-g {
+        background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.364), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+        min-height: var(--view-height);
+    }
+
+    .bio {
+        background-size: 150%;
+        background-position-x: -800px;
+        background-position-y: -500px;
+        background-repeat: no-repeat;
+    }
+
+    .bio-text h2 {
+        font-family: var(--title-family);
+        font-size: clamp(60px, 10vw, 70px);
+        font-weight: 600;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .bio-text h6 {
+        font-family: var(--title-family);
+        font-size: clamp(16px, 4vw, 20px);
+        font-weight: 500;
+        margin: 0;
+        padding: 2% 0%;
+    }
+
+    .bio-text p {
+        font-family: var(--body-family);
+        font-size: clamp(13px, 4vw, 15px);
+        line-height: 28px;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+
+    /*title*/
+    :root {
+        --hero-height: 85vh;
+        --view-height: 100vh;
+    }
+
+    .text {
+        font-size: clamp(30px, 10vw, 48px);
+        font-weight: 700;
+    }
+
+    /*bio*/
+
+    .bio {
+        background-position-x: center;
+        background-position-y: top;
+        background-size: 100%;
+    }
+
+    .bio-g {
+        background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.364), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    }
+
+    .bio-c {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .bio-text h2 {
+        font-family: var(--title-family);
+        font-size: clamp(55px, 10vw, 65px);
+        font-weight: 600;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .bio-text h6 {
+        font-family: var(--title-family);
+        font-size: clamp(16px, 4vw, 20px);
+        font-weight: 500;
+        margin: 0;
+        padding: 2% 0%;
+    }
+
+    .bio-text p {
+        font-family: var(--body-family);
+        font-size: clamp(12px, 4vw, 16px);
+        line-height: 28px;
+    }
+
+    /*data*/
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .row {
+        padding: 0 25px;
+    }
+
+}
