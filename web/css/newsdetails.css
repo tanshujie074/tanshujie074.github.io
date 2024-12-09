@@ -8,6 +8,81 @@ body {
     color: white;
 }
 
+/*breadcrumb*/
+div.breadcrumb {
+    position: sticky;
+    top: 0;
+    background-color: #07175B;
+    color: white;
+    padding: 8px 0px 8px 0px;
+    margin: 0px;
+}
+
+ul.breadcrumb-content {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    list-style: none;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+ul.breadcrumb-content,
+li.breadcrumb-items,
+li.the-on-page {
+    display: inline;
+    margin-right: 8px;
+    text-align: center;
+}
+
+a.breadcumb-items {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+a.breadcumb-items:hover {
+    color: #5D9DFE;
+}
+
+i.breadcrumb-arrow {
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin-right: 8px;
+    font-size: large;
+}
+
+li.the-on-page {
+    font-weight: 650;
+    text-decoration: underline;
+
+}
+
+@media screen and (max-width: 1000px) {
+    ul.breadcrumb-content {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    ul.breadcrumb-content {
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 11px;
+    }
+
+    a.breadcumb-items {
+        color: white;
+        font-size: 11px;
+    }
+
+    i.breadcrumb-arrow {
+        font-size: medium;
+    }
+}
+
 /*news details content*/
 div.newsdetails-banner-img1 {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.1), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-wfilter.jpg");
@@ -18,7 +93,7 @@ div.newsdetails-banner-img1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-position: 45%;
+    background-position: center;
 }
 
 header {
@@ -26,6 +101,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-top: -60px;
 
 }
 

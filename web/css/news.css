@@ -8,68 +8,6 @@ body {
     color: white;
 }
 
-/*breadcrumb*/
-div.breadcrumb {
-    background-color: #07175B;
-    color: white;
-    padding: 5px 0px 5px 0px;
-    margin: 0px;
-}
-
-ul.breadcrumb {
-    font-family: 'Futura Std', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    list-style: none;
-    margin-left: 7%;
-    margin-right: 7%;
-
-}
-
-ul.breadcrumb li {
-    display: inline;
-    margin-right: 8px;
-    text-align: center;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #5D9DFE;
-}
-
-.arrow {
-    display: inline-block;
-    transform: rotate(-90deg);
-    margin-right: 8px;
-    font-size: large;
-}
-
-.the-on-page {
-    font-weight: 650;
-    text-decoration: underline;
-
-}
-
-@media screen and (max-width: 1000px) {
-    ul.breadcrumb {
-        margin-left: 3%;
-        margin-right: 3%;
-
-    }
-}
-
-@media screen and (max-width: 800px) {
-    ul.breadcrumb {
-        margin-left: 0%;
-        margin-right: 0%;
-
-    }
-}
-
 /*news*/
 div.news-heroimg {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-banner-cropped.jpg");
@@ -418,7 +356,7 @@ div.menu {
 
 a.menu-item {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -446,7 +384,7 @@ a.menu-item:hover {
 
 a.footer-info {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -477,7 +415,7 @@ p.copyright {
     }
 
     a.menu-item {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     div.menu {
@@ -511,10 +449,6 @@ p.copyright {
         text-align: center;
     }
 
-    a.menu-item {
-        font-size: 18px;
-    }
-
     div.menu-content {
         margin: 10px 0px;
     }
@@ -529,7 +463,7 @@ p.copyright {
     div.footer-info-menu {
         display: flex;
         justify-content: center;
-        align-items: center;
+        text-align: center;
         margin: 4px 0px;
     }
 
@@ -538,9 +472,17 @@ p.copyright {
         margin: 5px 10px;
     }
 
+    a.footer-info {
+        font-size: 13px;
+    }
+
     div.copyright {
         display: flex;
         justify-content: center;
-        align-items: center;
+        text-align: center;
+    }
+
+    p.copyright {
+        font-size: 13px;
     }
 }

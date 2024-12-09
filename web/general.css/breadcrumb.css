@@ -6,13 +6,15 @@ body {
 
 /*breadcrumb*/
 div.breadcrumb {
+    position: sticky;
+    top: 0;
     background-color: #07175B;
     color: white;
-    padding: 5px 0px 5px 0px;
+    padding: 8px 0px 8px 0px;
     margin: 0px;
 }
 
-ul.breadcrumb {
+ul.breadcrumb-content {
     font-family: 'Futura Std', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -22,36 +24,39 @@ ul.breadcrumb {
 
 }
 
-ul.breadcrumb li {
+ul.breadcrumb-content,
+li.breadcrumb-items,
+li.the-on-page {
     display: inline;
     margin-right: 8px;
     text-align: center;
 }
 
-a {
+a.breadcumb-items {
     color: white;
+    font-size: 15px;
     text-decoration: none;
 }
 
-a:hover {
+a.breadcumb-items:hover {
     color: #5D9DFE;
 }
 
-.arrow {
+i.breadcrumb-arrow {
     display: inline-block;
     transform: rotate(-90deg);
     margin-right: 8px;
     font-size: large;
 }
 
-.the-on-page {
+li.the-on-page {
     font-weight: 650;
     text-decoration: underline;
 
 }
 
 @media screen and (max-width: 1000px) {
-    ul.breadcrumb {
+    ul.breadcrumb-content {
         margin-left: 3%;
         margin-right: 3%;
 
@@ -59,9 +64,19 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
-    ul.breadcrumb {
+    ul.breadcrumb-content {
         margin-left: 0%;
         margin-right: 0%;
+        font-size: 11px;
+    }
 
+    a.breadcumb-items {
+        color: white;
+        font-size: 11px;
+
+    }
+
+    i.breadcrumb-arrow {
+        font-size: medium;
     }
 }
