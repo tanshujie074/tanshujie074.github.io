@@ -1,7 +1,7 @@
 body {
-    background-color: #000000;
+    background-color: rgba(27, 27, 29, 1);
     background-image: url("img/blogdetail-imgaes/blog-detail-image1.png");
-    background-size: 100% 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -40,10 +40,32 @@ body {
 
 .box_blur {
     background-color: rgba(7, 23, 91, 1);
-    max-width: 830px;
-    max-height: 260px;
+    width: 830px;
+    height: 260px;
     position: absolute;
-    top: 510px;
-    right: 0;
-    z-index: 0;
+    top: 400px;
+    right: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 32px;
+        position: static;
+        margin-top: 150px;
+    }
+
+    .contect_box {
+        background-color: rgba(27, 27, 29, 1);
+        position: absolute;
+        top: 300px;
+        right: 0px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .box_blur {
+        block-size: 0;
+    }
 }
