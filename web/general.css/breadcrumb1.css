@@ -8,7 +8,7 @@ body {
 div.breadcrumb {
     background-color: #07175B;
     color: white;
-    padding: 20px 0px;
+    padding: 5px 0px 5px 0px;
     margin: 0px;
     position: fixed;
     display: flex;
@@ -67,5 +67,9 @@ ul.breadcrumb li {
 @media screen and (max-width: 800px) {
     ul.breadcrumb {
         padding: 0 25px;
+    }
+
+    ul.breadcrumb {
+        font-size: 16px;
     }
 }

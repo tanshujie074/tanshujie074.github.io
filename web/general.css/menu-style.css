@@ -3,11 +3,16 @@
 /*futura font*/
 @import url('https://fonts.cdnfonts.com/css/futura-std-4');
 
-* {
+.nav,
+.navbar,
+.navbar1,
+.social,
+.navbar1,
+.links,
+.submenu {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
 }
 
 /*menu*/

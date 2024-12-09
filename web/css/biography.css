@@ -26,3 +26,16 @@ body {
     background-color: var(--background-color);
     font-family: 'Futura', 'Noto Serif JP', sans-serif;
 }
+
+.bio {
+    min-height: var(--hero-height);
+    background-image: url(../img/biography-images/hero-images.jpeg);
+    background-color: hsla(240, 4%, 11%, 0.548);
+    background-position: center;
+    font-family: var(--title-family);
+    font-size: clamp(70px, 10vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
