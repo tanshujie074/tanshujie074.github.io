@@ -27,15 +27,42 @@ body {
     font-family: 'Futura', 'Noto Serif JP', sans-serif;
 }
 
-.bio {
+.row {
+    padding: 0 50px;
+    place-content: center;
+}
+
+/*title*/
+.bio-title {
     min-height: var(--hero-height);
     background-image: url(../img/biography-images/hero-images.jpeg);
-    background-color: hsla(240, 4%, 11%, 0.548);
     background-position: center;
+    background-size: cover;
+}
+
+.blend {
+    background-color: hsla(240, 4%, 11%, 0.621);
+    min-height: var(--hero-height);
+    width: 100%;
     font-family: var(--title-family);
-    font-size: clamp(70px, 10vw, 80px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+    align-items: center;
+}
+
+.text {
+    min-height: var(--hero-height);
+    align-content: center;
+    font-size: clamp(70px, 10vw, 80px);
+    font-weight: 700;
+}
+
+/*bio*/
+
+
+
+@media screen and (max-width:1090px) {
+    .row {
+        padding: 0 50px;
+    }
 }
