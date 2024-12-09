@@ -45,6 +45,10 @@ ul.breadcrumb li {
     color: #5D9DFE;
 }
 
+a.breadcrumb-a {
+    font-size: 14px;
+}
+
 .breadcrumb-arrow {
     display: inline-block;
     transform: rotate(-90deg);
