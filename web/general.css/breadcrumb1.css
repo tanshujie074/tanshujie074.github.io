@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #1b1b1d;
+    color: white;
+}
+
+/*breadcrumb*/
+div.breadcrumb {
+    background-color: #07175B;
+    color: white;
+    padding: 20px 0px;
+    margin: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    z-index: 98;
+}
+
+ul.breadcrumb {
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    list-style: none;
+    max-width: 1250px;
+    padding: 0px 50px;
+    width: 100%;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.breadcrumb-a a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb-a a:hover {
+    color: #5D9DFE;
+}
+
+.breadcrumb-arrow {
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin-right: 8px;
+    font-size: large;
+}
+
+.the-on-page {
+    font-weight: 650;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+@media screen and (max-width: 1090px) {
+    ul.breadcrumb {
+        padding: 0px 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    ul.breadcrumb {
+        padding: 0 25px;
+    }
+}
