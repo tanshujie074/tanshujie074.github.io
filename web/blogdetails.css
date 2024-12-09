@@ -1,0 +1,71 @@
+body {
+    background-color: rgba(27, 27, 29, 1);
+    background-image: url("img/blogdetail-imgaes/blog-detail-image1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.title {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 64px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 178px;
+    right: 144px;
+}
+
+.contect_box {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 625px;
+    max-height: 300px;
+    position: absolute;
+    top: 350px;
+    right: 248px;
+    z-index: 2;
+}
+
+.contect_box_text {
+    color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_blur {
+    background-color: rgba(7, 23, 91, 1);
+    width: 830px;
+    height: 260px;
+    position: absolute;
+    top: 400px;
+    right: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 32px;
+        position: static;
+        margin-top: 150px;
+    }
+
+    .contect_box {
+        background-color: rgba(27, 27, 29, 1);
+        position: absolute;
+        top: 300px;
+        right: 0px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .box_blur {
+        block-size: 0;
+    }
+}
