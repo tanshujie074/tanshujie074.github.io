@@ -7,17 +7,18 @@ body {
 /*breadcrumb*/
 div.breadcrumb {
     position: sticky;
-    top: 0;
+    top: 70px;
     background-color: #07175B;
     color: white;
     padding: 8px 0px 8px 0px;
     margin: 0px;
+    z-index: 98;
 }
 
 ul.breadcrumb-content {
     font-family: 'Futura Std', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     list-style: none;
     margin-left: 7%;
     margin-right: 7%;
@@ -34,7 +35,7 @@ li.the-on-page {
 
 a.breadcumb-items {
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
 }
 
@@ -52,6 +53,7 @@ i.breadcrumb-arrow {
 li.the-on-page {
     font-weight: 650;
     text-decoration: underline;
+    text-decoration-thickness: 1.5px;
 
 }
 
