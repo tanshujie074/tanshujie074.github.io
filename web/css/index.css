@@ -448,11 +448,11 @@ body {
 
     .row {
         padding: 0 50px;
-        min-height: var(--hero-height);
     }
 
     .hero-g {
         background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.97), hsla(240, 4%, 11%, 0.859), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+        min-height: var(--hero-height);
     }
 
     .hero-text h1 {
