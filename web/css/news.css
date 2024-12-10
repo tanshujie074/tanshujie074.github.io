@@ -170,6 +170,7 @@ div.release-banner-img1 {
 .release-left-column {
     font-family: 'Futura Std', sans-serif;
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 15px;
     align-items: stretch;
