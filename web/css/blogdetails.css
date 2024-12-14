@@ -66,7 +66,7 @@ body {
     max-width: 600px;
     margin-top: 150px;
     transform: translateY(150px);
-
+    position: ;
 }
 
 .content1 {
@@ -116,7 +116,6 @@ body {
     max-width: 395px;
     margin-top: 15px;
 }
-
 
 .image3 {
     grid-column: 2 / 4;
