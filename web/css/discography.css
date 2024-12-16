@@ -18,24 +18,65 @@ div.discography-heroimg {
     height: 580px;
 }
 
+
+h1 {
+    font-size: 80px;
+    margin-top: -45px;
+    text-align: center;
+}
+
 #tabs {
     padding-left: 10%;
     padding-right: 10%;
 }
 
 
-h1 {
-    font-size: 80px;
-    text-align: center;
-    margin-top: -45px;
+/*category*/
+.category-container {
+    border: 1px solid white;
+    padding: 10px 30px;
 }
 
+.all-container {
+    padding: 10px 50px;
+}
 
-.row-1-container {
+ul.discography-category {
+    margin: 50px 0px;
+    padding: 0px;
     display: flex;
+    justify-content: center;
 }
 
-.artwork-container {}
+li.category-item {
+    list-style: none;
+}
+
+li.category-item:hover {
+    background-color: black;
+}
+
+li.category-item.active {
+    background-color: #5D9DFE;
+}
+
+a.category-item {
+    font-family: 'Futura Std', sans-serif;
+    font-size: 22px;
+    color: white;
+    text-decoration-line: none;
+}
+
+/*artwork*/
+.discography-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.discography-container {
+    margin-bottom: 15px;
+}
 
 .artwork-container:hover {
     background-color: black;
@@ -83,27 +124,71 @@ h4.date {
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 400;
+    margin: 10px 0px;
 }
 
 h4 {
     font-size: 18px;
     font-weight: 400;
+    margin: 10px 0px;
 }
 
 div.price {
     display: flex;
     text-align: right;
-    padding: 0px 0px;
+    padding: 25px 0px 0px 0px;
+    justify-content: flex-end;
 }
 
 h3.price-value {
     font-weight: 600;
-    padding: 0px 0px;
+}
+
+span.tax-incld {
+    font-size: 22px;
 }
 
 hr.artwork-bottom-line {
     position: relative;
     top: 9.46px;
+}
+
+@media (max-width:1090px) {
+    #tabs {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    div.discography-heroimg {
+        height: 460px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .discography-section {
+        grid-template-columns: auto auto;
+    }
+
+    div.disco-tablet {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+    .discography-section {
+        grid-template-columns: auto;
+
+    }
+
+    a.category-item {
+        font-size: 18px;
+    }
+
+    div.disco-tablet {
+        display: block;
+    }
 }
