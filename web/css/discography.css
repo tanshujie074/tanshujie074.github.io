@@ -32,14 +32,9 @@ h1 {
 
 
 /*category*/
-.category-container {
-    border: 1px solid white;
-    padding: 10px 30px;
-}
+.category-container {}
 
-.all-container {
-    padding: 10px 50px;
-}
+.all-container {}
 
 ul.discography-category {
     margin: 50px 0px;
@@ -52,19 +47,23 @@ li.category-item {
     list-style: none;
 }
 
-li.category-item:hover {
-    background-color: black;
-}
-
-li.category-item.active {
-    background-color: #5D9DFE;
-}
 
 a.category-item {
     font-family: 'Futura Std', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: white;
     text-decoration-line: none;
+    padding: 20px 30px;
+    border: 1px solid white;
+
+}
+
+a.category-item :hover {
+    background-color: #5D9DFE;
+}
+
+a.category-item .active {
+    background-color: #5D9DFE;
 }
 
 /*artwork*/
@@ -184,8 +183,12 @@ hr.artwork-bottom-line {
 
     }
 
+    .all-container {
+        padding: 10px 45px;
+    }
+
     a.category-item {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     div.disco-tablet {
