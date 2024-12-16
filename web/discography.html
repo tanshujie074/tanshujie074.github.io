@@ -23,20 +23,19 @@
     <div id="tabs">
         <ul class="discography-category">
             <li class="category-item">
-                <div class="category-container all-container"><a class="category-item" href="#tabs-1">ALL</a></div>
+                <a class="category-item" href="#tabs-1">ALL</a>
             </li>
 
             <li class="category-item">
-                <div class="category-container"><a class="category-item" href="#tabs-2">ALBUM</a></div>
+                <a class="category-item" href="#tabs-2">ALBUM</a>
             </li>
 
             <li class="category-item">
-                <div class="category-container"><a class="category-item" href="#tabs-3">SINGLE</a></div>
+                <a class="category-item" href="#tabs-3">SINGLE</a>
             </li>
 
             <li class="category-item">
-                <div class="category-container"><a class="category-item" href="#tabs-4">DIGITAL</a></div>
-            </li>
+                <a class="category-item" href="#tabs-4">DIGITAL</a>
         </ul>
 
         <div id="tabs-1">
@@ -338,8 +337,15 @@
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <script>
         $(document).ready(function () {
+            $("#tabs .category-item").on("click", function () {
+                // Remove active class from all category items
+                $("#tabs .category-item").removeClass("active");
+
+                // Add active class to the clicked item
+                $(this).addClass("active");
+            });
+
             $("#tabs").tabs();
-            /* check here for more options: https://jqueryui.com/tabs/ */
         });
     </script>
 
