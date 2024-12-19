@@ -35,7 +35,7 @@ body {
     font-weight: 650;
     font-family: var(--body-family);
     color: var(--font-color);
-    padding: 15px 37px;
+    padding: 15px 40px;
     font-size: clamp(16px, 5vw, 19px);
 
 }
@@ -110,7 +110,7 @@ body {
 }
 
 .hero-text h4 {
-    font-size: clamp(28px, 4vw, 39px);
+    font-size: clamp(28px, 4vw, 32px);
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -406,7 +406,7 @@ body {
         padding: 0 50px;
     }
 
-    .hero-g {
+    00 .hero-g {
         background-image: linear-gradient(to right, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.986), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
     }
 
