@@ -406,7 +406,7 @@ body {
         padding: 0 50px;
     }
 
-    00 .hero-g {
+    .hero-g {
         background-image: linear-gradient(to right, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.986), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
     }
 
