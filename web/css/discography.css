@@ -32,7 +32,9 @@ h1 {
 
 
 /*category*/
+.category-container {}
 
+.all-container {}
 
 ul.discography-category {
     margin: 50px 0px;
@@ -51,20 +53,16 @@ a.category-item {
     font-size: 20px;
     color: white;
     text-decoration-line: none;
-    padding: 10px 45px;
+    padding: 20px 30px;
     border: 1px solid white;
 
 }
 
-a.all-category-item {
-    padding: 10px 55px;
-}
-
-a.category-item:hover {
+a.category-item :hover {
     background-color: #5D9DFE;
 }
 
-a.category-item.active {
+a.category-item .active {
     background-color: #5D9DFE;
 }
 
@@ -185,13 +183,8 @@ hr.artwork-bottom-line {
 
     }
 
-    a.category-item {
-        padding: 10px 30px;
-
-    }
-
-    a.all-category-item {
-        padding: 10px 35px;
+    .all-container {
+        padding: 10px 45px;
     }
 
     a.category-item {

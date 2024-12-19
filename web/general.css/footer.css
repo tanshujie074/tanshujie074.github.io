@@ -19,8 +19,8 @@ a {
 }
 
 div.footer-content {
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 15px;
     margin-bottom: 20px;
 }
@@ -92,8 +92,8 @@ p.copyright {
 @media screen and (max-width: 1000px) {
 
     div.footer-content {
-        padding-left: 5%;
-        padding-right: 5%;
+        margin-left: 6%;
+        margin-right: 6%;
     }
 
     a.menu-item {
