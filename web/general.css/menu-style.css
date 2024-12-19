@@ -7,7 +7,6 @@
 .navbar,
 .navbar1,
 .social,
-.navbar1,
 .links,
 .submenu {
     box-sizing: border-box;
@@ -43,6 +42,7 @@ nav .navbar {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+    line-height: 70px;
 }
 
 .logo {
@@ -73,12 +73,6 @@ nav .navbar {
     transition: color 0.3s ease;
 }
 
-.navbar1 {
-    display: flex;
-    line-height: 70px;
-    height: 100%;
-}
-
 nav .navbar .nav-links .links li a:hover {
     text-decoration: underline;
     text-decoration-color: #5D9DFE;
@@ -88,7 +82,7 @@ nav .navbar .nav-links .links li a:hover {
 
 nav .navbar .nav-links .links {
     display: flex;
-    margin-left: 10px;
+    justify-content: space-between;
 }
 
 nav .navbar .nav-links .links li {
@@ -253,7 +247,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
         transition: color 0.3s ease;
     }
 
-    nav .navbar .navbar1 .nav-links .links {
+    nav .navbar .nav-links .links {
         display: block;
         margin-top: 20px;
     }
