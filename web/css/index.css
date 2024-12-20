@@ -37,7 +37,6 @@ body {
     color: var(--font-color);
     padding: 15px 40px;
     font-size: clamp(16px, 5vw, 19px);
-
 }
 
 .blue-button {
@@ -56,10 +55,16 @@ body {
     border: var(--main-color-red) 1px;
 }
 
-.black-button:hover,
 .blue-button:hover,
 .red-button:hover {
     background-color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.black-button:hover {
+    background-color: white;
+    color: var(--main-color-blue);
     cursor: pointer;
     transition: all 0.2s ease;
 }

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Serif+JP:wght@200..900&display=swap');
+
+
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+
+:root {
+    /*font family*/
+    --title-family: "Noto Serif JP", serif;
+    --body-family: 'Futura Std', sans-serif;
+
+    /*color*/
+    --font-color: white;
+    --background-color: #1b1b1d;
+    --accent-color: #5D9DFE;
+    --main-color-blue: #07175B;
+    --main-color-red: #9F1C07;
+    --main-color-white: white;
+}
+
+body {
+    font-family: 'Futura', 'Noto Serif JP', sans-serif;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    margin: 0;
+}
+
+/*row*/
+.row {
+    padding: 0 50px;
+    place-content: center;
+}
+
+.container {
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+/*title*/
+.font-title {
+    font-family: var(--title-family);
+}
+
+.font-title h1,
+h1.font-title {
+    font-size: clamp(64px, 8vw, 128px);
+}
+
+.font-title h2,
+h2.font-title {
+    font-size: clamp(48px, 6vw, 80px);
+}
+
+.font-title h3,
+h3.font-title {
+    font-size: clamp(36px, 5vw, 64px);
+}
+
+.font-title h4,
+h4.font-title {
+    font-size: clamp(28px, 4vw, 48px);
+}
+
+.font-title h5,
+h5.font-title {
+    font-size: clamp(20px, 3vw, 32px);
+}
+
+.font-title h6,
+h6.font-title {
+    font-size: clamp(16px, 2.5vw, 23px);
+}
+
+
+/*body*/
+.font-body {
+    font-family: var(--body-family);
+}
+
+.font-body h1,
+h1.font-body {
+    font-size: clamp(36px, 6vw, 48px);
+    font-weight: 650;
+}
+
+.font-body h2,
+h2.font-body {
+    font-size: clamp(28px, 5vw, 32px);
+}
+
+.font-body h3,
+h3.font-body {
+    font-size: clamp(24px, 4.5vw, 28px);
+}
+
+.font-body h4,
+h4.font-body {
+    font-size: clamp(20px, 4vw, 26px);
+}
+
+.font-body h5,
+h5.font-body {
+    font-size: clamp(18px, 3.5vw, 22px);
+}
+
+.font-body h6,
+h6.font-body {
+    font-size: clamp(16px, 3vw, 20px);
+}
+
+.font-body p,
+p.font-body {
+    font-size: clamp(14px, 2.5vw, 16px);
+}
+
+
+/*button*/
+.button {
+    font-family: var(--body-family);
+    font-weight: 550;
+    color: var(--font-color);
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 0px;
+    font-size: clamp(14px, 1.8vw, 18px);
+    padding: clamp(10px, 1.8vw, 15px) clamp(25px, 3.5vw, 40px);
+}
+
+.blue-button {
+    background-color: var(--main-color-blue);
+}
+
+.black-button {
+    background-color: var(--background-color);
+}
+
+.red-button {
+    background-color: var(--main-color-red);
+}
+
+.white-button {
+    background-color: var(--main-color-white);
+    color: var(--main-color-blue);
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: var(--accent-color);
+    color: var(--main-color-white);
+}
+
+
+@media screen and (max-width:1024px) {
+
+    /*title*/
+    .font-title h1,
+    h1.font-title {
+        font-size: clamp(56px, 7vw, 110px);
+    }
+
+    .font-title h2,
+    h2.font-title {
+        font-size: clamp(44px, 5.5vw, 72px);
+    }
+
+    .font-title h3,
+    h3.font-title {
+        font-size: clamp(32px, 4.5vw, 56px);
+    }
+
+    .font-title h4,
+    h4.font-title {
+        font-size: clamp(26px, 4vw, 44px);
+    }
+
+    .font-title h5,
+    h5.font-title {
+        font-size: clamp(18px, 3vw, 28px);
+    }
+
+    .font-title h6,
+    h6.font-title {
+        font-size: clamp(14px, 2.5vw, 22px);
+    }
+
+
+    /*body*/
+    .font-body h1,
+    h1.font-body {
+        font-size: clamp(32px, 5.5vw, 44px);
+    }
+
+    .font-body h2,
+    h2.font-body {
+        font-size: clamp(26px, 4.8vw, 30px);
+    }
+
+    .font-body h3,
+    h3.font-body {
+        font-size: clamp(22px, 4vw, 26px);
+    }
+
+    .font-body h4,
+    h4.font-body {
+        font-size: clamp(18px, 3.8vw, 24px);
+    }
+
+    .font-body h5,
+    h5.font-body {
+        font-size: clamp(16px, 3vw, 20px);
+    }
+
+    .font-body h6,
+    h6.font-body {
+        font-size: clamp(14px, 2.5vw, 18px);
+    }
+
+    .font-body p,
+    p.font-body {
+        font-size: clamp(12px, 2.2vw, 14px);
+    }
+}
+
+
+@media screen and (max-width:800px) {
+
+    /*row*/
+    .row {
+        padding: 0 25px;
+    }
+
+    /*title*/
+    .font-title h1,
+    h1.font-title {
+        font-size: clamp(48px, 6vw, 96px);
+    }
+
+    .font-title h2,
+    h2.font-title {
+        font-size: clamp(40px, 5vw, 64px);
+    }
+
+    .font-title h3,
+    h3.font-title {
+        font-size: clamp(30px, 4vw, 52px);
+    }
+
+    .font-title h4,
+    h4.font-title {
+        font-size: clamp(24px, 3.5vw, 40px);
+    }
+
+    .font-title h5,
+    h5.font-title {
+        font-size: clamp(16px, 2.5vw, 24px);
+    }
+
+    .font-title h6,
+    h6.font-title {
+        font-size: clamp(12px, 2vw, 20px);
+    }
+
+    /*body*/
+    .font-body h1,
+    h1.font-body {
+        font-size: clamp(28px, 5vw, 40px);
+    }
+
+    .font-body h2,
+    h2.font-body {
+        font-size: clamp(24px, 4.5vw, 28px);
+    }
+
+    .font-body h3,
+    h3.font-body {
+        font-size: clamp(20px, 4vw, 24px);
+    }
+
+    .font-body h4,
+    h4.font-body {
+        font-size: clamp(18px, 3.5vw, 22px);
+    }
+
+    .font-body h5,
+    h5.font-body {
+        font-size: clamp(14px, 3vw, 18px);
+    }
+
+    .font-body h6,
+    h6.font-body {
+        font-size: clamp(12px, 2.5vw, 16px);
+    }
+
+    /*button*/
+    .button {
+        font-size: clamp(13px, 2vw, 16px);
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+
+    /*row*/
+    .row {
+        padding: 0 15px;
+    }
+
+    /*title*/
+    .font-title h1,
+    h1.font-title {
+        font-size: clamp(40px, 5vw, 80px);
+    }
+
+    .font-title h2,
+    h2.font-title {
+        font-size: clamp(32px, 4.5vw, 56px);
+    }
+
+    .font-title h3,
+    h3.font-title {
+        font-size: clamp(24px, 4vw, 48px);
+    }
+
+    .font-title h4,
+    h4.font-title {
+        font-size: clamp(20px, 3vw, 36px);
+    }
+
+    .font-title h5,
+    h5.font-title {
+        font-size: clamp(14px, 2vw, 22px);
+    }
+
+    .font-title h6,
+    h6.font-title {
+        font-size: clamp(12px, 2vw, 18px);
+    }
+
+
+    /*body*/
+    .font-body h1,
+    h1.font-body {
+        font-size: clamp(24px, 4.5vw, 36px);
+    }
+
+    .font-body h2,
+    h2.font-body {
+        font-size: clamp(20px, 4vw, 24px);
+    }
+
+    .font-body h3,
+    h3.font-body {
+        font-size: clamp(18px, 3.5vw, 22px);
+    }
+
+    .font-body h4,
+    h4.font-body {
+        font-size: clamp(16px, 3vw, 20px);
+    }
+
+    .font-body h5,
+    h5.font-body {
+        font-size: clamp(14px, 2.5vw, 18px);
+    }
+
+    .font-body h6,
+    h6.font-body {
+        font-size: clamp(12px, 2.2vw, 16px);
+    }
+
+    .font-body p,
+    p.font-body {
+        font-size: clamp(12px, 2vw, 14px);
+    }
+}
