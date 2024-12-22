@@ -1,0 +1,37 @@
+/*
+
+    <div class="number-buttons">
+        <button class="button active">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">></button>
+    </div>
+*/
+
+.number-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #1a1a1a;
+    color: rgba(217, 217, 217, 1);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: #5D9DFE;
+}
+
+.button.active {
+    background-color: #ffffff;
+    color: black;
+}
