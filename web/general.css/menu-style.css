@@ -99,7 +99,6 @@ nav .navbar .nav-links .links li a {
     font-size: 16px;
 }
 
-
 nav .navbar .nav-links .links li .arrow {
     height: 100%;
     width: 22px;
@@ -146,7 +145,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
 }
 
 
-@media (max-width:1090px) {
+@media (max-width:1024px) {
     nav .navbar {
         max-width: 100%;
         padding: 0 45px;
@@ -312,6 +311,6 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
     }
 
     .social i {
-        font-size: 28px;
+        font-size: 16px;
     }
 }

@@ -149,7 +149,6 @@ p.font-body {
     color: var(--main-color-white);
 }
 
-
 @media screen and (max-width:1024px) {
 
     /*title*/
@@ -290,12 +289,6 @@ p.font-body {
     h6.font-body {
         font-size: clamp(12px, 2.5vw, 16px);
     }
-
-    /*button*/
-    .button {
-        font-size: clamp(13px, 2vw, 16px);
-    }
-
 }
 
 
