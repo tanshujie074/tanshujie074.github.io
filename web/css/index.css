@@ -354,7 +354,7 @@ h3.font-body {
 
     .hero-image {
         min-height: var(--hero-height);
-        background-position-y: -70px;
+        background-position-y: -60px;
         background-position-x: center;
     }
 
