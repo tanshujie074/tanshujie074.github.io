@@ -55,7 +55,7 @@ h1.font-title {
 .font-title h5,
 h5.font-title {
     font-weight: 400;
-    margin-bottom:
+    margin-bottom: clamp(10px, 5vw, 20px);
 }
 
 
