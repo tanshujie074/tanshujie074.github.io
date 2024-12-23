@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*color*/
+    --font-color: white;
+    --background-color: #1b1b1d;
+    --accent-color: #5D9DFE;
+    --main-color-blue: #07175B;
+    --main-color-red: #9F1C07;
+    --main-color-white: white;
+}
+
+/*title*/
+.live-hero-image {
+    background-image: url(../img/live-images/livepage-herobackground.jpeg);
+    background-size: cover;
+    background-size: 135%;
+    background-position-y: -700px;
+    background-repeat: no-repeat;
+}
+
+.live-hero-g {
+    background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+}
+
+.live-title {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.font-title h1,
+h1.font-title {
+    line-height: 1.2;
+}
+
+
+/*live-card*/
+.live-card {
+    display: flex;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.live-card:hover {
+    cursor: pointer;
+}
+
+/*live image*/
+.live-image {
+    height: 60vh;
+    width: 70%;
+    display: block;
+}
+
+.live1 {
+    background-image: url(../img/live-images/livepage-hibana-world-tour.jpg);
+    background-size: cover;
+    background-size: 135%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*date*/
+.date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-icon {
+    max-width: 25px;
+}
+
+.font-body h6,
+h6.font-body {
+    margin: 0px;
+    font-weight: 300;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    max-height: 800px;
+    height: 60vh;
+}
+
+.info-box {
+    padding: clamp(30px, 5vw, 40px) clamp(10px, 3vw, 30px);
+    background-color: var(--background-color);
+    width: 50%;
+}
+
+.font-body h2,
+h2.font-body {
+    font-weight: 650;
+    margin: 10px 0 10px 0;
+}
+
+.font-body p,
+p.font-body {
+    line-height: 25px;
+}
+
+.live-button {
+    float: right;
+}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:800px) {
+    .live-title {
+        height: 50vh;
+    }
+
+    .live-image {
+        width: 100%;
+    }
+
+    .live-card {
+        margin-bottom: 150px;
+    }
+
+    .overlay {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .info-box {
+        padding: clamp(30px, 5vw, 40px) clamp(10px, 3vw, 30px);
+        background-color: var(--background-color);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {}
