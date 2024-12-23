@@ -89,7 +89,7 @@ p.copyright {
     font-size: 15px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
 
     div.footer-content {
         margin-left: 6%;

@@ -58,6 +58,258 @@ h5.font-title {
     margin-bottom: clamp(10px, 5vw, 20px);
 }
 
+/*live*/
+.live {
+    background-image: url(../img/home-images/expo.jpeg);
+    min-height: var(--view-height);
+    background-size: cover;
+    background-position-y: -300px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.live-g {
+    background-image: linear-gradient(to left, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0));
+    min-height: clamp(400px, 85vh, 1000px);
+}
+
+.live-c {
+    height: 90%;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+
+.live-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    row-gap: 20px;
+    min-height: fit-content;
+}
+
+.live-news-title {
+    align-self: center;
+}
+
+.item-box {
+    background-color: var(--background-color);
+    border: white solid 2px;
+    font-family: var(--body-family);
+    display: flex;
+    align-items: center;
+}
+
+.item-box:hover {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.item-box1 {
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    flex: 4;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.item-text {
+    flex: 9;
+}
+
+.item-font {
+    font-weight: 500;
+}
+
+.item-icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.date {
+    border-right: white solid 2px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.font-body h3,
+h3.font-body {
+    font-weight: 650;
+}
+
+.live-button {
+    float: right;
+}
+
+/*discography*/
+
+.discography,
+.row {
+    min-height: var(--hero-height);
+}
+
+.card-c {
+    height: 75%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: clamp(20px, 5vw, 40px);
+    padding-bottom: clamp(20px, 5vw, 40px);
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 20px;
+    row-gap: clamp(10px, 5vw, 20px);
+}
+
+.card-img {
+    width: 100%;
+    min-width: 250px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: var(--main-color-blue);
+    padding: clamp(10px, 5vw, 20px);
+}
+
+.card:hover {
+    background-color: var(--background-color);
+    border: white solid 2px;
+    cursor: pointer;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(8px, 5vw, 10px);
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(5px, 5vw, 12px);
+}
+
+
+.discography-font-title {
+    font-weight: 650;
+}
+
+.discography-font-body {
+    font-weight: 300;
+}
+
+.readmore {
+    background-color: var(--background-color);
+    border: white solid 2px;
+}
+
+.card-button {
+    float: right;
+}
+
+/*news*/
+.news {
+    background-image: url(../img/home-images/live\ 3.jpg);
+    min-height: var(--view-height);
+    background-size: cover;
+    background-position-y: -300px;
+    background-position-x: 260px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.news-g {
+    background-image: linear-gradient(to right, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0));
+}
+
+.news-c {
+    height: 90%;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+}
+
+/*store*/
+.column {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.column-gap {
+    padding-right: clamp(10px, 5vw, 20px);
+}
+
+.store-card {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.store-card:hover {
+    cursor: pointer;
+    border: white solid 2px;
+}
+
+.store-card1 {
+    background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0)), url(../img/home-images/doll.png);
+}
+
+.store-card1:hover {
+    background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsl(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.785), hsla(240, 4%, 11%, 0.308), hsla(240, 4%, 11%, 0.308), hsl(240, 4%, 11%, 0.027), hsl(240, 4%, 11%, 0)), url(../img/home-images/doll.png);
+}
+
+.store-card2 {
+    background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0)), url(../img/home-images/t-shirt.png);
+}
+
+.store-card2:hover {
+    background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsl(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.785), hsla(240, 4%, 11%, 0.308), hsla(240, 4%, 11%, 0.308), hsl(240, 4%, 11%, 0.027), hsl(240, 4%, 11%, 0)), url(../img/home-images/t-shirt.png);
+}
+
+.store-card3 {
+    background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0)), url(../img/home-images/stand.png);
+}
+
+.store-card3:hover {
+    background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsl(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.785), hsla(240, 4%, 11%, 0.308), hsla(240, 4%, 11%, 0.308), hsl(240, 4%, 11%, 0.027), hsl(240, 4%, 11%, 0)), url(../img/home-images/stand.png);
+}
+
+.store-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.store-text h6 {
+    font-weight: 650;
+    font-size: clamp(18px, 4vw, 23px);
+    font-family: var(--body-family);
+    padding-right: clamp(2px, 4vw, 3px);
+}
+
+.text-box {
+    min-height: 480px;
+    padding: clamp(10px, 5vw, 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
 @media screen and (max-width:1024px) {
 
@@ -71,6 +323,19 @@ h5.font-title {
 
     .hero-g {
         background-image: linear-gradient(to right, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.986), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    }
+
+    /*live*/
+    .live {
+        background-position-y: -300px;
+        background-size: 100%;
+    }
+
+    /*news*/
+    .news {
+        background-position-y: -200px;
+        background-position-x: 90px;
+        background-size: 150%;
     }
 }
 
@@ -92,6 +357,77 @@ h5.font-title {
         background-position-y: -70px;
         background-position-x: center;
     }
+
+    /*live*/
+    .live {
+        background-position-x: center;
+        background-size: 100%;
+        min-height: var(--view-height);
+        background-position-y: -200px;
+    }
+
+    .live-g {
+        background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0));
+        min-height: var(--view-height);
+    }
+
+    .news-c,
+    .live-c {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .live-text {
+        max-width: 1000px;
+    }
+
+    /*news*/
+    .news-g {
+        background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0));
+        min-height: var(--view-height);
+    }
+
+    .news {
+        background-position-x: center;
+        background-size: 100%;
+        min-height: var(--view-height);
+        background-position-y: -130px;
+    }
+
+    /*store*/
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .column-gap {
+        padding-right: 0;
+    }
+
+    .store-card3 {
+        background-position-y: top;
+    }
+
+    .store-text h6 {
+        font-size: clamp(18px, 4vw, 23px);
+    }
 }
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:500px) {
+
+    /*live*/
+    .live {
+        background-position-x: center;
+        background-position-y: -100px;
+    }
+
+    /*news*/
+    .news {
+        background-position-x: center;
+        background-size: 150%;
+        background-position-y: -100px;
+    }
+}
