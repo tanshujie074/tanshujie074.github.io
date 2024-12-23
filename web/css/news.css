@@ -173,7 +173,6 @@ div.release-banner-img1 {
     flex: 1;
     flex-direction: column;
     gap: 15px;
-    align-items: stretch;
 }
 
 a {

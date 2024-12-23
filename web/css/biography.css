@@ -151,7 +151,7 @@ body {
     font-family: var(--body-family);
     font-size: clamp(18px, 4vw, 23px);
     margin: 0%;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /*TOP YOUTUBE VIDEOS*/

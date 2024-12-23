@@ -19,6 +19,7 @@ body {
     position: absolute;
     top: 150px;
     margin-left: 144px;
+    background-color: #5D9DFE;
 }
 
 .bolg-detail-big1 {
@@ -73,7 +74,7 @@ body {
     margin-top: 50px;
 }
 
-.button {
+.button1 {
     width: 30px;
     height: 30px;
     border: 2px solid rgb(255, 255, 255);
@@ -83,12 +84,12 @@ body {
     cursor: pointer;
 }
 
-.button:hover {
+.button1:hover {
     transition: 0.5s;
     background-color: #5D9DFE;
 }
 
-.button.active {
+.button1.active {
     background-color: #ffffff;
     color: black;
 }
