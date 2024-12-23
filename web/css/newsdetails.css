@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #1b1b1d;
@@ -11,6 +15,7 @@ div.newsdetails-banner-img1 {
     background-size: cover;
     height: 700px;
     background-position: center;
+    margin-top: 50px;
 }
 
 .newsdetails-banner {
@@ -319,6 +324,7 @@ a.to-ado-shop:hover {
         justify-content: center;
         background-position: center;
         display: block;
+        margin-top: 80px;
     }
 
     /*live*/
