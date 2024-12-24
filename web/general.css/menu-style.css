@@ -305,7 +305,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
     }
 }
 
-@media (max-width:370px) {
+@media (max-width:500px) {
     nav .navbar .nav-links {
         max-width: 100%;
     }
