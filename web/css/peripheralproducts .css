@@ -5,56 +5,37 @@ body {
     padding: 0px;
 }
 
-
-.frame {
-    position: absolute;
-    bottom: 50px;
-    width: 100%;
-    align-items: center;
-    box-sizing: content-box;
-}
-
 .title-image {
+    background-image: url("../img/peripheral-products-images/title-image.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    object-fit: cover;
+    width: 100%;
 }
 
+
 .title {
-    display: flex;
-    justify-content: center;
+
     font-weight: 650;
-    box-sizing: border-box;
-    width: 80%;
-    word-wrap: break-word;
-    margin: 0 15%;
 }
 
 .title-content {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    box-sizing: border-box;
-    width: 60%;
-    word-wrap: break-word;
-    gap: 32px;
-    margin-left: 15%;
+    align-items: center;
 }
 
 .product-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    padding: 0 144px;
+    row-gap: 40px;
+    gap: 20px;
+    margin-bottom: 5%;
     overflow: hidden;
 }
 
 .product-item {
     width: 100%;
     height: auto;
-    margin: 0;
-    flex: 1 1 calc(25% - 20px);
-    max-width: calc(25% - 20px);
+    flex: 1 1 20%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -90,33 +71,6 @@ body {
     box-sizing: border-box;
 }
 
-.number-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-.button {
-    width: 30px;
-    height: 30px;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: #1a1a1a;
-    color: rgba(217, 217, 217, 1);
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.button:hover {
-    transition: 0.5s;
-    background-color: #5D9DFE;
-}
-
-.button.active {
-    background-color: #ffffff;
-    color: black;
-}
 
 /*
     <h2 class="font-title">heading1</h2>
@@ -158,11 +112,6 @@ h3.font-body {
 
 
 @media screen and (max-width:1024px) {
-    body {
-        margin: 0px;
-        padding: 0px;
-    }
-
     .title-image {
         height: 70vh;
     }
@@ -170,12 +119,7 @@ h3.font-body {
     .product-item {
         display: flex;
         flex-direction: column;
-        flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-
-    .product-container {
-        padding: 0 25px;
+        flex: 1 1 40%;
     }
 
     .title {
@@ -193,10 +137,6 @@ h3.font-body {
 
     .frame {
         justify-content: flex-start;
-        position: absolute;
-        bottom: 300px;
-        width: 100%;
-        margin: 0 16px;
     }
 
 
