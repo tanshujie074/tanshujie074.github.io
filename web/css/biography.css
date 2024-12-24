@@ -250,7 +250,6 @@ h2.font-body {
 
 .top-song-info {
     grid-column: 3;
-    background-color: #5D9DFE;
     align-content: center;
     flex: 4;
 }
