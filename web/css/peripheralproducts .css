@@ -21,25 +21,24 @@ body {
 }
 
 .title {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 80px;
     display: flex;
     justify-content: center;
-    font-weight: bold;
+    font-weight: 650;
     box-sizing: border-box;
-    width: 100%;
+    width: 80%;
     word-wrap: break-word;
+    margin: 0 15%;
 }
 
 .title-content {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 32px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
     box-sizing: border-box;
-    width: 100%;
+    width: 60%;
     word-wrap: break-word;
+    gap: 32px;
+    margin-left: 15%;
 }
 
 .product-container {
@@ -51,7 +50,6 @@ body {
 }
 
 .product-item {
-    background-color: #ddd;
     width: 100%;
     height: auto;
     margin: 0;
@@ -120,8 +118,46 @@ body {
     color: black;
 }
 
+/*
+    <h2 class="font-title">heading1</h2>
+    <h4 class="font-title">heading4</h4>
+ */
 
-@media (max-width: 1000px) {
+/*
+ <h2 class="font-body">heading2</h2>
+ <h3 class="font-body">heading3</h3>
+ */
+
+.font-title h2,
+h2.font-title {
+    font-size: clamp(32px, 4.5vw, 56px);
+    font-weight: 650;
+    margin: 0;
+    width: 100%;
+    margin-top: 30%;
+}
+
+
+.font-title h4,
+h4.font-title {
+    font-size: clamp(20px, 3vw, 36px);
+    font-weight: 650;
+    margin: 0;
+    width: 80%;
+}
+
+.font-body h2,
+h2.font-body {
+    font-size: clamp(20px, 4vw, 24px);
+}
+
+.font-body h3,
+h3.font-body {
+    font-size: clamp(18px, 3.5vw, 22px);
+}
+
+
+@media screen and (max-width:1024px) {
     body {
         margin: 0px;
         padding: 0px;
@@ -139,19 +175,20 @@ body {
     }
 
     .product-container {
-        padding: 0 80px;
+        padding: 0 25px;
     }
 
     .title {
-        font-size: 64px;
         display: flex;
         justify-content: flex-start;
+        margin: 0 25px;
     }
 
     .title-content {
-        font-size: 24px;
+        width: 80%;
         display: flex;
         justify-content: flex-start;
+        margin: 0 25px;
     }
 
     .frame {
