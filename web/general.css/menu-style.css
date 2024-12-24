@@ -306,9 +306,6 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
 }
 
 @media (max-width:500px) {
-    nav .navbar .nav-links {
-        max-width: 100%;
-    }
 
     .social i {
         font-size: 16px;
