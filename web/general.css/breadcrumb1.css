@@ -4,6 +4,10 @@ body {
     color: white;
 }
 
+.breadcrumb {
+    box-sizing: border-box;
+}
+
 /*breadcrumb*/
 div.breadcrumb {
     background-color: #07175B;
