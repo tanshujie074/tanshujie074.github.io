@@ -22,6 +22,7 @@ body {
     background-color: var(--background-color);
     color: var(--font-color);
     margin: 0;
+    font-size: min(100%, 16px);
 }
 
 /*row*/
@@ -42,12 +43,12 @@ body {
 
 .font-title h1,
 h1.font-title {
-    font-size: clamp(64px, 8vw, 128px);
+    font-size: clamp(100px, 8vw, 128px);
 }
 
 .font-title h2,
 h2.font-title {
-    font-size: clamp(48px, 6vw, 80px);
+    font-size: clamp(70px, 6vw, 80px);
 }
 
 .font-title h3,
@@ -149,61 +150,17 @@ p.font-body {
     color: var(--main-color-white);
 }
 
-/*number buttons*/
-.number-buttons {
-    display: flex;
-    margin: 30px 0px 80px 0px;
-}
-
-.number-page-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.page-button {
-    font-family: var(--body-family);
-    color: var(--font-color);
-    border: 2px solid rgb(255, 255, 255);
-    background-color: #1a1a1a;
-    color: rgba(217, 217, 217, 1);
-    font-size: clamp(14px, 1.8vw, 18px);
-    padding: clamp(10px, 2vw, 15px) clamp(16px, 3vw, 24px);
-    cursor: pointer;
-}
-
-.page-button:hover {
-    transition: 0.5s;
-    background-color: #5D9DFE;
-}
-
-.page-button.active {
-    background-color: #ffffff;
-    color: black;
-    font-weight: 700;
-    font-size: large;
-}
-
-.page-button-icon {
-    padding: clamp(10px, 2vw, 15px) clamp(12px, 2.5vw, 17px);
-}
-
-.page-button-arrow {
-    display: inline-block;
-    transform: rotate(-90deg);
-    font-size: x-large;
-}
-
 @media screen and (max-width:1024px) {
 
     /*title*/
     .font-title h1,
     h1.font-title {
-        font-size: clamp(56px, 7vw, 110px);
+        font-size: clamp(96px, 7vw, 110px);
     }
 
     .font-title h2,
     h2.font-title {
-        font-size: clamp(44px, 5.5vw, 72px);
+        font-size: clamp(60px, 5.5vw, 70px);
     }
 
     .font-title h3,
@@ -262,11 +219,6 @@ p.font-body {
     p.font-body {
         font-size: clamp(12px, 2.2vw, 14px);
     }
-
-    /*page button*/
-    .page-button-arrow {
-        font-size: large;
-    }
 }
 
 
@@ -280,12 +232,12 @@ p.font-body {
     /*title*/
     .font-title h1,
     h1.font-title {
-        font-size: clamp(48px, 6vw, 96px);
+        font-size: clamp(80px, 6vw, 96px);
     }
 
     .font-title h2,
     h2.font-title {
-        font-size: clamp(40px, 5vw, 64px);
+        font-size: clamp(45px, 5vw, 64px);
     }
 
     .font-title h3,
@@ -351,12 +303,12 @@ p.font-body {
     /*title*/
     .font-title h1,
     h1.font-title {
-        font-size: clamp(40px, 5vw, 80px);
+        font-size: clamp(60px, 5vw, 80px);
     }
 
     .font-title h2,
     h2.font-title {
-        font-size: clamp(32px, 4.5vw, 56px);
+        font-size: clamp(40px, 4.5vw, 56px);
     }
 
     .font-title h3,

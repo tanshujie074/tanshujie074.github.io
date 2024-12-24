@@ -7,7 +7,7 @@
 :root {
     /*height*/
     --hero-height: clamp(400px, 95vh, 1000px);
-    --view-height: clamp(400px, 85vh, 1000px);
+    --view-height: clamp(400px, 85vh, 600px);
 
     /*color*/
     --font-color: white;
