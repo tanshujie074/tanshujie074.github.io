@@ -22,6 +22,7 @@ body {
     background-color: var(--background-color);
     color: var(--font-color);
     margin: 0;
+    font-size: min(100%, 16px);
 }
 
 /*row*/
