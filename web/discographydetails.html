@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="general.css/breadcrumb1.css" />
     <link rel="stylesheet" href="general.css/footer.css" />
     <link rel="stylesheet" href="general.css/general2.css">
+    <link rel="stylesheet" href="general.css/slider.css">
     <link rel="stylesheet" href="css/discographydetails.css" />
-
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
     <!-- font: noto-serif-jp-->
@@ -49,31 +49,67 @@
         </div>
     </div>
 
-    <div class="slideshow-container">
-        <div class="sliders-content fade">
-            <img src="img/discographydetails-images/Ado-albumdetails-productalbumimg.jpg" style="width:100%">
-        </div>
+    <div class="album-product-showcase row">
+        <div class="slider-section container">
+            <div class="slider-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/discographydetails-images/Ado-albumdetails-productalbumimg.jpg" alt="Image 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/discographydetails-images/Ado-albumdetails-productlaid.webp" alt="Image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/discographydetails-images/Ado-albumdetails-productstand.webp" alt="Image 3">
+                        </div>
+                    </div>
 
-        <div class="sliders-content fade">
-            <img src="img/discographydetails-images/Ado-albumdetails-productlaid.webp" style="width:100%">
-        </div>
+                    <!-- Optional Scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
 
-        <div class="sliders-content fade">
-            <img src="img/discographydetails-images/Ado-albumdetails-productstand.webp" style="width:100%">
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-
     </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+
+    <div class="album-product-info row">
+        <div class="container">
+            <div class="product-price-toshop">
+                <div class="price">
+                    <h2 class="font-body value">¥13,640<span class="tax">(Incl. Tax)</span>
+                    </h2>
+                </div>
+                <div class="more-button">
+                    <a href="https://store.universal-music.co.jp/product/pdcv1240/" target="_blank"><button
+                            class="button white-button">VISIT STORE</button></a>
+                </div>
+            </div>
+
+            <div class="product-details">
+
+            </div>
+        </div>
     </div>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+        });
     </script>
-
 </body>
 
 </html>
