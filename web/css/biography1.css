@@ -96,7 +96,7 @@ p.font-body {
 
 /*data*/
 .data {
-    min-height: 30vh;
+    height: clamp(200px, 30vh, 230px);
 }
 
 .column {
@@ -120,6 +120,7 @@ p.font-body {
 
 .data-number {
     line-height: clamp(50px, 5vw, 70px);
+    font-weight: 600;
 }
 
 .data-title {
@@ -159,6 +160,15 @@ p.font-body {
 @media screen and (max-width:500px) {
 
     /*data*/
+    .data-row {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
     .column {
         width: 100%;
         display: block;
