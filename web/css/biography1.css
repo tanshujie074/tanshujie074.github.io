@@ -194,6 +194,36 @@ h2.font-body {
     background-image: url(../img/biography-images/show.jpg);
 }
 
+
+/*top-song*/
+.top-song-card-img {
+    background-image: url(../img/biography-images/biopage-topsong-show.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+.song-column {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.top-song-card {
+    display: flex;
+}
+
+.top-song-card img {
+    width: auto;
+    width: 100%;
+    min-width: 250px;
+    object-fit: cover;
+}
+
+.top-song-info {
+    align-content: center;
+}
+
 @media screen and (max-width:1024px) {
     .bio {
         background-position-x: -250px;
