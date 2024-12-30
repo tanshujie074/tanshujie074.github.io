@@ -1,0 +1,19 @@
+.responsive-background {
+    width: 100%;
+    /* 宽度占满容器 */
+    height: 100vh;
+    /* 高度占视口的 50% */
+    background-image: url('../img/blogdetail-images/blog-detail-image2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    /* 不重复 */
+}
+
+@media screen and (max-width: 800px) {
+    .responsive-background {
+        background-image: url('../img/blogdetail-images/blog-detail-image2-mobile-size.png');
+        height: 50vh;
+    }
+}
