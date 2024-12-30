@@ -170,7 +170,7 @@ h2.font-body {
 }
 
 .video-img1 {
-    background-image: url(../img/biography-images/Usseewa.jpg);
+    background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0)), url(../img/biography-images/Usseewa.jpg);
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -186,41 +186,88 @@ h2.font-body {
 }
 
 .video-img2 {
-    background-image: url(../img/biography-images/Odo.jpeg);
+    background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0)), url(../img/biography-images/Odo.jpeg);
 
 }
 
 .video-img3 {
-    background-image: url(../img/biography-images/show.jpg);
+    background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0)), url(../img/biography-images/show.jpg);
 }
 
 
 /*top-song*/
 .top-song-card-img {
-    background-image: url(../img/biography-images/biopage-topsong-show.jpg);
+    background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0)), url(../img/biography-images/biopage-topsong-show.jpg);
     background-size: cover;
     object-fit: cover;
     background-position: center;
+    padding: 30px;
+}
+
+.songs-grid {
+    display: flex;
+    height: fit-content;
+    background-color: #ffa598;
+    column-gap: 10px;
 }
 
 .song-column {
     float: left;
     width: 50%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 .top-song-card {
     display: flex;
+    flex: 1;
 }
 
-.top-song-card img {
-    width: auto;
-    width: 100%;
+.song-text {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+h2.font-body.song-text-number {
+    line-height: 10px;
+    font-weight: 400;
+}
+
+.song-thumbnail {
     object-fit: cover;
+    flex: 1;
+}
+
+.top-song-card:nth-child(1) .song-thumbnail {
+    background-image: url(../img/biography-images/biopage-topsong-Usseewa.jpg);
+    object-fit: cover;
+    width: 100%;
+    background-position: center;
+}
+
+.top-song-card:nth-child(2) .song-thumbnail {
+    background-image: url(../img/biography-images/biopage-topsong-Usseewa.jpg);
+}
+
+.top-song-card:nth-child(3) .song-thumbnail {
+    background-image: url(../img/biography-images/biopage-topsong-Usseewa.jpg);
+}
+
+.song-thumbnail-size {
+    min-height: 100px;
+
 }
 
 .top-song-info {
-    align-content: center;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9F1C07;
 }
 
 @media screen and (max-width:1024px) {
@@ -284,13 +331,7 @@ h2.font-body {
         padding-top: 20px;
     }
 
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .column-gap {
-        padding-right: 0px;
+    .songs-grid {
+        flex-direction: column;
     }
 }
