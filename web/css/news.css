@@ -10,7 +10,7 @@ body {
 
 /*news*/
 .news-banner-top {
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-banner-cropped.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-herobanner-top.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 80%;
@@ -102,7 +102,7 @@ div.more-button {
 
 /*release*/
 div.release-banner-img1 {
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-release-banner.jpg");
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-release-banner-redgreenlookback.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -149,7 +149,7 @@ img.release-img {
 }
 
 div.release-banner-img-bottom {
-    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-release-banner-bottom.jpg");
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-release-banner-bottom-holdingflowergallerybg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -229,16 +229,24 @@ div.release-banner-img-bottom {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .news-banner-top {
-        height: 500px;
-    }
-
+@media screen and (max-width: 600px) {
     div.right-column {
         display: flex;
         flex-direction: column;
         gap: 15px;
 
+    }
+
+    .release-right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .news-banner-top {
+        height: 500px;
     }
 
     h6.latest-news {
@@ -247,12 +255,6 @@ div.release-banner-img-bottom {
 
     h6.latest-release {
         font-size: large;
-    }
-
-    .release-right-column {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
     }
 
 
