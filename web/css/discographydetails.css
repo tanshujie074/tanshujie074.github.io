@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1b1b1d;
+    color: white;
+}
+
+/*discography*/
+.discographydetails-banner-top {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/discographydetails-images/Ado-albumdetails-productalbumimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 80%;
+    height: 700px;
+}
+
+div.discographydetails-heading {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.discographydetails-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2.discographydetails-headings {
+    padding: 0px;
+    margin: 0px;
+}
+
+h4.discographydetails-subheading {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+h6.label {
+    font-weight: 650;
+    background-color: #5D9DFE;
+    padding: 10px 20px;
+    margin: 15px 0px;
+}
+
+h6.date {
+    font-weight: 400;
+    margin: 15px 0px;
+
+}
+
+div.label-date {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
