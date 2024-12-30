@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*height*/
+    --hero-height: clamp(500px, 80vh, 700px);
+    --view-height: clamp(400px, 85vh, 600px);
+    /*color*/
+    --font-color: white;
+    --background-color: #1b1b1d;
+    --accent-color: #5D9DFE;
+    --main-color-blue: #07175B;
+    --main-color-red: #9F1C07;
+}
