@@ -229,16 +229,24 @@ div.release-banner-img-bottom {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .news-banner-top {
-        height: 500px;
-    }
-
+@media screen and (max-width: 600px) {
     div.right-column {
         display: flex;
         flex-direction: column;
         gap: 15px;
 
+    }
+
+    .release-right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .news-banner-top {
+        height: 500px;
     }
 
     h6.latest-news {
@@ -247,12 +255,6 @@ div.release-banner-img-bottom {
 
     h6.latest-release {
         font-size: large;
-    }
-
-    .release-right-column {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
     }
 
 

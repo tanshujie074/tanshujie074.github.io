@@ -151,6 +151,26 @@ h4.value {
     font-size: clamp(16px, 3vw, 20px);
 }
 
+div.music-platforms {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a.music-icon {
+    font-size: 35px;
+}
+
+a.apple-music {
+    font-size: 33px;
+}
+
+a.music-icon:hover {
+    color: #5D9DFE;
+    transition: color 0.3s ease;
+}
+
 h4.discography-info {
     font-weight: 400;
 }
@@ -190,8 +210,6 @@ hr.artwork-bottom-line {
         font-size: large;
     }
 
-
-
 }
 
 @media (max-width:800px) {
@@ -202,6 +220,23 @@ hr.artwork-bottom-line {
 
     a.all-category-item {
         font-size: clamp(12px, 2.5vw, 16px);
+    }
+
+
+
+
+}
+
+
+@media (max-width:660px) {
+    div.long-artwork-name {
+        gap: 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .discography-section {
+        grid-template-columns: auto;
     }
 }
 
@@ -219,10 +254,6 @@ hr.artwork-bottom-line {
     a.all-category-item {
         font-size: clamp(12px, 2.2vw, 16px);
         padding: 15px 35px;
-    }
-
-    .discography-section {
-        grid-template-columns: auto;
     }
 
     .artwork-nineth {
