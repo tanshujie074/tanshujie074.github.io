@@ -297,6 +297,6 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
     }
 
     .social {
-        column-gap: clamp(5px, 2vw, 8px);
+        column-gap: clamp(3px, 2vw, 5px);
     }
 }
