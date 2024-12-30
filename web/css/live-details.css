@@ -6,7 +6,7 @@
     /*height*/
     --hero-height: clamp(550px, 90vh, 900px);
     --view-height: clamp(700px, 80vh, 800px);
-    --banner-height: clamp(300px, 70vh, 900px);
+    --banner-height: clamp(300px, 60vh, 600px);
     /*color*/
     --font-color: white;
     --background-color: #1b1b1d;
@@ -70,7 +70,6 @@ h4.font-title {
 /*tour overview*/
 .tour-overview {
     min-height: var(--view-height);
-    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,9 +78,8 @@ h4.font-title {
 .tour-overview-c {
     display: flex;
     flex-direction: row-reverse;
-    margin: auto;
-    height: fit-content;
-    background-color: #002fff;
+    justify-content: center;
+    height: 60%;
     gap: clamp(20px, 10vw, 80px);
 }
 
@@ -97,7 +95,6 @@ h4.font-title {
 }
 
 .tour-overview-text {
-    background-color: #07175B;
     display: flex;
     flex-direction: column;
     justify-content: end;
