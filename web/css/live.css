@@ -64,6 +64,12 @@ h1.font-title {
     background-repeat: no-repeat;
 }
 
+.live2 {
+    background-image: url(../img/live-images/livepage-live2.jpeg);
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
 
 /*date*/
 .date {
