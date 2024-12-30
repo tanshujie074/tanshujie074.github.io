@@ -159,24 +159,69 @@ div.songinclude-banner-img {
     background-position-y: 20%;
     filter: blur(3px);
     -webkit-filter: blur(3px);
-    height: 700px;
+    height: 600px;
+    position: relative;
+    z-index: -1;
 }
 
 /*feature song*/
+.feature-section {
+    margin-top: -250px;
+    margin-bottom: 35px;
+}
+
 h4.details-center-heading {
     text-align: center;
     padding: 45px 0px;
     margin: 0px;
 }
 
-.song-category {
+.song-category-section {
     display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
 
+.song-category-container {
+    background-color: #07175d;
+    border: 1px solid white;
+    padding: 25px;
+}
+
+h3.song-category {
+    font-weight: 650;
+    padding: 0px 0px 15px 0px;
+    margin: 0px;
 }
 
 .songs {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+
+}
+
+.song-top-row {
     display: flex;
     gap: 15px;
+}
+
+.song-bottom-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.song-container-1 {
+    width: 50%;
+}
+
+.song-container-2 {
+    width: 50%;
+}
+
+.song-container-3 {
+    width: 49.3%;
 }
 
 .song-container {
@@ -194,14 +239,23 @@ h4.details-center-heading {
     font-weight: 650;
     padding: 15px 0px 8px 0px;
     margin: 0px;
+    font-size: medium;
 }
 
 .music {
     font-weight: 400;
     padding: 0px;
     margin: 0px;
-
 }
+
+.feature-songs-description {
+    font-weight: 400;
+    text-align: center;
+    padding: 25px 0px;
+    margin: 0px;
+}
+
+
 
 
 
@@ -209,6 +263,8 @@ h4.details-center-heading {
     ul.details-points {
         font-size: clamp(16px, 2.5vw, 18px)
     }
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -219,10 +275,32 @@ h4.details-center-heading {
     .product-showcase-info {
         flex-direction: column-reverse;
     }
+
+    div.songinclude-banner-img {
+        height: 500px;
+
+    }
+
+    .song-category-section {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .swiper {
         max-width: 350px;
     }
+
+    div.songinclude-banner-img {
+        height: 400px;
+
+    }
+
+    .song-img {
+        min-width: 40%;
+    }
+
+
 }
