@@ -371,13 +371,11 @@ a.to-ado-shop:hover {
     }
 
     h5.price {
-        font-weight: 400;
         padding: 10px 0px;
         margin: 0px;
     }
 
     h4.value {
-        font-weight: 650;
         padding: 10px 0px;
         margin: 0px;
     }
@@ -439,6 +437,25 @@ a.to-ado-shop:hover {
 
     .mobile-margin {
         margin-bottom: 15px;
+    }
+
+    div.price {
+        display: flex;
+        gap: 10px;
+    }
+
+    h5.price {
+        padding: 10px 0px;
+
+    }
+
+    h4.value {
+        padding: 10px 0px;
+    }
+
+    .tax {
+        font-weight: 300;
+        font-size: clamp(14px, 2.5vw, 16px);
     }
 
 
