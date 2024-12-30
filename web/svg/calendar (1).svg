@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="calendar">
+  <circle fill="#fff" cx="24" cy="24" r="23"></circle>
+  <path fill="#1B1B1D" d="M37,13H32V11H30v2H25V11H23v2H17V11H15v2H11a2,2,0,0,0-2,2V33a2,2,0,0,0,2,2H37a2,2,0,0,0,2-2V15A2,2,0,0,0,37,13ZM15,15v2h2V15h6v2h2V15h5v2h2V15h5v3H11V15ZM11,33V20H37V33Z"></path>
+  <rect width="2" height="2" x="21" y="23" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="25" y="23" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="29" y="23" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="33" y="23" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="17" y="23" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="13" y="23" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="21" y="28" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="25" y="28" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="29" y="28" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="33" y="28" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="17" y="28" fill="#1B1B1D"></rect>
+  <rect width="2" height="2" x="13" y="28" fill="#1B1B1D"></rect>
+</svg>
