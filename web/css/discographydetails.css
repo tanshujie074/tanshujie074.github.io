@@ -61,18 +61,46 @@ div.label-date {
     gap: 14px;
 }
 
-img {
-    vertical-align: middle;
+/*Slider*/
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 15px;
+.swiper {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+
+.swiper-pagination-bullet {
     background-color: #ffffff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #5D9DFE;
+}
+
+.swiper-scrollbar {
+    opacity: 0;
+}
+
+/*price*/
+h2.value {
+    font-weight: 650;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.tax {
+    font-weight: 300;
+    font-size: clamp(16px, 3vw, 20px);
 }
