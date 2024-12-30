@@ -277,7 +277,7 @@ a.to-ado-shop:hover {
 
     /*live*/
     ul.details-points {
-        font-size: clamp(14px, 2.5vw, 18px)
+        font-size: clamp(16px, 2.5vw, 18px)
     }
 
     /*product*/
@@ -336,7 +336,7 @@ a.to-ado-shop:hover {
     }
 
     ul.details-points {
-        font-size: clamp(12px, 2.5vw, 16px);
+        font-size: clamp(16px, 2.5vw, 16px);
     }
 
     /*product*/
@@ -362,6 +362,7 @@ a.to-ado-shop:hover {
 
     div.product-info {
         flex: 1;
+        align-items: start;
     }
 
     div.price {
@@ -407,19 +408,7 @@ a.to-ado-shop:hover {
 
 }
 
-@media screen and (max-width: 500px) {
-
-    /*news details content*/
-    ul.details-points {
-        font-size: clamp(12px, 2.2vw, 16px);
-    }
-
-    .details-live-image {
-        min-width: 400px;
-
-    }
-
-    /*product*/
+@media screen and (max-width:660px) {
     div.price {
         display: block;
     }
@@ -433,6 +422,25 @@ a.to-ado-shop:hover {
         padding: 0px;
         margin: 0px;
     }
+}
+
+@media screen and (max-width: 500px) {
+
+    /*news details content*/
+    .details-live-image {
+        min-width: 400px;
+
+    }
+
+    /*product*/
+    div.product-info {
+        display: block;
+    }
+
+    .mobile-margin {
+        margin-bottom: 15px;
+    }
+
 
     /*notes*/
     a.to-ado-shop {
