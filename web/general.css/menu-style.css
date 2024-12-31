@@ -73,6 +73,14 @@ nav .navbar {
     transition: color 0.3s ease;
 }
 
+.navbar-social {
+    display: inline-block;
+}
+
+.sidebar-social {
+    display: none;
+}
+
 nav .navbar .nav-links .links li a:hover {
     text-decoration: underline;
     text-decoration-color: #5D9DFE;
@@ -115,7 +123,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
 .navbar .nav-links .links .submenu {
     position: absolute;
     top: 70px;
-    left: 0;
+    right: 0;
     background-color: #0f0f10;
     width: fit-content;
     line-height: 40px;
@@ -172,6 +180,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
     nav .navbar {
         max-width: 100%;
         padding: 0 25px;
+        flex-direction: row-reverse;
     }
 
     nav .navbar .nav-links {
@@ -181,10 +190,10 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
         height: 100%;
         width: 100%;
         top: 0;
-        left: -100%;
+        right: -100%;
         max-width: 270px;
         padding: 20px;
-        transition: left 0.5s ease-in-out;
+        transition: right 0.5s ease-in-out;
         z-index: 100;
         line-height: 50px;
         font-size: 18px;
@@ -292,11 +301,15 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
         transform: rotate(180deg);
     }
 
-    .social i {
-        font-size: clamp(28px, 3vw, 30px);
+    .navbar-social {
+        display: none;
     }
 
-    .social {
-        column-gap: clamp(3px, 2vw, 5px);
+    .sidebar-social {
+        display: block;
+    }
+
+    .social i {
+        font-size: 30px;
     }
 }
