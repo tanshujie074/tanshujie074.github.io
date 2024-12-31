@@ -3,10 +3,10 @@ let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .ri-menu-line");
 let menuCloseBtn = document.querySelector(".nav-links .ri-close-line");
 menuOpenBtn.onclick = function () {
-    navLinks.style.left = "0";
+    navLinks.style.right = "0";
 }
 menuCloseBtn.onclick = function () {
-    navLinks.style.left = "-100%";
+    navLinks.style.right = "-100%";
 }
 
 // sidebar submenu open close js code
