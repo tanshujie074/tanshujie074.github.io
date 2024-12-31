@@ -86,6 +86,16 @@ input[type="text"]:focus {
     margin-top: 3%;
 }
 
+.container-line-box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.line-box {
+    border: 1px solid var(--main-color-white);
+    width: 30%;
+    height: 15%;
+}
 
 .font-body h1,
 h1.font-body {
