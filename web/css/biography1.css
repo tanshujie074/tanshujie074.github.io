@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 
-
 :root {
+    /*font*/
+    --title-family: "Noto Serif JP", serif;
+    --body-family: 'Futura Std', sans-serif;
     /*height*/
-    --hero-height: clamp(500px, 80vh, 700px);
-    --view-height: clamp(400px, 85vh, 600px);
+    --hero-height: clamp(400px, 95vh, 1000px);
+    --view-height: clamp(400px, 85vh, 1000px);
     /*color*/
     --font-color: white;
     --background-color: #1b1b1d;
@@ -18,9 +20,25 @@
     --main-color-red: #9F1C07;
 }
 
+body {
+    color: var(--font-color);
+    background-color: var(--background-color);
+    font-family: 'Futura', 'Noto Serif JP', sans-serif;
+}
+
+.row {
+    padding: 0 50px;
+    place-content: center;
+}
+
+.container {
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
 /*title*/
 .bio-title {
-    height: var(--hero-height);
+    min-height: var(--hero-height);
     background-image: url(../img/biography-images/hero-images.jpeg);
     background-position: center;
     background-size: cover;
@@ -28,37 +46,38 @@
 
 .title-g {
     background-color: hsla(240, 4%, 11%, 0.621);
-    height: var(--hero-height);
+    min-height: var(--hero-height);
     width: 100%;
+    font-family: var(--title-family);
+    align-items: center;
 }
 
-.title-c {
-    position: relative;
-    top: 65px;
+.text {
+    min-height: var(--hero-height);
+    align-content: center;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: clamp(70px, 10vw, 80px);
+    font-weight: 700;
 }
 
 /*bio*/
 .bio {
     background-image: url(../img/biography-images/ado1.jpg);
     background-size: cover;
-    background-size: 110%;
-    background-position-x: -400px;
-    background-position-y: -350px;
+    background-size: 150%;
+    background-position-x: -800px;
+    background-position-y: -500px;
     background-repeat: no-repeat;
-    height: var(--view-height);
+    min-height: var(--view-height);
 }
 
 .bio-g {
-    background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.263), hsla(240, 4%, 11%, 0.17), hsla(240, 4%, 11%, 0));
-    height: var(--view-height);
+    background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    min-height: var(--view-height);
 }
 
 .bio-c {
-    min-height: var(--view-height);
+    height: 90%;
     display: flex;
     justify-content: end;
     margin: auto;
@@ -68,7 +87,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     min-height: fit-content;
 }
 
@@ -78,25 +98,31 @@
     margin-left: 0;
 }
 
-.font-title h2,
-h2.font-title {
-    margin: 0;
+.bio-text h2 {
+    font-family: var(--title-family);
+    font-size: clamp(70px, 10vw, 80px);
+    font-weight: 600;
+    margin: 0%;
+    padding: 0%;
 }
 
-.font-title h6,
-h6.font-title {
+.bio-text h6 {
+    font-family: var(--title-family);
+    font-size: clamp(18px, 4vw, 23px);
+    font-weight: 500;
     margin: 0;
-    margin-bottom: clamp(10px, 2vw, 30px);
+    padding: 2% 0%;
 }
 
-.font-body p,
-p.font-body {
+.bio-text p {
+    font-family: var(--body-family);
+    font-size: clamp(14px, 4vw, 16px);
     line-height: 28px;
 }
 
 /*data*/
 .data {
-    height: clamp(200px, 30vh, 400px);
+    min-height: 30vh;
 }
 
 .column {
@@ -111,19 +137,20 @@ p.font-body {
 
 .data-item {
     text-align: center;
+    padding: 20px;
 }
 
-.data-number,
-.data-title {
-    margin: 0px;
-}
-
-.data-number {
-    line-height: clamp(50px, 5vw, 70px);
+.data-item h3 {
+    font-family: var(--title-family);
+    font-size: clamp(39px, 8vw, 48px);
     font-weight: 600;
+    margin-bottom: 2%;
 }
 
-.data-title {
+.data-item h6 {
+    font-family: var(--body-family);
+    font-size: clamp(18px, 4vw, 23px);
+    margin: 0%;
     font-weight: 400;
 }
 
@@ -170,7 +197,7 @@ h2.font-body {
 }
 
 .video-img1 {
-    background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0)), url(../img/biography-images/Usseewa.jpg);
+    background-image: url(../img/biography-images/Usseewa.jpg);
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -186,104 +213,85 @@ h2.font-body {
 }
 
 .video-img2 {
-    background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0)), url(../img/biography-images/Odo.jpeg);
+    background-image: url(../img/biography-images/Odo.jpeg);
 
 }
 
 .video-img3 {
-    background-image: linear-gradient(to top, hsl(229, 86%, 19%), hsl(229, 86%, 19%, 0.98), hsla(229, 86%, 19%, 0.785), hsla(229, 86%, 19%, 0.308), hsla(229, 86%, 19%, 0.308), hsl(229, 86%, 19%, 0.027), hsl(229, 86%, 19%, 0)), url(../img/biography-images/show.jpg);
+    background-image: url(../img/biography-images/show.jpg);
 }
-
 
 /*top-song*/
 .top-song-card-img {
-    background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0)), url(../img/biography-images/biopage-topsong-show.jpg);
+    background-image: url(../img/biography-images/biopage-topsong-show.jpg);
     background-size: cover;
     object-fit: cover;
     background-position: center;
-    padding: 30px;
+    grid-column: 1 /span 6;
+    grid-row: 1 / span 3;
+    padding: 10px;
 }
 
-.songs-grid {
-    display: flex;
-    height: fit-content;
-    background-color: #ffa598;
-    column-gap: 10px;
-}
-
-.song-column {
-    float: left;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+.top-song-row {
+    gap: clamp(10px, 5vw, 20px);
 }
 
 .top-song-card {
     display: flex;
+    grid-column: 7;
+}
+
+.top-song-card img {
     flex: 1;
-}
-
-.song-text {
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-h2.font-body.song-text-number {
-    line-height: 10px;
-    font-weight: 400;
-}
-
-.song-thumbnail {
+    width: auto;
+    min-height: 20px;
     object-fit: cover;
-    flex: 1;
-}
-
-.top-song-card:nth-child(1) .song-thumbnail {
-    background-image: url(../img/biography-images/biopage-topsong-Usseewa.jpg);
-    object-fit: cover;
-    width: 100%;
-    background-position: center;
-}
-
-.top-song-card:nth-child(2) .song-thumbnail {
-    background-image: url(../img/biography-images/biopage-topsong-Usseewa.jpg);
-}
-
-.top-song-card:nth-child(3) .song-thumbnail {
-    background-image: url(../img/biography-images/biopage-topsong-Usseewa.jpg);
-}
-
-.song-thumbnail-size {
-    min-height: 100px;
-
 }
 
 .top-song-info {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #9F1C07;
+    grid-column: 3;
+    align-content: center;
+    flex: 4;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1090px) {
+    .row {
+        padding: 0 50px;
+    }
+
+    /*bio*/
+    .bio-g {
+        background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.364), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+        min-height: var(--view-height);
+    }
+
     .bio {
-        background-position-x: -250px;
-        background-position-y: center;
+        background-size: 150%;
+        background-position-x: -800px;
+        background-position-y: -500px;
+        background-repeat: no-repeat;
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
+
+    /*title*/
+    :root {
+        --hero-height: 85vh;
+        --view-height: 100vh;
+    }
+
+    .text {
+        font-size: clamp(30px, 10vw, 48px);
+        font-weight: 700;
+    }
+
     /*bio*/
 
     .bio {
         background-position-x: center;
-        background-position-y: -200px;
-        background-size: cover;
+        background-position-y: top;
+        background-size: 100%;
     }
 
     .bio-g {
@@ -294,11 +302,44 @@ h2.font-body.song-text-number {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+        min-height: 90vh;
     }
 
-    .bio-text {
-        width: 100%;
+    .bio-text h2 {
+        font-family: var(--title-family);
+        font-size: clamp(55px, 10vw, 65px);
+        font-weight: 600;
+        margin: 0%;
+        padding: 0%;
     }
+
+    .bio-text h6 {
+        font-family: var(--title-family);
+        font-size: clamp(16px, 4vw, 20px);
+        font-weight: 500;
+        margin: 0;
+        padding: 2% 0%;
+    }
+
+    .bio-text p {
+        font-family: var(--body-family);
+        font-size: clamp(12px, 4vw, 16px);
+        line-height: 28px;
+    }
+
+    /*data*/
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .row {
+        padding: 0 25px;
+    }
+
 
     /*vedio*/
     .video-img1 {
@@ -313,25 +354,12 @@ h2.font-body.song-text-number {
     }
 
     /*song*/
-    .song-column {
-        width: 100%;
-        display: block;
-    }
-}
-
-@media screen and (max-width:500px) {
-
-    /*data*/
-    .data-row {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
+    .top-song-card-img {
+        grid-column: 1;
+        min-height: 361px;
     }
 
-    .songs-grid {
-        flex-direction: column;
+    .top-song-card {
+        grid-column: 1;
     }
 }
