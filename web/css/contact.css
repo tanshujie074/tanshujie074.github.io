@@ -122,16 +122,18 @@ h4.font-body {
 }
 
 @media screen and (max-width:500px) {
+
     .img {
         background-image: url(../img/contact-images/contact-images-mobile-size.png);
         width: 100%;
-        height: 250vh;
+        height: 230vh;
         background-size: cover;
         margin-top: 5%;
     }
 
     label {
-        max-width: 300px;
+        max-width: 80%;
+        word-wrap: break-word;
         color: var(--font-color);
         margin-bottom: 1%;
         display: block;
@@ -140,7 +142,6 @@ h4.font-body {
     }
 
     input[type=text] {
-        width: 100%;
         padding: 10px;
         width: 80%;
         background-color: var(--main-color-white);
@@ -150,10 +151,16 @@ h4.font-body {
         font-size: clamp(16px, 3vw, 20px);
     }
 
+
+    .frame {
+        width: 100%;
+    }
+
     .container-box {
         background-color: var(--main-color-blue);
-        width: clamp(250px, 95vh, 450px);
+        width: 90%;
         margin-top: 10%;
         gap: 20px;
+        max-width: 450px;
     }
 }
