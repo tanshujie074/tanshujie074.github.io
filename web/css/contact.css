@@ -130,14 +130,7 @@ h4.font-body {
 }
 
 @media screen and (max-width:500px) {
-    .img {
-        background-image: url(../img/contact-images/contact-images-mobile-size.png);
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        margin-top: 5%;
-        background-position: center top;
-    }
+
 
     label {
         max-width: 80%;
