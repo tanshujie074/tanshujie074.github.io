@@ -11,16 +11,21 @@ body {
     background-repeat: no-repeat;
     object-fit: cover;
     width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 
 .title {
-
     font-weight: 650;
+    position: absolute;
+    bottom: 20%;
 }
 
 .title-content {
     align-items: center;
+    position: absolute;
+    bottom: 0;
 }
 
 .product-container {
@@ -49,6 +54,12 @@ body {
     box-sizing: border-box;
     width: 100%;
     word-wrap: break-word;
+}
+
+div.price {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
 }
 
 .product-item-price {
@@ -103,11 +114,13 @@ h4.font-title {
 .font-body h2,
 h2.font-body {
     font-size: clamp(20px, 4vw, 24px);
+    font-weight: 600;
 }
 
 .font-body h3,
 h3.font-body {
     font-size: clamp(18px, 3.5vw, 22px);
+    font-weight: 400;
 }
 
 
@@ -126,6 +139,8 @@ h3.font-body {
         display: flex;
         justify-content: flex-start;
         margin: 0 25px;
+        bottom: 28%;
+        left: 0;
     }
 
     .title-content {
@@ -133,6 +148,7 @@ h3.font-body {
         display: flex;
         justify-content: flex-start;
         margin: 0 25px;
+        left: 0;
     }
 
     .frame {
@@ -142,12 +158,25 @@ h3.font-body {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .product-item {
         flex: 1 1 calc(100%);
         max-width: calc(100%);
         display: flex;
         flex-direction: column;
+    }
+
+    .title {
+        margin: 0 25px;
+        bottom: 20%;
+        left: 0;
+    }
+
+    .title-content {
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
 }
