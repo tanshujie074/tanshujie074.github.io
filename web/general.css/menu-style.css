@@ -61,11 +61,11 @@ nav .navbar {
 
 .social {
     display: flex;
-    column-gap: 10px;
+    column-gap: clamp(5px, 2vw, 10px);
 }
 
 .social i {
-    font-size: 30px;
+    font-size: clamp(25px, 5vw, 30px);
 }
 
 .social i:hover {
@@ -165,10 +165,6 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
 
     .logo {
         line-height: 85px;
-    }
-
-    .social i {
-        font-size: 28px;
     }
 }
 
@@ -297,17 +293,10 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
     }
 
     .social i {
-        font-size: 30px;
+        font-size: clamp(28px, 3vw, 30px);
     }
 
     .social {
-        column-gap: 5px;
-    }
-}
-
-@media (max-width:500px) {
-
-    .social i {
-        font-size: 16px;
+        column-gap: clamp(3px, 2vw, 5px);
     }
 }
