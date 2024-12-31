@@ -139,7 +139,8 @@ h3.font-body {
         display: flex;
         justify-content: flex-start;
         margin: 0 25px;
-        bottom: 25%;
+        bottom: 28%;
+        left: 0;
     }
 
     .title-content {
@@ -147,6 +148,7 @@ h3.font-body {
         display: flex;
         justify-content: flex-start;
         margin: 0 25px;
+        left: 0;
     }
 
     .frame {
@@ -165,10 +167,16 @@ h3.font-body {
     }
 
     .title {
-        display: flex;
-        justify-content: flex-start;
         margin: 0 25px;
         bottom: 20%;
+        left: 0;
+    }
+
+    .title-content {
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
 }
