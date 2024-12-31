@@ -212,15 +212,11 @@ h3.song-category {
     margin-top: 15px;
 }
 
-.song-container-1 {
+.song-container-top-width {
     width: 50%;
 }
 
-.song-container-2 {
-    width: 50%;
-}
-
-.song-container-3 {
+.song-container-bottom-width {
     width: 49.3%;
 }
 
