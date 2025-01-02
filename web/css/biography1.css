@@ -186,6 +186,10 @@ body {
     justify-content: end;
 }
 
+.video-text1 {
+    min-height: 480px;
+}
+
 .font-body h1,
 h1.font-body {
     margin: 0px;
@@ -340,6 +344,19 @@ h2.font-body {
         padding: 0 25px;
     }
 
+    /*song*/
+    .top-song-card-img {
+        grid-column: 1;
+        min-height: 361px;
+    }
+
+    .top-song-card {
+        grid-column: 1;
+    }
+}
+
+
+@media screen and (max-width:500px) {
 
     /*vedio*/
     .video-img1 {
@@ -351,15 +368,5 @@ h2.font-body {
     .v-img2 {
         grid-column: 1;
         min-height: 200px;
-    }
-
-    /*song*/
-    .top-song-card-img {
-        grid-column: 1;
-        min-height: 361px;
-    }
-
-    .top-song-card {
-        grid-column: 1;
     }
 }
