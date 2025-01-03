@@ -173,6 +173,7 @@ h2.font-body {
 
     .info-box {
         width: 100%;
+        padding: clamp(25px, 5vw, 20px) clamp(25px, 3vw, 20px);
     }
 }
 
@@ -185,34 +186,12 @@ h2.font-body {
         background-position-x: -60px;
     }
 
-    .breif-font {
-        display: none;
-    }
-
     .font-body h2,
     h2.font-body {
         margin: 20px 0;
     }
 
-    /*live-card*/
-    .live-card {
-        min-height: clamp(400px, 70vh, 800px);
-    }
-
-    .overlay {
-        min-height: clamp(400px, 65vh, 600px);
-    }
-
-    /*live image*/
-    .live-image {
-        min-height: clamp(400px, 65vh, 600px);
-    }
-
     .info-box {
-        padding: clamp(20px, 5vw, 25px) clamp(15px, 3vw, 20px);
-    }
-
-    .phone-breif {
-        display: block;
+        padding: clamp(20px, 5vw, 15px) clamp(15px, 3vw, 10px);
     }
 }
