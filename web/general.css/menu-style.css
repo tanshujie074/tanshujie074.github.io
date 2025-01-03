@@ -94,7 +94,7 @@ nav .navbar .nav-links .links li {
     display: flex;
     align-items: center;
     list-style: none;
-    padding: 0 14px;
+    padding: 0 clamp(8px, 5vw, 20px);
 }
 
 nav .navbar .nav-links .links li a {
@@ -172,7 +172,7 @@ nav .navbar .nav-links .links li:hover .live-news-arrow {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     nav .navbar {
         max-width: 100%;
         padding: 0 25px;

@@ -25,13 +25,8 @@
     background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
 }
 
-.live-c {
-    padding: 20px 0;
-}
-
 .live-title {
-    min-height: 75vh;
-    --view-height: clamp(400px, 85vh, 600px);
+    min-height: clamp(500px, 75vh, 600px);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -45,19 +40,21 @@ h1.font-title {
 
 /*live-card*/
 .live-card {
+    min-height: clamp(400px, 75vh, 700px);
+    background-color: #07175B;
     display: flex;
     position: relative;
 }
 
-.live-card:hover {
+.live-card-hover:hover {
     cursor: pointer;
 }
 
 /*live image*/
 .live-image {
-    height: 70vh;
     width: 70%;
-    display: block;
+    min-height: clamp(300px, 70vh, 700px);
+    height: 100%;
 }
 
 .live1 {
@@ -79,7 +76,7 @@ h1.font-title {
 .date {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: clamp(5px, 5vw, 10px);
 }
 
 .date-icon {
@@ -97,21 +94,22 @@ h6.font-body {
     display: flex;
     justify-content: end;
     align-items: center;
+    min-height: clamp(300px, 70vh, 600px);
     width: 100%;
-    height: 70vh;
+    background-color: rgba(240, 248, 255, 0.347);
 }
 
 .info-box {
-    padding: clamp(30px, 5vw, 40px) clamp(10px, 3vw, 30px);
-    background-color: var(--background-color);
-    width: 50%;
+    padding: clamp(20px, 5vw, 40px) clamp(10px, 3vw, 30px);
+    background-color: red;
+    width: 55%;
     height: fit-content;
 }
 
 .font-body h2,
 h2.font-body {
     font-weight: 650;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
 }
 
 .font-body p,
@@ -123,11 +121,20 @@ p.font-body {
     float: right;
 }
 
-@media screen and (max-width:1024px) {}
+.button-hover:hover {
+    background-color: var(--main-color-blue);
+    cursor: auto;
+}
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1024px) {
+    .info-box {
+        padding: clamp(10px, 5vw, 30px) clamp(5px, 3vw, 20px);
+    }
+}
+
+@media screen and (max-width:900px) {
     .live-title {
-        height: 50vh;
+        min-height: clamp(400px, 50vh, 600px);
     }
 
     .live-image {
@@ -137,24 +144,11 @@ p.font-body {
     .overlay {
         display: flex;
         flex-direction: column;
-        height: 80vh;
     }
 
     .info-box {
-        padding: clamp(30px, 5vw, 40px) clamp(10px, 3vw, 30px);
-        background-color: var(--background-color);
         width: 100%;
     }
-
-
-    .live-c {
-        padding: 100px 0;
-    }
 }
 
-@media screen and (max-width:500px) {
-    .overlay {
-        height: 80vh;
-    }
-
-}
+@media screen and (max-width:500px) {}
