@@ -100,7 +100,7 @@ h5.font-title {
     align-items: center;
 }
 
-.item-box:hover {
+.item-box-hover:hover {
     background-color: var(--accent-color);
     cursor: pointer;
 }
@@ -185,7 +185,7 @@ h3.font-body {
     padding: clamp(10px, 5vw, 20px);
 }
 
-.card:hover {
+.card-hover:hover {
     background-color: var(--background-color);
     border: white solid 2px;
     cursor: pointer;
@@ -260,7 +260,7 @@ h3.font-body {
     background-size: cover;
 }
 
-.store-card:hover {
+.store-card-hover:hover {
     cursor: pointer;
     border: white solid 2px;
 }
@@ -269,7 +269,7 @@ h3.font-body {
     background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0)), url(../img/home-images/doll.png);
 }
 
-.store-card1:hover {
+.store-card-hover:hover {
     background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsl(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.785), hsla(240, 4%, 11%, 0.308), hsla(240, 4%, 11%, 0.308), hsl(240, 4%, 11%, 0.027), hsl(240, 4%, 11%, 0)), url(../img/home-images/doll.png);
 }
 
@@ -277,16 +277,8 @@ h3.font-body {
     background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0)), url(../img/home-images/t-shirt.png);
 }
 
-.store-card2:hover {
-    background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsl(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.785), hsla(240, 4%, 11%, 0.308), hsla(240, 4%, 11%, 0.308), hsl(240, 4%, 11%, 0.027), hsl(240, 4%, 11%, 0)), url(../img/home-images/t-shirt.png);
-}
-
 .store-card3 {
     background-image: linear-gradient(to top, hsl(8, 92%, 33%), hsl(8, 92%, 33%, 0.98), hsla(8, 92%, 33%, 0.785), hsla(8, 92%, 33%, 0.308), hsla(8, 92%, 33%, 0.308), hsl(8, 92%, 33%, 0.027), hsl(8, 92%, 33%, 0)), url(../img/home-images/stand.png);
-}
-
-.store-card3:hover {
-    background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsl(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.785), hsla(240, 4%, 11%, 0.308), hsla(240, 4%, 11%, 0.308), hsl(240, 4%, 11%, 0.027), hsl(240, 4%, 11%, 0)), url(../img/home-images/stand.png);
 }
 
 .store-text {
