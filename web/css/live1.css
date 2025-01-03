@@ -16,8 +16,8 @@
 .live-hero-image {
     background-image: url(../img/live-images/livepage-herobackground.jpeg);
     background-size: cover;
-    background-size: 135%;
-    background-position-y: -700px;
+    background-size: 120%;
+    background-position-y: -400px;
     background-repeat: no-repeat;
 }
 
@@ -53,7 +53,7 @@ h1.font-title {
 /*live image*/
 .live-image {
     width: 70%;
-    min-height: clamp(300px, 70vh, 700px);
+    min-height: clamp(400px, 70vh, 800px);
     height: 100%;
 }
 
@@ -62,7 +62,6 @@ h1.font-title {
     background-size: cover;
     background-size: 135%;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 .live2 {
@@ -83,11 +82,11 @@ h1.font-title {
     max-width: 25px;
 }
 
-.font-body h6,
-h6.font-body {
+.date-font {
     margin: 0px;
     font-weight: 300;
 }
+
 
 .overlay {
     position: absolute;
@@ -100,7 +99,7 @@ h6.font-body {
 }
 
 .info-box {
-    padding: clamp(20px, 5vw, 40px) clamp(10px, 3vw, 30px);
+    padding: clamp(30px, 5vw, 25px) clamp(30px, 3vw, 25px);
     background-color: red;
     width: 55%;
     height: fit-content;
@@ -112,9 +111,13 @@ h2.font-body {
     margin: 10px 0;
 }
 
-.font-body p,
-p.font-body {
-    line-height: 25px;
+.breif-font {
+    font-weight: 500;
+    margin: clamp(15px, 5vw, 20px) 0px;
+}
+
+.phone-breif {
+    display: none;
 }
 
 .live-button {
@@ -127,23 +130,45 @@ p.font-body {
 }
 
 @media screen and (max-width:1024px) {
-    .info-box {
-        padding: clamp(10px, 5vw, 30px) clamp(5px, 3vw, 20px);
+    .live-hero-image {
+        background-image: url(../img/live-images/livepage-herobackground.jpeg);
+        background-size: cover;
+        background-size: 130%;
+        background-position-y: -300px;
+        background-repeat: no-repeat;
+    }
+
+    .breif-font {
+        font-weight: 500;
+        margin: clamp(10px, 5vw, 15px) 0px;
     }
 }
 
 @media screen and (max-width:900px) {
+
+    /*title*/
+    .live-hero-image {
+        background-size: 150%;
+        background-position-y: center;
+    }
+
     .live-title {
         min-height: clamp(400px, 50vh, 600px);
     }
 
+    .live-card {
+        min-height: clamp(500px, 90vh, 800px);
+    }
+
     .live-image {
         width: 100%;
+        min-height: clamp(400px, 75vh, 700px);
     }
 
     .overlay {
         display: flex;
         flex-direction: column;
+        min-height: clamp(400px, 85vh, 700px);
     }
 
     .info-box {
@@ -151,4 +176,43 @@ p.font-body {
     }
 }
 
-@media screen and (max-width:500px) {}
+@media screen and (max-width:500px) {
+
+    /*title*/
+    .live-hero-image {
+        background-size: 200%;
+        background-position-y: center;
+        background-position-x: -60px;
+    }
+
+    .breif-font {
+        display: none;
+    }
+
+    .font-body h2,
+    h2.font-body {
+        margin: 20px 0;
+    }
+
+    /*live-card*/
+    .live-card {
+        min-height: clamp(400px, 70vh, 800px);
+    }
+
+    .overlay {
+        min-height: clamp(400px, 65vh, 600px);
+    }
+
+    /*live image*/
+    .live-image {
+        min-height: clamp(400px, 65vh, 600px);
+    }
+
+    .info-box {
+        padding: clamp(20px, 5vw, 25px) clamp(15px, 3vw, 20px);
+    }
+
+    .phone-breif {
+        display: block;
+    }
+}
