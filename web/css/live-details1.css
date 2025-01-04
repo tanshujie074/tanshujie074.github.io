@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*height*/
+    --hero-height: clamp(550px, 80vh, 600px);
+    --view-height: clamp(700px, 80vh, 800px);
+    --banner-height: clamp(300px, 60vh, 600px);
+    /*color*/
+    --font-color: white;
+    --background-color: #1b1b1d;
+    --accent-color: #5D9DFE;
+    --main-color-blue: #07175B;
+    --main-color-red: #9F1C07;
+    --backgound-cover: hsla(240, 4%, 11%, 0.621);
+}
+
+.font-title h2,
+h2.font-title,
+.font-title h4,
+h4.font-title,
+.font-body h2,
+h2.font-body,
+.font-body h5,
+h5.font-body {
+    margin: 0px;
+}
+
+/*breadcrumb*/
+li.the-on-page.phone {
+    display: none;
+}
+
+li.the-on-page.phone-320px {
+    display: none;
+}
+
+/*live-details-title*/
+.live-details-title {
+    height: var(--hero-height);
+    background-image: url(../img/live-details-images/live-details-hibana.jpeg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+}
+
+.title-g {
+    background-color: var(--backgound-cover);
+    height: var(--hero-height);
+    width: 100%;
+}
+
+.title-c {
+    position: relative;
+    top: 65px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.live-details-font-title,
+.font-title h4,
+h4.font-title {
+    text-transform: uppercase;
+}
+
+
+/*tour overview*/
+.tour-overview-r {
+    min-height: var(--view-height);
+    background-color: #07175B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tour-overview-c {
+    min-height: clamp(600px, 60vh, 700px);
+    background-color: #5D9DFE;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 60%;
+    gap: clamp(20px, 10vw, 80px);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.tour-overview-box-row {
+    display: flex;
+    padding-top: clamp(40px, 10vw, 80px);
+}
+
+.tour-overview-box {
+    display: flex;
+    gap: clamp(10px, 5vw, 20px);
+    flex: 1;
+}
+
+.tour-overview-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.tour-overview-icon img {
+    width: clamp(14px, 2vw, 40px);
+}
+
+.font-body h2,
+h2.font-body {
+    font-weight: 650;
+    padding-bottom: 10px;
+}
+
+
+.font-body h5,
+h5.font-body {
+    font-weight: 400;
+}
+
+
+@media screen and (max-width:1024px) {
+    .live-details-title {
+        background-position-x: center;
+        background-position-y: -100px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .live-details-title {
+        background-position-x: center;
+        background-position-y: -100px;
+        background-size: 150%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    /*breadcrumb*/
+    li.the-on-page.desktop {
+        display: none;
+    }
+
+    li.the-on-page.phone {
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .live-details-title {
+        background-position-x: center;
+        background-position-y: 60px;
+    }
+
+    /*live tour overview*/
+    .tour-overview-c {
+        flex-direction: column;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .tour-overview-box-row {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    /*comment*/
+    .comment {
+        background-size: cover;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    /*breadcrumb*/
+    li.the-on-page.phone {
+        display: none;
+    }
+
+    li.the-on-page.phone-320px {
+        display: inline-block;
+        width: fit-content;
+    }
+}

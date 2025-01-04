@@ -66,13 +66,13 @@ a.breadcrumb-a {
     text-decoration-thickness: 1.5px;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1024px) {
     ul.breadcrumb {
         padding: 0px 50px;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     ul.breadcrumb {
         padding: 0 25px;
     }

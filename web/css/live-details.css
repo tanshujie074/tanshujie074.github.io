@@ -4,8 +4,8 @@
 
 :root {
     /*height*/
-    --hero-height: clamp(550px, 90vh, 900px);
-    --view-height: clamp(700px, 80vh, 800px);
+    --hero-height: clamp(550px, 80vh, 600px);
+    --view-height: clamp(800px, 80vh, 900px);
     --banner-height: clamp(300px, 60vh, 600px);
     /*color*/
     --font-color: white;
@@ -67,152 +67,46 @@ h4.font-title {
     text-transform: uppercase;
 }
 
+
 /*tour overview*/
-.tour-overview {
+.tour-overview-r {
     min-height: var(--view-height);
+    padding: clamp(20px, 10vw, 70px) 0;
+    background-color: #07175B;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .tour-overview-c {
+    background-color: #5D9DFE;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    height: 60%;
     gap: clamp(20px, 10vw, 80px);
 }
 
-.tour-overview-box-row {
-    display: flex;
-    padding-top: clamp(40px, 10vw, 80px);
+.column {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 136, 255);
 }
 
-.tour-overview-box {
-    display: flex;
-    gap: clamp(10px, 5vw, 20px);
-    flex: 1;
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-color: #9F1C07;
+    overflow: hidden;
 }
 
-.tour-overview-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.tour-overview-icon img {
-    width: clamp(14px, 2vw, 40px);
-}
-
-.font-body h2,
-h2.font-body {
-    font-weight: 650;
-    padding-bottom: 10px;
-}
-
-
-.font-body h5,
-h5.font-body {
-    font-weight: 400;
-}
-
-/*comment*/
-.comment {
-    height: var(--banner-height);
-    background-image: url(../img/live-details-images/live-details-comment-background.jpg);
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: -250px;
-    background-repeat: no-repeat;
-}
-
-.comment-g {
-    background-color: var(--backgound-cover);
-    height: var(--banner-height);
-}
-
-.comment-c {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-
-h2.comment-font-body {
-    font-weight: 400;
-    line-height: clamp(40px, 5vw, 60px);
-}
-
-@media screen and (max-width:1024px) {
-    .live-details-title {
-        background-position-x: center;
-        background-position-y: -100px;
-    }
-
-}
-
-@media screen and (max-width:800px) {
-    .live-details-title {
-        background-position-x: center;
-        background-position-y: -100px;
-        background-size: 150%;
-    }
-}
-
-@media screen and (max-width:500px) {
-
-    /*breadcrumb*/
-    li.the-on-page.desktop {
-        display: none;
-    }
-
-    li.the-on-page.phone {
-        display: inline-block;
-        width: fit-content;
-    }
-
-    .live-details-title {
-        background-position-x: center;
-        background-position-y: 60px;
-    }
-
-    /*live tour overview*/
-    .tour-overview-c {
-        flex-direction: column;
-        align-items: center;
-        min-height: 90vh;
-    }
-
-    video {
-        width: 100%;
-    }
-
-    .tour-overview-box-row {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 20px;
-    }
-
-    /*comment*/
-    .comment {
-        background-size: cover;
-        background-position-x: center;
-        background-repeat: no-repeat;
-    }
-}
-
-@media screen and (max-width:320px) {
-
-    /*breadcrumb*/
-    li.the-on-page.phone {
-        display: none;
-    }
-
-    li.the-on-page.phone-320px {
-        display: inline-block;
-        width: fit-content;
-    }
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
