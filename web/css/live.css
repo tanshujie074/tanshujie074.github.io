@@ -23,6 +23,10 @@
     background-repeat: no-repeat;
 }
 
+.live-hero-g {
+    background-image: linear-gradient(to top, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+}
+
 .live-title {
     min-height: clamp(500px, 75vh, 600px);
     display: flex;
@@ -160,8 +164,6 @@ h2.font-body {
 
 @media screen and (max-width:1024px) {
     .live-hero-image {
-        background-image: url(../img/live-images/livepage-herobackground.jpeg);
-        background-size: cover;
         background-size: 130%;
         background-position-y: -300px;
         background-repeat: no-repeat;
