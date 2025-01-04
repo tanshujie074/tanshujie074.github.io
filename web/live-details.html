@@ -125,13 +125,16 @@
         <div class="tour-overview">
             <div class="row tour-overview-r">
                 <div class="container tour-overview-c">
-                    <video width="40%" controls loop autoplay muted>
-                        <source src="img/live-details-images/live-details-hibana-video.mp4" type="video/mp4"
-                            alt="Hibana-vedio">
-                        <source src="img/live-details-images/live-details-hibana.ogg" type="video/ogg"
-                            alt="Hibana-vedio">
-                        Your browser does not support the video tag.
-                    </video>
+                    <div class="video-container">
+                        <video controls loop autoplay muted poster="placeholder1.jpg" class="lazy-video">
+                            <source data-src="img/live-details-images/live-details-hibana-video.mp4" type="video/mp4"
+                                alt="Hibana-vedio">
+                            <source data-src="img/live-details-images/live-details-hibana.ogg" type="video/ogg"
+                                alt="Hibana-vedio">
+                            <div class="placeholder">Loading video...</div>
+                        </video>
+                    </div>
+
                     <div class="tour-overview-text">
                         <h2 class="font-title">Tour Overview</h2>
 
@@ -196,6 +199,7 @@
     </main>
 
     <script src="js/menu.js"></script>
+    <script src="js/loading-image.js"></script>
 </body>
 
 </html>
