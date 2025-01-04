@@ -5,8 +5,9 @@
 :root {
     /*height*/
     --hero-height: clamp(550px, 80vh, 600px);
-    --view-height: clamp(700px, 80vh, 800px);
-    --banner-height: clamp(300px, 60vh, 600px);
+    --view-height: clamp(800px, 80vh, 900px);
+    --banner-height: clamp(400px, 75vh, 600px);
+    --ticker-height: clamp(700px, 75vh, 900px);
     /*color*/
     --font-color: white;
     --background-color: #1b1b1d;
@@ -16,14 +17,17 @@
     --backgound-cover: hsla(240, 4%, 11%, 0.621);
 }
 
-.font-title h2,
-h2.font-title,
-.font-title h4,
-h4.font-title,
+.live-details-font-title,
 .font-body h2,
 h2.font-body,
+.font-body h1,
+h1.font-body,
+.font-title h4,
+h4.font-title,
 .font-body h5,
-h5.font-body {
+h5.font-body,
+.font-body h6,
+h6.font-body {
     margin: 0px;
 }
 
@@ -67,83 +71,227 @@ h4.font-title {
     text-transform: uppercase;
 }
 
-
-/*tour overview*/
+/*tour-overview*/
 .tour-overview-r {
-    padding: clamp(10px, 10vw, 20px) 0;
-    background-color: #07175B;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: var(--view-height);
 }
 
 .tour-overview-c {
-    background-color: #5D9DFE;
+    height: 85%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
+    background-color: #5D9DFE;
+    gap: 2rem;
 }
 
-.column {
-    float: left;
-    width: 50%;
-    background-color: rgb(0, 0, 0);
-}
-
-.tour-overview-box {
+.text-section {
+    height: 100%;
+    flex: 1;
+    background-color: #9F1C07;
     display: flex;
-    gap: clamp(10px, 5vw, 20px);
+    flex-direction: column;
+    justify-content: end;
 }
 
-.tour-overview-box-c {
+.info-item {
+    display: flex;
+    gap: clamp(10px, 5%, 20px);
+}
+
+.text-section .info {
     display: grid;
-    gap: 10px;
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
+    grid-template-columns: 1fr 1fr;
 }
 
-.tour-overview-box1,
-.tour-overview-box2 {
-    display: flex;
-    gap: clamp(10px, 5vw, 20px);
+.text-section .font-title h2,
+.text-section h2.font-title {
+    padding-bottom: 5%;
 }
 
-.tour-overview-box1 {
-    grid-column: 1;
+.info .info-item {
+    padding-bottom: 20%;
 }
 
-.tour-overview-box2 {
-    grid-column: 2;
-}
-
-.tour-overview-box-text-title {
+.info-item-text-title {
     font-weight: 650;
 }
 
 
-.tour-overview-box-text-body {
+.info-item-text-body,
+.comment-text-body {
     font-weight: 400;
 }
 
-
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
+    flex: 1;
+    aspect-ratio: 3 / 4;
     overflow: hidden;
 }
 
-
-video {
+.video-container video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/*comment*/
+.comment {
+    height: var(--banner-height);
+    background-image: url(../img/live-details-images/live-details-comment-background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.comment-g {
+    background-color: var(--backgound-cover);
+    height: var(--banner-height);
+    width: 100%;
+    padding-top: clamp(10px, 5vw, 20px);
+    padding-bottom: clamp(10px, 5vw, 20px);
+}
+
+.comment-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/*ticker information*/
+.ticker-r {
+    height: var(--ticker-height);
+}
+
+.ticker-c {
+    height: 80%;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.column-gap {
+    padding-right: clamp(10px, 5vw, 20px);
+}
+
+.ticker-card {
+    background-color: var(--main-color-blue);
+    padding: clamp(10px, 5vw, 15px);
+    min-height: 388px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ticker-icon {
+    max-height: 60px;
+    height: 100%;
+}
+
+.ticker-icon-box {
+    background-color: var(--background-color);
+    width: fit-content;
+    padding: clamp(5px, 5vw, 8px);
+    border: var(--font-color) 2px solid;
+}
+
+.ticker-card-text li {
+    margin: clamp(5px, 5vw, 10px);
+}
 
 
+.ticker-card-text-h2 {
+    font-weight: 650;
+}
+
+.ticker-card-text-H5,
+.ticker-card-text-H6 {
+    font-weight: 400;
+}
+
+/*note*/
+.note {
+    height: var(--banner-height);
+    background-image: url(../img/live-details-images/live-details-note-background-images.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.note-g {
+    background-color: var(--backgound-cover);
+    height: var(--banner-height);
+}
+
+.note-c {
+    height: 50%;
+}
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.note-icon {
+    max-width: 85px;
+}
+
+.note-breif {
+    font-weight: 300;
+}
+
+/*details*/
+.details {
+    background-image: url(../img/live-details-images/live-details-details-background-images.jpeg);
+    height: var(--hero-height);
+    background-size: cover;
+    background-position-y: -300px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.details-g {
+    background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    height: var(--hero-height);
+}
+
+.details-c {
+    height: 90%;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    row-gap: 20px;
+    min-height: fit-content;
+}
+
+.item-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-box1 {
+    margin-bottom: 20px;
+}
 
 @media screen and (max-width:1024px) {
     .live-details-title {
@@ -153,11 +301,77 @@ video {
 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
+
+
     .live-details-title {
         background-position-x: center;
         background-position-y: -100px;
         background-size: 150%;
+    }
+
+    .tour-overview-c {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-container {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-section {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .info .info-item {
+        padding-bottom: 5%;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: clamp(10px, 5vh, 20px);
+    }
+
+    .column-gap {
+        padding-right: 0px;
+    }
+
+    .column-gap {
+        padding-right: clamp(8px, 5vw, 10px);
+    }
+
+    /*details*/
+    .details {
+        background-image: url(../img/live-details-images/live-details-details-background-images.jpeg);
+        height: var(--hero-height);
+        background-position-y: 80px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .details-g {
+        background-image: linear-gradient(to bottom, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+        height: var(--hero-height);
+    }
+
+    .details-c {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .details-text {
+        max-width: 1000px;
     }
 }
 
@@ -173,33 +387,21 @@ video {
         width: fit-content;
     }
 
+    /*title*/
     .live-details-title {
         background-position-x: center;
         background-position-y: 60px;
     }
 
-    /*live tour overview*/
-    .tour-overview-c {
-        flex-direction: column;
-        align-items: center;
-        min-height: 90vh;
+    .text-section .info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(10px, 5%, 20px);
     }
 
-    video {
-        width: 100%;
-    }
-
-    .tour-overview-box-row {
-        flex-direction: column;
-        gap: 20px;
-        padding-top: 20px;
-    }
-
-    /*comment*/
-    .comment {
-        background-size: cover;
-        background-position-x: center;
-        background-repeat: no-repeat;
+    /*ticker information*/
+    .ticker-icon {
+        max-height: 40px;
     }
 }
 
