@@ -228,6 +228,21 @@ h2.font-body {
         margin: 20px 0;
     }
 
+    .live-card {
+        min-height: clamp(500px, 75vh, 800px);
+    }
+
+    .live-image {
+        width: 100%;
+        min-height: clamp(400px, 70vh, 700px);
+    }
+
+    .overlay {
+        display: flex;
+        flex-direction: column;
+        min-height: clamp(400px, 70vh, 700px);
+    }
+
     .info-box {
         padding: clamp(20px, 5vw, 15px) clamp(15px, 3vw, 10px);
     }
@@ -255,7 +270,8 @@ h2.font-body {
     }
 
     .live5 {
-        background-position-y: center;
-        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: center;
+        background-size: 110%;
     }
 }
