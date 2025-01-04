@@ -72,7 +72,7 @@ a.breadcrumb-a {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     ul.breadcrumb {
         padding: 0 25px;
     }

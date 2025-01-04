@@ -70,7 +70,7 @@ h4.font-title {
 
 /*tour overview*/
 .tour-overview-r {
-    min-height: var(--view-height);
+    padding: clamp(10px, 10vw, 20px) 0;
     background-color: #07175B;
     display: flex;
     flex-direction: column;
@@ -78,53 +78,71 @@ h4.font-title {
 }
 
 .tour-overview-c {
-    min-height: clamp(600px, 60vh, 700px);
     background-color: #5D9DFE;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    height: 60%;
-    gap: clamp(20px, 10vw, 80px);
 }
 
 .column {
     float: left;
     width: 50%;
-    height: 100%;
-}
-
-.tour-overview-box-row {
-    display: flex;
-    padding-top: clamp(40px, 10vw, 80px);
+    background-color: rgb(0, 0, 0);
 }
 
 .tour-overview-box {
     display: flex;
     gap: clamp(10px, 5vw, 20px);
-    flex: 1;
 }
 
-.tour-overview-text {
+.tour-overview-box-c {
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+}
+
+.tour-overview-box1,
+.tour-overview-box2 {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    gap: clamp(10px, 5vw, 20px);
 }
 
-.tour-overview-icon img {
-    width: clamp(14px, 2vw, 40px);
+.tour-overview-box1 {
+    grid-column: 1;
 }
 
-.font-body h2,
-h2.font-body {
+.tour-overview-box2 {
+    grid-column: 2;
+}
+
+.tour-overview-box-text-title {
     font-weight: 650;
-    padding-bottom: 10px;
 }
 
 
-.font-body h5,
-h5.font-body {
+.tour-overview-box-text-body {
     font-weight: 400;
 }
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 
 @media screen and (max-width:1024px) {
