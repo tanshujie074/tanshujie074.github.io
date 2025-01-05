@@ -247,6 +247,39 @@ h4.font-title {
     justify-content: space-between;
 }
 
+/*note*/
+.note {
+    height: var(--banner-height);
+    background-image: url(../img/live-details-images/live-details-note-background-images.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.note-g {
+    background-color: var(--backgound-cover);
+    height: var(--banner-height);
+}
+
+.note-c {
+    height: 50%;
+}
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.note-icon {
+    max-width: 85px;
+}
+
+.note-breif {
+    font-weight: 300;
+}
+
 @media screen and (max-width:1090px) {
     .comment-text {
         gap: clamp(4px, 5%, 8px);
