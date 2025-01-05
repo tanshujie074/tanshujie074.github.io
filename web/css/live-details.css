@@ -4,7 +4,7 @@
 
 :root {
     /*height*/
-    --hero-height: clamp(500px, 60vh, 600px);
+    --hero-height: clamp(500px, 60vh, 900px);
     --view-height: clamp(900px, 80vh, 900px);
     --banner-height: clamp(430px, 40vh, 600px);
     --ticker-height: clamp(750px, 70vh, 900px);
