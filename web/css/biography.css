@@ -21,7 +21,7 @@
 /*title*/
 .bio-title {
     height: var(--hero-height);
-    background-image: url(../img/biography-images/hero-images.jpeg);
+    background-image: url(../img/biography-images/bio-page-hero-images.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -43,12 +43,11 @@
 
 /*bio*/
 .bio {
-    background-image: url(../img/biography-images/ado1.jpg);
+    background-image: url(../img/biography-images/bio-page-profile.jpg);
     background-size: cover;
-    background-size: 110%;
-    background-position-x: -400px;
-    background-position-y: -350px;
-    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position-x: -277px;
+    background-position-y: bottom;
     height: var(--view-height);
 }
 
@@ -94,6 +93,7 @@ p.font-body {
     line-height: 28px;
 }
 
+
 /*data*/
 .data {
     height: clamp(300px, 30vh, 320px);
@@ -132,83 +132,12 @@ p.font-body {
     font-weight: 400;
 }
 
-/*TOP YOUTUBE VIDEOS*/
-.top-video {
-    min-height: var(--view-height);
-    background-image: url(../img/biography-images/Ado-Live-Tour-2023-2-Budokan-A.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.video-g {
-    background-color: hsla(240, 4%, 11%, 0.685);
-}
-
-.top-row {
-    display: grid;
-    gap: 10px;
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
-}
-
-.video-text {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.video-text1 {
-    min-height: 480px;
-}
-
-.font-body h1,
-h1.font-body,
-.font-title h4,
-h4.font-title,
-.font-body h2,
-h2.font-body {
-    margin: 0px;
-}
-
-.font-body h2,
-h2.font-body {
-    line-height: 60%;
-}
-
-.video-img1 {
-    background-image: url(../img/biography-images/Usseewa.jpg);
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
-    grid-column: 1;
-    grid-row: 1 / span 2;
-}
-
-.v-img2 {
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
-    grid-column: 2;
-}
-
-.video-img2 {
-    background-image: url(../img/biography-images/Odo.jpeg);
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
-}
-
-.video-img3 {
-    background-image: url(../img/biography-images/show.jpg);
-}
-
 
 @media screen and (max-width:1024px) {
     .bio {
-        background-position-x: -250px;
-        background-position-y: center;
+        background-size: 100%;
+        background-position-x: -240px;
+        background-position-y: bottom;
     }
 }
 
@@ -249,17 +178,5 @@ h2.font-body {
 
     .data-item {
         margin-bottom: clamp(10px, 5vw, 20px);
-    }
-
-    /*vedio*/
-    .video-img1 {
-        background-image: url(../img/biography-images/Usseewa.jpg);
-        grid-column: 1;
-        min-height: 300px;
-    }
-
-    .v-img2 {
-        grid-column: 1;
-        min-height: 200px;
     }
 }

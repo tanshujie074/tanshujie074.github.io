@@ -5,7 +5,7 @@
 :root {
     /*height*/
     --hero-height: clamp(550px, 80vh, 600px);
-    --view-height: clamp(900px, 80vh, 900px);
+    --view-height: clamp(800px, 80vh, 900px);
     --banner-height: clamp(400px, 75vh, 600px);
     --ticker-height: clamp(700px, 75vh, 900px);
     /*color*/
@@ -77,7 +77,7 @@ h4.font-title {
 }
 
 .tour-overview-c {
-    height: 90%;
+    height: 85%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -127,6 +127,7 @@ h4.font-title {
 .video-container {
     height: 100%;
     flex: 1;
+    aspect-ratio: 3 / 4;
     overflow: hidden;
 }
 
@@ -136,14 +137,160 @@ h4.font-title {
     object-fit: cover;
 }
 
-.video {
-    display: none;
+/*comment*/
+.comment {
+    height: var(--banner-height);
+    background-image: url(../img/live-details-images/live-details-comment-background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
 
-.video.show {
-    display: block;
+.comment-g {
+    background-color: var(--backgound-cover);
+    height: var(--banner-height);
     width: 100%;
-    height: auto;
+    padding-top: clamp(10px, 5vw, 20px);
+    padding-bottom: clamp(10px, 5vw, 20px);
+}
+
+.comment-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/*ticker information*/
+.ticker-r {
+    height: var(--ticker-height);
+}
+
+.ticker-c {
+    height: 80%;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.column-gap {
+    padding-right: clamp(10px, 5vw, 20px);
+}
+
+.ticker-card {
+    background-color: var(--main-color-blue);
+    padding: clamp(10px, 5vw, 15px);
+    min-height: 388px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ticker-icon {
+    max-height: 60px;
+    height: 100%;
+}
+
+.ticker-icon-box {
+    background-color: var(--background-color);
+    width: fit-content;
+    padding: clamp(5px, 5vw, 8px);
+    border: var(--font-color) 2px solid;
+}
+
+.ticker-card-text li {
+    margin: clamp(5px, 5vw, 10px);
+}
+
+
+.ticker-card-text-h2 {
+    font-weight: 650;
+}
+
+.ticker-card-text-H5,
+.ticker-card-text-H6 {
+    font-weight: 400;
+}
+
+/*note*/
+.note {
+    height: var(--banner-height);
+    background-image: url(../img/live-details-images/live-details-note-background-images.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.note-g {
+    background-color: var(--backgound-cover);
+    height: var(--banner-height);
+}
+
+.note-c {
+    height: 50%;
+}
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.note-icon {
+    max-width: 85px;
+}
+
+.note-breif {
+    font-weight: 300;
+}
+
+/*details*/
+.details {
+    background-image: url(../img/live-details-images/live-details-details-background-images.jpeg);
+    height: var(--hero-height);
+    background-size: cover;
+    background-position-y: -300px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.details-g {
+    background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    height: var(--hero-height);
+}
+
+.details-c {
+    height: 90%;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    row-gap: 20px;
+    min-height: fit-content;
+}
+
+.item-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-box1 {
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width:1024px) {
@@ -155,6 +302,8 @@ h4.font-title {
 }
 
 @media screen and (max-width:900px) {
+
+
     .live-details-title {
         background-position-x: center;
         background-position-y: -100px;
@@ -200,6 +349,30 @@ h4.font-title {
         padding-right: clamp(8px, 5vw, 10px);
     }
 
+    /*details*/
+    .details {
+        background-image: url(../img/live-details-images/live-details-details-background-images.jpeg);
+        height: var(--hero-height);
+        background-position-y: 80px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .details-g {
+        background-image: linear-gradient(to bottom, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+        height: var(--hero-height);
+    }
+
+    .details-c {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .details-text {
+        max-width: 1000px;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -226,6 +399,10 @@ h4.font-title {
         gap: clamp(10px, 5%, 20px);
     }
 
+    /*ticker information*/
+    .ticker-icon {
+        max-height: 40px;
+    }
 }
 
 @media screen and (max-width:320px) {
