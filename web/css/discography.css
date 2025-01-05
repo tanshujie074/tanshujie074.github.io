@@ -103,25 +103,6 @@ div.artwork-description {
 
 }
 
-h6.label {
-    font-weight: 650;
-    background-color: #5D9DFE;
-    padding: 10px 20px;
-    margin: 15px 0px;
-}
-
-h6.date {
-    font-weight: 400;
-    margin: 15px 0px;
-
-}
-
-div.label-date {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
 h4.artwork-name {
     font-weight: 400;
     padding: 0px;
