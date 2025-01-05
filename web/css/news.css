@@ -9,15 +9,15 @@ body {
 }
 
 /*news*/
-.news-banner-top {
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-herobanner-top.jpg");
+.news-herobannerimg-top {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.4), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-herobanner-top.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 80%;
     height: 680px;
 }
 
-div.news-heading {
+div.news-heading-container {
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -57,12 +57,13 @@ div.news-content {
     padding-right: 20px;
 }
 
-div.news-content:hover {
+div.news-content-interactable:hover {
     background-color: #0F0F10;
     border: 1px solid white;
+    transition: all 0.3s ease;
 }
 
-h6.news1-description {
+h6.news-description {
     font-weight: 650;
     margin: 15px 0px;
 }
@@ -85,13 +86,13 @@ div.more-button {
 }
 
 /*release*/
-div.release-banner-img1 {
+div.release-banner-img-top {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.4), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.4), rgb(27, 27, 29, 1)), url("../img/news-images/Ado-news-release-banner-redgreenlookback.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 440px;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .release-section {
@@ -133,7 +134,7 @@ img.release-img {
     margin-right: 25px;
 }
 
-.mobile-img {
+.mobile-release-img {
     display: none;
 }
 
@@ -151,8 +152,6 @@ div.release-banner-img-bottom {
 
 
 @media screen and (max-width: 1024px) {
-    /*news*/
-
 
     /*latest*/
     .latest-content {
@@ -200,7 +199,7 @@ div.release-banner-img-bottom {
         display: none;
     }
 
-    .mobile-img {
+    .mobile-release-img {
         display: block;
     }
 
@@ -213,7 +212,7 @@ div.release-banner-img-bottom {
 
 @media screen and (max-width: 800px) {
     .news-banner-top {
-        height: 500px;
+        height: 600px;
         margin-top: 80px;
     }
 }
@@ -238,13 +237,12 @@ div.release-banner-img-bottom {
         height: 500px;
     }
 
-    h6.latest-news {
-        font-size: large;
+    div.release-banner-img1 {
+        height: 350px;
+        margin-top: -10px;
     }
 
-    h6.latest-release {
-        font-size: large;
+    div.release-banner-img-bottom {
+        height: 350px;
     }
-
-
 }
