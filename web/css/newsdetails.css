@@ -426,7 +426,7 @@ a.to-ado-shop:hover {
 
     /*news details content*/
     .details-live-image {
-        min-width: 400px;
+        min-width: 350px;
 
     }
 
@@ -456,6 +456,12 @@ a.to-ado-shop:hover {
     .tax {
         font-weight: 300;
         font-size: clamp(14px, 2.5vw, 16px);
+    }
+
+    .songs {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
     }
 
 
