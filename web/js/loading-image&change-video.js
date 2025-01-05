@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const screenWidth = window.innerWidth;
         lazyVideos.forEach(video => {
-            if (screenWidth > 900 && video.id === "localVideo") {
+            if (screenWidth > 800 && video.id === "localVideo") {
                 video.classList.add("show");
-            } else if (screenWidth <= 900 && video.id === "youtubeVideo") {
+            } else if (screenWidth <= 800 && video.id === "youtubeVideo") {
                 video.classList.add("show");
             }
         });
