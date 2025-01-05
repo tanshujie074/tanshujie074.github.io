@@ -9,7 +9,7 @@ body {
 }
 
 /*news details content*/
-div.newsdetails-banner-img1 {
+div.newsdetails-herobanner-top-img {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.1), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-herobanner-top-leftrightadoblankcenter.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@ div.newsdetails-banner-img1 {
     margin-top: 50px;
 }
 
-.newsdetails-banner {
+.newsdetails-herobanner {
     display: flex;
     justify-content: center;
 }
@@ -49,25 +49,25 @@ div.information-content {
 
 }
 
-.details-live-image {
+.details-info-image {
     flex: 1;
     min-width: 350px;
 }
 
-img.details-live-image {
+img.details-info-image {
     min-width: 200px;
 }
 
-div.details-description {
+div.details-info-description {
     flex: 1;
 }
 
-h4.details-heading {
+h4.details-info-heading {
     padding: 0px;
     margin: 0px;
 }
 
-h5.details-live-subheading {
+h5.details-info-subheading {
     font-weight: 650;
     margin: 15px 0px;
 }
@@ -154,7 +154,7 @@ h4.value {
     margin: 0px;
 }
 
-img.first-limited {
+img.shinzou-product {
     max-width: 35%;
 }
 
@@ -168,8 +168,8 @@ div.product-section2 {
 }
 
 /*feature song*/
-div.featuresong-banner-img1 {
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-feature.jpg");
+div.featurehitsong-banner-img {
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), linear-gradient(to top, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-banner-featurehitsong-adoredbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 60%;
@@ -182,7 +182,7 @@ div.featuresong-banner-img1 {
 }
 
 
-.songs {
+.feature-hit-songs {
     display: flex;
     gap: 15px;
 }
@@ -198,13 +198,13 @@ div.featuresong-banner-img1 {
     max-width: 100%;
 }
 
-.name {
+.song-name {
     font-weight: 650;
     padding: 15px 0px 8px 0px;
     margin: 0px;
 }
 
-.music {
+.music-composer {
     font-weight: 400;
     padding: 0px;
     margin: 0px;
@@ -296,7 +296,7 @@ a.to-ado-shop:hover {
 }
 
 @media screen and (max-width: 800px) {
-    div.newsdetails-banner-img1 {
+    div.newsdetails-herobanner-top-img-mobile {
         background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgb(27, 27, 29, 1)), url("../img/newsdetails-images/Ado-newsdetails-herobanner-top-leftrightadoblankcenter-mob.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -311,7 +311,7 @@ a.to-ado-shop:hover {
 
     }
 
-    .details-live-image {
+    .details-liveinfo-image {
         max-width: 515px;
 
     }
@@ -321,12 +321,12 @@ a.to-ado-shop:hover {
     }
 
     /*product*/
-    img.first-limited-mobile {
+    img.shinzou-product-mobile {
         display: flex;
         width: 50%;
     }
 
-    div.limited-container {
+    div.product-info-outer-container {
         display: flex;
         flex-direction: column;
     }
@@ -337,7 +337,7 @@ a.to-ado-shop:hover {
         align-items: center;
     }
 
-    .first-limited {
+    .shinzou-product {
         display: none;
     }
 
@@ -362,7 +362,7 @@ a.to-ado-shop:hover {
     }
 
     /*feature song*/
-    .songs {
+    .feature-hit-songs {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 20px;
@@ -406,7 +406,7 @@ a.to-ado-shop:hover {
 @media screen and (max-width: 500px) {
 
     /*news details content*/
-    .details-live-image {
+    .details-liveinfo-image {
         min-width: 350px;
 
     }
@@ -416,7 +416,7 @@ a.to-ado-shop:hover {
         display: block;
     }
 
-    .mobile-margin {
+    .mobile-margin-bottom {
         margin-bottom: 15px;
     }
 
@@ -439,7 +439,7 @@ a.to-ado-shop:hover {
         font-size: clamp(14px, 2.5vw, 16px);
     }
 
-    .songs {
+    .feature-hit-songs {
         display: grid;
         grid-template-columns: auto;
         grid-gap: 20px;
@@ -447,6 +447,14 @@ a.to-ado-shop:hover {
 
 
     /*notes*/
+    .notes-description {
+        padding: 0px;
+    }
+
+    .notes-heading {
+        margin: 0px 0px 20px 0px;
+    }
+
     a.to-ado-shop {
         font-size: clamp(16px, 3vw, 20px);
     }
