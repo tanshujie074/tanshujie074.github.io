@@ -15,17 +15,24 @@
     --main-color-blue: #07165b;
     --main-color-red: #9F1C07;
     --backgound-cover: hsla(240, 4%, 11%, 0.621);
+
+    /*padding*/
+    --view-padding: clamp(30px, 5vh, 40px);
 }
 
 .live-details-font-title,
 .ticket-title,
 .comment-title,
-.font-body h2,
-h2.font-body,
-.font-body h1,
-h1.font-body,
 .font-title h4,
 h4.font-title,
+.font-title h3,
+h3.font-title,
+.font-body h1,
+h1.font-body,
+.font-body h2,
+h2.font-body,
+.font-body h3,
+h3.font-body,
 .font-body h5,
 h5.font-body,
 .font-body h6,
@@ -85,8 +92,8 @@ h4.font-title {
     justify-content: center;
     align-items: center;
     gap: clamp(10px, 5%, 20px);
-    padding-top: clamp(30px, 5vh, 40px);
-    padding-bottom: clamp(30px, 5vh, 40px);
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
 }
 
 .text-section {
@@ -123,7 +130,11 @@ h4.font-title {
 
 .info-item-text-body,
 .comment-text-body,
-.ticket-card-body {
+.ticket-card-body,
+.font-body h2,
+h2.font-body,
+.font-body h3,
+h3.font-body {
     font-weight: 400;
 }
 
@@ -193,8 +204,8 @@ h4.font-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: clamp(30px, 5vh, 40px);
-    padding-bottom: clamp(30px, 5vh, 40px);
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
 }
 
 .ticket-title {
@@ -244,9 +255,8 @@ h4.font-title {
 
 .ticket-responsive-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: clamp(20px, 3%, 30px);
-    justify-content: space-between;
 }
 
 /*note*/
@@ -254,8 +264,9 @@ h4.font-title {
     min-height: var(--banner-height);
     background-image: url(../img/live-details-images/live-details-note-background-images.jpg);
     background-size: cover;
+    background-size: 100%;
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: bottom;
 }
 
 .note-g {
@@ -264,8 +275,27 @@ h4.font-title {
 }
 
 .note-c {
-    height: 50%;
+    min-height: var(--banner-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
 }
+
+.note-row {
+    height: fit-content;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.column-gap {
+    padding-right: clamp(10px, 5vw, 20px);
+}
+
 
 .note-card {
     display: flex;
@@ -275,11 +305,69 @@ h4.font-title {
 }
 
 .note-icon {
+    max-width: 80px;
+}
+
+.note-icon-disabled {
     max-width: 85px;
 }
 
 .note-breif {
     font-weight: 300;
+}
+
+/*details*/
+.details {
+    background-image: url(../img/live-details-images/live-details-details-background-images.jpeg);
+    min-height: var(--hero-height);
+    background-size: cover;
+    background-position-y: -400px;
+    background-position-x: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.details-g {
+    background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+    min-height: var(--hero-height);
+}
+
+.details-c {
+    min-height: var(--hero-height);
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    max-width: 500px;
+    row-gap: 20px;
+    min-height: fit-content;
+}
+
+.detail-title {
+    margin-bottom: clamp(15px, 5vh, 20px);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-box1 {
+    margin-bottom: clamp(10px, 5vh, 15px);
 }
 
 @media screen and (max-width:1090px) {
@@ -302,6 +390,17 @@ h4.font-title {
     /*comment*/
     .comment-text {
         gap: clamp(15px, 5%, 20px);
+    }
+
+    /*details*/
+    .details {
+        background-position-y: -300px;
+        background-position-x: center;
+        background-size: 100%;
+    }
+
+    .details-g {
+        background-image: linear-gradient(to left, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.971), hsla(240, 4%, 11%, 0.971), hsla(240, 4%, 11%, 0.971), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
     }
 }
 
@@ -347,6 +446,28 @@ h4.font-title {
     .ticket-card {
         padding: clamp(8px, 5vw, 10px);
     }
+
+    /*details*/
+    .details {
+        background-position-y: top;
+        background-size: 90%;
+    }
+
+    .details-g {
+        background-image: linear-gradient(to bottom, hsl(240, 4%, 11%), hsla(240, 4%, 11%, 0.98), hsla(240, 4%, 11%, 0.957), hsla(240, 4%, 11%, 0.403), hsla(240, 4%, 11%, 0), hsla(240, 4%, 11%, 0));
+        height: var(--hero-height);
+    }
+
+    .details-c {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 90vh;
+    }
+
+    .details-text {
+        max-width: 1000px;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -389,6 +510,37 @@ h4.font-title {
     .ticket-card {
         padding: clamp(5px, 5vw, 10px);
     }
+
+    /*note*/
+    .note-c {
+        padding-top: clamp(40px, 5vh, 45px);
+        padding-bottom: clamp(40px, 5vh, 45px);
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: clamp(20px, 5vh, 25px);
+    }
+
+    .column-gap {
+        padding-right: 0px;
+    }
+
+    .note-icon {
+        max-width: 60px;
+    }
+
+    .note-icon-disabled {
+        max-width: 65px;
+    }
+
+    /*details*/
+    .details {
+        background-position-y: 160px;
+    }
+
 }
 
 @media screen and (max-width:320px) {
@@ -401,5 +553,14 @@ h4.font-title {
     li.the-on-page.phone-320px {
         display: inline-block;
         width: fit-content;
+    }
+
+    /*note*/
+    .note-icon {
+        max-width: 50px;
+    }
+
+    .note-icon-disabled {
+        max-width: 55px;
     }
 }

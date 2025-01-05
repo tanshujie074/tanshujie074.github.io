@@ -185,7 +185,7 @@ h4.font-title {
 
 /*ticker information*/
 .ticker-r {
-    height: var(--ticker-height);
+    height: var(--banner-height);
 }
 
 .ticker-c {

@@ -114,14 +114,14 @@ p.font-body {
 }
 
 /*label*/
-h6.category-label {
+h6.label {
     font-weight: 650;
     background-color: #5D9DFE;
     padding: 10px 20px;
     margin: 15px 0px;
 }
 
-h6.publish-date {
+h6.date {
     font-weight: 400;
     margin: 15px 0px;
 
