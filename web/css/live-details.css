@@ -7,17 +7,18 @@
     --hero-height: clamp(500px, 60vh, 600px);
     --view-height: clamp(900px, 80vh, 900px);
     --banner-height: clamp(430px, 40vh, 600px);
-    --ticker-height: clamp(700px, 75vh, 900px);
+    --ticker-height: clamp(750px, 70vh, 900px);
     /*color*/
     --font-color: white;
     --background-color: #1b1b1d;
     --accent-color: #5D9DFE;
-    --main-color-blue: #07175B;
+    --main-color-blue: #07165b;
     --main-color-red: #9F1C07;
     --backgound-cover: hsla(240, 4%, 11%, 0.621);
 }
 
 .live-details-font-title,
+.ticket-title,
 .comment-title,
 .font-body h2,
 h2.font-body,
@@ -119,7 +120,8 @@ h4.font-title {
 
 
 .info-item-text-body,
-.comment-text-body {
+.comment-text-body,
+.ticket-card-body {
     font-weight: 400;
 }
 
@@ -178,6 +180,73 @@ h4.font-title {
     text-align: center;
 }
 
+/*Ticket Information*/
+.ticket-r {
+    min-height: var(--ticker-height);
+    height: auto;
+}
+
+.ticket-c {
+    min-height: var(--ticker-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: clamp(30px, 5vh, 40px);
+    padding-bottom: clamp(30px, 5vh, 40px);
+}
+
+.ticket-title {
+    padding-bottom: clamp(25px, 5vh, 30px);
+}
+
+.ticket-card-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 20px;
+    row-gap: clamp(10px, 5vh, 20px);
+}
+
+.ticket-card {
+    background-color: var(--main-color-blue);
+    height: auto;
+    padding: clamp(15px, 5vw, 20px);
+}
+
+.ticket-card-text-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket-card-icon {
+    max-width: 80px;
+    width: 100%;
+    display: inline-block;
+    background-color: var(--background-color);
+    width: fit-content;
+    padding: clamp(5px, 5vw, 8px);
+    border: var(--font-color) 2px solid;
+}
+
+.ticket-card-title {
+    padding-top: clamp(10px, 5vh, 15px);
+}
+
+.ticket-card-title {
+    font-weight: 650;
+}
+
+.ticket-card-text-box-info {
+    flex: 1;
+}
+
+.ticket-responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: clamp(20px, 3%, 30px);
+    justify-content: space-between;
+}
+
 @media screen and (max-width:1090px) {
     .comment-text {
         gap: clamp(4px, 5%, 8px);
@@ -185,6 +254,11 @@ h4.font-title {
 }
 
 @media screen and (max-width:1024px) {
+    :root {
+        /*height*/
+        --ticker-height: clamp(990px, 70vh, 1000px);
+    }
+
     .live-details-title {
         background-position-x: center;
         background-position-y: -100px;
@@ -196,7 +270,10 @@ h4.font-title {
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
+    :root {
+        --ticker-height: clamp(990px, 70vh, 1000px);
+    }
 
     /*tour-overview*/
     .live-details-title {
@@ -224,9 +301,23 @@ h4.font-title {
     .info .info-item {
         padding-bottom: 5%;
     }
+
+    /*ticket*/
+    .ticket-card-icon {
+        max-width: 70px;
+        width: 100%;
+        padding: clamp(5px, 5vw, 8px);
+    }
+
+    .ticket-card {
+        padding: clamp(8px, 5vw, 10px);
+    }
 }
 
 @media screen and (max-width:500px) {
+    :root {
+        --ticker-height: clamp(980px, 70vh, 1000px);
+    }
 
     /*breadcrumb*/
     li.the-on-page.desktop {
@@ -248,6 +339,21 @@ h4.font-title {
         gap: clamp(10px, 5%, 20px);
     }
 
+    /*ticket*/
+    .ticket-card-icon {
+        max-width: 60px;
+        width: 100%;
+        padding: clamp(5px, 5vw, 8px);
+    }
+
+    .ticket-card-row {
+        grid-template-columns: 1fr;
+        gap: clamp(10px, 5vh, 15px);
+    }
+
+    .ticket-card {
+        padding: clamp(5px, 5vw, 10px);
+    }
 }
 
 @media screen and (max-width:320px) {
