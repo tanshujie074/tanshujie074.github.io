@@ -44,7 +44,7 @@ li.the-on-page.phone-320px {
 
 /*live-details-title*/
 .live-details-title {
-    height: var(--hero-height);
+    min-height: var(--hero-height);
     background-image: url(../img/live-details-images/live-details-hibana.jpeg);
     background-size: cover;
     background-position-x: center;
@@ -54,7 +54,7 @@ li.the-on-page.phone-320px {
 
 .title-g {
     background-color: var(--backgound-cover);
-    height: var(--hero-height);
+    min-height: var(--hero-height);
     width: 100%;
 }
 
@@ -85,6 +85,8 @@ h4.font-title {
     justify-content: center;
     align-items: center;
     gap: clamp(10px, 5%, 20px);
+    padding-top: clamp(30px, 5vh, 40px);
+    padding-bottom: clamp(30px, 5vh, 40px);
 }
 
 .text-section {
@@ -153,7 +155,7 @@ h4.font-title {
 
 /*comment*/
 .comment {
-    height: var(--banner-height);
+    min-height: var(--banner-height);
     background-image: url(../img/live-details-images/live-details-comment-background.jpg);
     background-size: cover;
     background-position-x: center;
@@ -161,7 +163,7 @@ h4.font-title {
 }
 
 .comment-g {
-    height: var(--banner-height);
+    min-height: var(--banner-height);
     background-color: var(--backgound-cover);
 }
 
@@ -249,7 +251,7 @@ h4.font-title {
 
 /*note*/
 .note {
-    height: var(--banner-height);
+    min-height: var(--banner-height);
     background-image: url(../img/live-details-images/live-details-note-background-images.jpg);
     background-size: cover;
     background-position-x: center;
@@ -258,7 +260,7 @@ h4.font-title {
 
 .note-g {
     background-color: var(--backgound-cover);
-    height: var(--banner-height);
+    min-height: var(--banner-height);
 }
 
 .note-c {
