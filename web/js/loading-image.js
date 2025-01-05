@@ -4,21 +4,24 @@ document.querySelectorAll('.lazy-bg').forEach(el => {
 
 let player;
 function onYouTubeIframeAPIReady() {
-    console.log("YouTube API is ready");
     player = new YT.Player('youtubeVideo', {
         events: {
             onReady: (event) => {
-                console.log("Player is ready");
-                event.target.playVideo();
             },
             onStateChange: (event) => {
                 if (event.data === YT.PlayerState.ENDED) {
                     event.target.playVideo();
                 }
             }
+        },
+        playerVars: {
+            autoplay: 0,
+            controls: 1,
+            modestbranding: 1,
+            rel: 0
         }
     });
-};
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const lazyVideos = document.querySelectorAll(".lazy-video");

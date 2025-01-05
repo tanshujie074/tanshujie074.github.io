@@ -82,14 +82,12 @@ h4.font-title {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    background-color: #5D9DFE;
-    gap: 2rem;
+    gap: clamp(10px, 5%, 20px);
 }
 
 .text-section {
     height: 100%;
     flex: 1;
-    background-color: #9F1C07;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -136,14 +134,41 @@ h4.font-title {
     object-fit: cover;
 }
 
-.video {
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lazy-video {
     display: none;
 }
 
-.video.show {
+.lazy-video.show {
     display: block;
-    width: 100%;
-    height: auto;
+}
+
+/*comment*/
+.comment {
+    height: var(--banner-height);
+    background-image: url(../img/live-details-images/live-details-comment-background.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.comment-g {
+    background-color: var(--backgound-cover);
+    height: var(--banner-height);
+}
+
+.comment-c {
+    background-color: #07175B;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 @media screen and (max-width:1024px) {
@@ -164,6 +189,7 @@ h4.font-title {
     .tour-overview-c {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 
     .video-container {
