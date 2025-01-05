@@ -113,6 +113,25 @@ p.font-body {
     font-size: clamp(14px, 2.5vw, 16px);
 }
 
+/*label*/
+h6.label {
+    font-weight: 650;
+    background-color: #5D9DFE;
+    padding: 10px 20px;
+    margin: 15px 0px;
+}
+
+h6.date {
+    font-weight: 400;
+    margin: 15px 0px;
+
+}
+
+div.label-date {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
 
 /*button*/
 .button {

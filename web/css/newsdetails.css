@@ -31,25 +31,6 @@ div.newsdetails-banner-img1 {
     align-items: center;
 }
 
-h6.label {
-    font-weight: 650;
-    background-color: #5D9DFE;
-    padding: 10px 20px;
-    margin: 15px 0px;
-}
-
-h6.date {
-    font-weight: 400;
-    margin: 15px 0px;
-
-}
-
-div.label-date {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
 h3.newsdetails-heading {
     padding: 0px;
     margin: 0px;
@@ -235,7 +216,7 @@ div.featuresong-banner-img1 {
     display: flex;
     gap: 35px;
     align-items: center;
-    margin: 100px 0px 128px 0px;
+    margin: 100px 0px 50px 0px;
 }
 
 div.notes-content {
@@ -426,7 +407,7 @@ a.to-ado-shop:hover {
 
     /*news details content*/
     .details-live-image {
-        min-width: 400px;
+        min-width: 350px;
 
     }
 
@@ -456,6 +437,12 @@ a.to-ado-shop:hover {
     .tax {
         font-weight: 300;
         font-size: clamp(14px, 2.5vw, 16px);
+    }
+
+    .songs {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
     }
 
 
