@@ -226,8 +226,8 @@ div.release-banner-img-bottom {
     }
 
     .release-right-column {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto;
         gap: 15px;
     }
 }

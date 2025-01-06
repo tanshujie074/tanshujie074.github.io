@@ -244,7 +244,7 @@ hr.artwork-bottom-line {
 
 @media (max-width:320px) {
     a.category-item {
-        font-size: clamp(14px, 1.5vw, 18px);
+        font-size: clamp(14px, 2vw, 18px);
         padding: 15px;
     }
 
