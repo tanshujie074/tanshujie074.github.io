@@ -9,22 +9,16 @@ body {
     background-image: url("../img/peripheral-products-images/title-image.png");
     background-size: cover;
     background-repeat: no-repeat;
-    object-fit: cover;
     background-position: center top;
     width: 100%;
     height: 100vh;
     position: relative;
+    margin-top: 5%;
 }
 
 
-.title {
-    font-weight: 650;
-    position: absolute;
-    bottom: 20%;
-}
-
-.title-content {
-    align-items: center;
+.frame {
+    justify-content: flex-start;
     position: absolute;
     bottom: 0;
 }
@@ -45,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-bottom: 8%;
 }
 
 
@@ -57,23 +52,7 @@ body {
     word-wrap: break-word;
 }
 
-div.price {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
 
-.product-item-price {
-    font-weight: bold;
-    font-size: 28px;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: 50px;
-    box-sizing: border-box;
-    width: 100%;
-    word-wrap: break-word;
-}
 
 .content-alignment {
     display: flex;
@@ -81,18 +60,28 @@ div.price {
     justify-content: space-between;
     height: 100%;
     box-sizing: border-box;
+    gap: 50px;
 }
 
 
-/*
-    <h2 class="font-title">heading1</h2>
-    <h4 class="font-title">heading4</h4>
- */
+.font-body {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
-/*
- <h2 class="font-body">heading2</h2>
- <h3 class="font-body">heading3</h3>
- */
+.font-body .price {
+    font-size: clamp(20px, 4vw, 26px);
+    font-weight: 650;
+}
+
+.font-body .tax {
+    font-size: clamp(18px, 3.5vw, 22px);
+    font-weight: 300;
+}
+
+
+
 
 .font-title h2,
 h2.font-title {
@@ -115,7 +104,7 @@ h4.font-title {
 .font-body h2,
 h2.font-body {
     font-size: clamp(20px, 4vw, 24px);
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .font-body h3,
@@ -126,58 +115,56 @@ h3.font-body {
 
 
 @media screen and (max-width:1024px) {
-    .title-image {
-        height: 70vh;
+
+    .font-body .price {
+        font-size: clamp(18px, 3.8vw, 24px);
     }
+
+    .font-body .tax {
+        font-size: clamp(16px, 3vw, 20px);
+    }
+
 
     .product-item {
+        width: 100%;
+        height: auto;
+        flex: 1 1 45%;
         display: flex;
         flex-direction: column;
-        flex: 1 1 40%;
+        overflow: hidden;
+        margin-bottom: 8%;
     }
-
-    .title {
-        display: flex;
-        justify-content: flex-start;
-        margin: 0 25px;
-        bottom: 28%;
-        left: 0;
-    }
-
-    .title-content {
-        width: 80%;
-        display: flex;
-        justify-content: flex-start;
-        margin: 0 25px;
-        left: 0;
-    }
-
-    .frame {
-        justify-content: flex-start;
-    }
-
 
 }
 
 @media (max-width: 800px) {
     .product-item {
-        flex: 1 1 calc(100%);
-        max-width: calc(100%);
+        width: 100%;
+        height: auto;
+        flex: 1 1 90%;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+        margin-bottom: 8%;
     }
 
-    .title {
-        margin: 0 25px;
-        bottom: 20%;
-        left: 0;
+    .font-body .price {
+        font-size: clamp(18px, 3.5vw, 22px);
     }
 
-    .title-content {
-        align-items: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
+    .font-body .tax {
+        font-size: clamp(14px, 3vw, 18px);
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .font-body .price {
+        font-size: clamp(16px, 3vw, 20px);
     }
 
+    .font-body .tax {
+        font-size: clamp(14px, 2.5vw, 18px);
+    }
 }
