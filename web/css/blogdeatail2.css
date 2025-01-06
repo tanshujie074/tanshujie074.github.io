@@ -97,6 +97,12 @@ h6.font-body {
     font-weight: 300;
 }
 
+.font-body p,
+p.font-body {
+    font-size: clamp(12px, 2.2vw, 14px);
+    margin-bottom: 5%;
+}
+
 .right {
     align-items: flex-end
 }
@@ -168,24 +174,28 @@ h6.font-body {
     }
 
 
-    @media screen and (max-width:800px) {
+
+}
 
 
-        .row {
-            padding: 0 25px;
-        }
+@media screen and (max-width:800px) {
 
-        .container-part1 {
-            align-items: flex-start;
-        }
+
+    .row {
+        padding: 0 25px;
     }
 
-
-    @media screen and (max-width:480px) {
-
-
-        .row {
-            padding: 0 15px;
-        }
-
+    .container-part1 {
+        align-items: flex-start;
     }
+}
+
+
+@media screen and (max-width:480px) {
+
+
+    .row {
+        padding: 0 15px;
+    }
+
+}
