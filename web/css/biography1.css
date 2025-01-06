@@ -143,6 +143,16 @@ p.font-body {
     background-color: hsla(240, 4%, 11%, 0.685);
 }
 
+.video-c,
+.song-c {
+    padding-top: var(--view-padding);
+    padding-bottom: var(--view-padding);
+}
+
+.top-title {
+    padding-bottom: clamp(20px, 5vh, 25px);
+}
+
 .top-row {
     display: grid;
     gap: 15px;
@@ -156,23 +166,17 @@ p.font-body {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    padding: clamp(20px, 5vh, 30px);
 }
 
 .video-text1 {
-    min-height: 480px;
+    min-height: 472px;
+    width: 100%;
+    height: auto;
 }
 
 .video-text2 {
-    min-height: 245px;
-}
-
-.font-body h1,
-h1.font-body,
-.font-title h4,
-h4.font-title,
-.font-body h2,
-h2.font-body {
-    margin: 0px;
+    min-height: 227px;
 }
 
 .font-body h2,
@@ -180,31 +184,29 @@ h2.font-body {
     line-height: 60%;
 }
 
-.video-img1 {
-    background-image: url(../img/biography-images/bio-page-top-video-Usseewa.jpg);
+.video-img1,
+.v-img2 {
     background-size: cover;
     object-fit: cover;
     background-position: center;
+}
+
+.video-img1 {
+    background-image: linear-gradient(to top, hsla(229, 86%, 19%, 0.982), hsla(229, 86%, 19%, 0)), url(../img/biography-images/bio-page-top-video-Usseewa.jpg);
     grid-column: 1;
     grid-row: 1 / span 2;
 }
 
 .v-img2 {
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
     grid-column: 2;
 }
 
 .video-img2 {
-    background-image: url(../img/biography-images/bio-page-top-video-Odo.jpeg);
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
+    background-image: linear-gradient(to top, hsla(229, 86%, 19%, 0.982), hsla(229, 86%, 19%, 0)), url(../img/biography-images/bio-page-top-video-Odo.jpeg);
 }
 
 .video-img3 {
-    background-image: url(../img/biography-images/bio-page-top-video-show.jpg);
+    background-image: linear-gradient(to top, hsla(229, 86%, 19%, 0.982), hsla(229, 86%, 19%, 0)), url(../img/biography-images/bio-page-top-video-show.jpg);
 }
 
 /*top-song*/
@@ -212,33 +214,33 @@ h2.font-body {
     min-height: var(--view-height);
 }
 
-.title {
-    text-align: center;
-}
-
 .song-img1 {
-    background-image: url(../img/biography-images/bio-page-top-song-show.jpg);
+    background-image: linear-gradient(to top, hsla(8, 92%, 33%, 0.982), hsla(8, 92%, 33%, 0)), url(../img/biography-images/bio-page-top-song-show.jpg);
     background-size: cover;
     object-fit: cover;
     background-position: center;
-    grid-column: 1/span 6;
-    grid-row: 1 / span 2;
+}
+
+.top-song-cloumns1 {
+    grid-column: 1;
+    grid-row: 1/span 3;
 }
 
 .song-text1 {
-    width: 100%;
+    width: 50%;
     height: 100%;
+    min-height: 670px;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-height: 704px;
+    padding: clamp(20px, 5vh, 30px);
 }
 
 .top-song-cloumns2 {
-    grid-column: 7;
+    grid-column: 2;
     grid-row: 1;
     display: grid;
-    gap: 20px;
+    gap: clamp(10px, 5%, 20px);
     grid-auto-rows: auto;
     grid-auto-flow: dense;
 }
@@ -275,19 +277,39 @@ h2.font-body {
 
 .song-text2 {
     grid-column: 7;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1.top-song-name,
+.top-song-number {
+    font-weight: 400;
 }
 
 @media screen and (max-width:1024px) {
     .bio {
-        background-position-x: -250px;
-        background-position-y: center;
+        background-size: 100%;
+        background-position-x: -240px;
+        background-position-y: bottom;
+    }
+
+    /*video*/
+    .video-text {
+        padding: clamp(20px, 5vh, 25px);
     }
 }
 
 @media screen and (max-width:800px) {
-    /*bio*/
+    :root {
+        /*height*/
+        --data-height: clamp(100px, 30vh, 200px);
 
+        /*padding*/
+        --view-padding: clamp(20px, 5vh, 30px);
+    }
+
+    /*bio*/
     .bio {
         background-position-x: center;
         background-position-y: -200px;
@@ -307,25 +329,51 @@ h2.font-body {
     .bio-text {
         width: 100%;
     }
+
+    /*top-video*/
+    .video-text {
+        padding: clamp(15px, 5vh, 20px);
+    }
+
+    /*top-song*/
+    .song-text1 {
+        min-height: 300px;
+    }
 }
 
 @media screen and (max-width:500px) {
+    :root {
+        /*height*/
+        --data-height: clamp(300px, 30vh, 450px);
+    }
+
 
     /*data*/
     .data-c {
-        flex-direction: column;
+        padding-top: clamp(15px, 5vh, 25px);
+        padding-bottom: clamp(15px, 5vh, 25px);
     }
 
     .column {
         width: 100%;
     }
 
-    .data-item {
-        margin-bottom: clamp(10px, 5vw, 20px);
+    .column-gap {
+        margin-bottom: clamp(20px, 5vh, 25px);
     }
 
+    /*top-song & top-video*/
     .top-row {
         display: flex;
         flex-direction: column;
+    }
+
+    .video-text2 {
+        min-height: 140px;
+    }
+
+    /*top-song*/
+    .top-song-cloumns2 {
+        grid-column: 1;
     }
 }
