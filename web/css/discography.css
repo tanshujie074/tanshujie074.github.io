@@ -16,7 +16,7 @@ div.discography-banner-img {
     background-position-y: 35%;
     height: 540px;
     display: flex;
-    text-align: center;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -239,5 +239,16 @@ hr.artwork-bottom-line {
 
     .artwork-nineth {
         display: block;
+    }
+}
+
+@media (max-width:320px) {
+    a.category-item {
+        font-size: clamp(14px, 1.5vw, 18px);
+        padding: 15px;
+    }
+
+    a.all-category-item {
+        padding: 15px 25px;
     }
 }
