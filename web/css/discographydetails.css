@@ -177,14 +177,13 @@ h4.details-center-heading {
 
 h3.song-category {
     font-weight: 650;
-    padding: 0px 0px 15px 0px;
+    padding-bottom: 15px;
     margin: 0px;
 }
 
 .songs {
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 0px 15px 0px 0px;
+    grid-template-columns: auto auto;
     gap: 15px;
 
 }
@@ -219,14 +218,14 @@ h3.song-category {
     max-width: 100%;
 }
 
-.name {
+.song-name {
     font-weight: 650;
     padding: 15px 0px 8px 0px;
     margin: 0px;
     font-size: medium;
 }
 
-.music {
+.music-composer {
     font-weight: 400;
     padding: 0px;
     margin: 0px;
@@ -249,8 +248,8 @@ h3.song-category {
     }
 
     .song-category-section {
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
         gap: 15px;
     }
 
@@ -286,6 +285,34 @@ h3.song-category {
     .song-img {
         min-width: 40%;
     }
+
+    .songs {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    .song-top-row {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .song-bottom-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .song-container-top-width {
+        width: auto;
+    }
+
+    .song-container-bottom-width {
+        width: auto;
+    }
+
 
 
 }
