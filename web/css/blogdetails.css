@@ -143,6 +143,12 @@
     margin-top: 10%;
 }
 
+.font-body p,
+p.font-body {
+    font-size: clamp(12px, 2.2vw, 14px);
+    margin-bottom: 5%;
+}
+
 @media screen and (max-width:1024px) {
     .img1 {
         height: 80vh;
@@ -258,6 +264,8 @@
         text-align: left;
         margin-top: 10%;
     }
+
+
 }
 
 @media screen and (max-width:800px) {
