@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="general.css/footer.css" />
     <link rel="stylesheet" href="general.css/menu-style.css">
     <link rel="stylesheet" href="general.css/breadcrumb1.css">
+    <script src="script.js"></script>
+
 
     <!-- font: futura-->
     <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet">
@@ -147,6 +149,17 @@
                         <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
 
                         <button class="button white-button">SUBMIT</button>
+
+                        <div id="overlay" class="overlay">
+                            <div class="overlay-content">
+                                <p>Thank you for reaching out! We've received your message and will get back to you
+                                    shortly.
+                                </p>
+                                <button id="closeButton" class="close-button">Close</button>
+                            </div>
+                        </div>
+
+
                     </form>
                 </div>
             </div>
