@@ -8,6 +8,15 @@ body {
     color: white;
 }
 
+/*breadcrumb*/
+.phone {
+    display: none;
+}
+
+.phone-320px {
+    display: none;
+}
+
 /*discography*/
 .discographydetails-banner-top {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(27, 27, 29, 0.2), rgba(27, 27, 29, 0.5), rgb(27, 27, 29, 1)), url("../img/discographydetails-images/Ado-albumdetails-productalbumimg.jpg");
@@ -313,6 +322,20 @@ h3.song-category {
         width: auto;
     }
 
+    .phone {
+        display: flex;
+    }
 
 
+
+}
+
+@media screen and (max-width: 320px) {
+    .phone {
+        display: none;
+    }
+
+    .phone-320px {
+        display: flex;
+    }
 }
