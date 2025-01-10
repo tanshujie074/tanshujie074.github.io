@@ -104,16 +104,6 @@ textarea:focus {
     align-items: stretch;
 }
 
-.framelogo-inside {
-    height: auto;
-    width: 100%;
-    padding: 20px;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .framelogo-inside a {
     display: block;
     width: 100%;
