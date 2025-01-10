@@ -9,11 +9,23 @@ body {
 }
 
 /*breadcrumb*/
-.phone {
+li.the-on-page.tablet {
     display: none;
 }
 
-.phone-320px {
+li.the-on-page.phone {
+    display: none;
+}
+
+li.the-on-page.phone-500px {
+    display: none;
+}
+
+li.breadcrumb-a.phone-375px {
+    display: none;
+}
+
+li.the-on-page.phone-375px {
     display: none;
 }
 
@@ -89,8 +101,6 @@ h4.discographydetails-subheading {
 }
 
 /*price*/
-
-
 .product-price-toshop {
     display: flex;
     flex-direction: column;
@@ -265,6 +275,8 @@ h3.song-category {
 }
 
 @media screen and (max-width: 800px) {
+
+
     ul.details-points {
         font-size: clamp(16px, 2.5vw, 16px);
     }
@@ -277,11 +289,40 @@ h3.song-category {
         height: 500px;
 
     }
+}
 
+@media screen and (max-width: 660px) {
+    li.the-on-page.desktop {
+        display: none;
+    }
+
+    li.the-on-page.tablet {
+        display: inline-block;
+
+    }
+}
+
+@media screen and (max-width: 620px) {
+    li.the-on-page.tablet {
+        display: none;
+
+    }
+
+    li.the-on-page.phone {
+        display: inline-block;
+    }
 
 }
 
 @media screen and (max-width: 500px) {
+    li.the-on-page.phone {
+        display: none;
+    }
+
+    li.the-on-page.phone-500px {
+        display: inline-block;
+    }
+
     .swiper {
         max-width: 350px;
     }
@@ -322,20 +363,23 @@ h3.song-category {
         width: auto;
     }
 
-    .phone {
-        display: flex;
-    }
-
-
-
 }
 
-@media screen and (max-width: 320px) {
-    .phone {
+@media screen and (max-width: 375px) {
+    li.the-on-page.phone-500px {
         display: none;
     }
 
-    .phone-320px {
-        display: flex;
+    li.breadcrumb-a.desktop-phone-375px {
+        display: none;
     }
+
+    li.breadcrumb-a.phone-375px {
+        display: inline-block;
+    }
+
+    li.the-on-page.phone-375px {
+        display: inline-block;
+    }
+
 }
